@@ -1,0 +1,165 @@
+<svg width="500" height="333" viewBox="0 0 500 333" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#D4AF37;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#C9A961;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#B89347;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="navyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0A2240;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#061420;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+    <style>
+      .header-text { font-family: 'Georgia', serif; font-size: 20px; font-weight: 900; fill: white; letter-spacing: 1.5px; }
+      .title-text { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 16px; font-weight: 700; fill: #0A2240; }
+      .id-text { font-family: 'Courier New', monospace; font-size: 14px; font-weight: 600; fill: #0A2240; }
+      .footer-text { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 12px; font-weight: 600; fill: #0A2240; }
+    </style>
+  </defs>
+  
+  <!-- Premium Border with Gold Foil Effect -->
+  <rect x="0" y="0" width="500" height="333" fill="white" stroke="url(#goldGradient)" stroke-width="5" rx="8"/>
+  <rect x="6" y="6" width="488" height="321" fill="none" stroke="#C9A961" stroke-width="1" rx="6"/>
+  
+  <!-- Premium Header -->
+  <rect x="0" y="0" width="500" height="65" fill="url(#navyGradient)" rx="8"/>
+  <rect x="0" y="57" width="500" height="8" fill="url(#goldGradient)"/>
+  <text x="250" y="42" text-anchor="middle" class="header-text" filter="url(#shadow)">GOVERNMENT APPROVED PARTNER</text>
+  
+  <!-- QR Code with premium frame -->
+  <rect x="35" y="85" width="130" height="130" fill="white" stroke="url(#goldGradient)" stroke-width="3" rx="4"/>
+  <rect x="40" y="90" width="120" height="120" fill="#0A2240"/>
+  <!-- QR Pattern - Government Standard -->
+  <rect x="45" y="95" width="20" height="20" fill="white"/>
+  <rect x="50" y="100" width="10" height="10" fill="#0A2240"/>
+  <rect x="95" y="95" width="20" height="20" fill="white"/>
+  <rect x="100" y="100" width="10" height="10" fill="#0A2240"/>
+  <rect x="145" y="95" width="20" height="20" fill="white"/>
+  <rect x="150" y="100" width="10" height="10" fill="#0A2240"/>
+  <rect x="45" y="145" width="20" height="20" fill="white"/>
+  <rect x="50" y="150" width="10" height="10" fill="#0A2240"/>
+  <rect x="95" y="145" width="20" height="20" fill="white"/>
+  <rect x="100" y="150" width="10" height="10" fill="#0A2240"/>
+  <rect x="145" y="145" width="20" height="20" fill="white"/>
+  <rect x="150" y="150" width="10" height="10" fill="#0A2240"/>
+  <rect x="45" y="195" width="20" height="20" fill="white"/>
+  <rect x="50" y="200" width="10" height="10" fill="#0A2240"/>
+  <rect x="95" y="195" width="20" height="20" fill="white"/>
+  <rect x="100" y="200" width="10" height="10" fill="#0A2240"/>
+  <rect x="145" y="195" width="20" height="20" fill="white"/>
+  <rect x="150" y="200" width="10" height="10" fill="#0A2240"/>
+  <!-- Additional QR dots for realism -->
+  <rect x="70" y="100" width="8" height="8" fill="white"/>
+  <rect x="85" y="100" width="8" height="8" fill="white"/>
+  <rect x="70" y="115" width="8" height="8" fill="white"/>
+  <rect x="85" y="115" width="8" height="8" fill="white"/>
+  <rect x="120" y="100" width="8" height="8" fill="white"/>
+  <rect x="135" y="100" width="8" height="8" fill="white"/>
+  <rect x="120" y="115" width="8" height="8" fill="white"/>
+  <rect x="135" y="115" width="8" height="8" fill="white"/>
+  <rect x="70" y="170" width="8" height="8" fill="white"/>
+  <rect x="85" y="170" width="8" height="8" fill="white"/>
+  <rect x="120" y="170" width="8" height="8" fill="white"/>
+  <rect x="135" y="170" width="8" height="8" fill="white"/>
+  
+  <!-- Text Section -->
+  <text x="190" y="115" class="title-text">SCAN FOR SAFETY</text>
+  <line x1="190" y1="125" x2="460" y2="125" stroke="url(#goldGradient)" stroke-width="2"/>
+  <text x="190" y="155" class="id-text">LATC ID: _______________</text>
+  <text x="190" y="185" class="id-text" opacity="0.6">Verify at latcltd.rw</text>
+  
+  <!-- Premium Barcode Section -->
+  <rect x="35" y="235" width="430" height="55" fill="white" stroke="#0A2240" stroke-width="2" rx="3"/>
+  <!-- Code 128 Barcode Pattern -->
+  <rect x="45" y="245" width="3" height="35" fill="#0A2240"/>
+  <rect x="51" y="245" width="1" height="35" fill="#0A2240"/>
+  <rect x="55" y="245" width="2" height="35" fill="#0A2240"/>
+  <rect x="60" y="245" width="1" height="35" fill="#0A2240"/>
+  <rect x="64" y="245" width="3" height="35" fill="#0A2240"/>
+  <rect x="70" y="245" width="2" height="35" fill="#0A2240"/>
+  <rect x="75" y="245" width="1" height="35" fill="#0A2240"/>
+  <rect x="79" y="245" width="3" height="35" fill="#0A2240"/>
+  <rect x="85" y="245" width="2" height="35" fill="#0A2240"/>
+  <rect x="90" y="245" width="1" height="35" fill="#0A2240"/>
+  <rect x="94" y="245" width="3" height="35" fill="#0A2240"/>
+  <rect x="100" y="245" width="2" height="35" fill="#0A2240"/>
+  <rect x="105" y="245" width="1" height="35" fill="#0A2240"/>
+  <rect x="109" y="245" width="3" height="35" fill="#0A2240"/>
+  <rect x="115" y="245" width="2" height="35" fill="#0A2240"/>
+  <rect x="120" y="245" width="1" height="35" fill="#0A2240"/>
+  <rect x="124" y="245" width="3" height="35" fill="#0A2240"/>
+  <rect x="130" y="245" width="2" height="35" fill="#0A2240"/>
+  <rect x="135" y="245" width="1" height="35" fill="#0A2240"/>
+  <rect x="139" y="245" width="3" height="35" fill="#0A2240"/>
+  <rect x="145" y="245" width="2" height="35" fill="#0A2240"/>
+  <rect x="150" y="245" width="1" height="35" fill="#0A2240"/>
+  <rect x="154" y="245" width="3" height="35" fill="#0A2240"/>
+  <rect x="160" y="245" width="2" height="35" fill="#0A2240"/>
+  <rect x="165" y="245" width="1" height="35" fill="#0A2240"/>
+  <rect x="169" y="245" width="3" height="35" fill="#0A2240"/>
+  <rect x="175" y="245" width="2" height="35" fill="#0A2240"/>
+  <rect x="180" y="245" width="1" height="35" fill="#0A2240"/>
+  <rect x="184" y="245" width="3" height="35" fill="#0A2240"/>
+  <rect x="190" y="245" width="2" height="35" fill="#0A2240"/>
+  <rect x="195" y="245" width="1" height="35" fill="#0A2240"/>
+  <rect x="199" y="245" width="3" height="35" fill="#0A2240"/>
+  <rect x="205" y="245" width="2" height="35" fill="#0A2240"/>
+  <rect x="210" y="245" width="1" height="35" fill="#0A2240"/>
+  <rect x="214" y="245" width="3" height="35" fill="#0A2240"/>
+  <rect x="220" y="245" width="2" height="35" fill="#0A2240"/>
+  <rect x="225" y="245" width="1" height="35" fill="#0A2240"/>
+  <rect x="229" y="245" width="3" height="35" fill="#0A2240"/>
+  <rect x="235" y="245" width="2" height="35" fill="#0A2240"/>
+  <rect x="240" y="245" width="1" height="35" fill="#0A2240"/>
+  <rect x="244" y="245" width="3" height="35" fill="#0A2240"/>
+  <rect x="250" y="245" width="2" height="35" fill="#0A2240"/>
+  <rect x="255" y="245" width="1" height="35" fill="#0A2240"/>
+  <rect x="259" y="245" width="3" height="35" fill="#0A2240"/>
+  <rect x="265" y="245" width="2" height="35" fill="#0A2240"/>
+  <rect x="270" y="245" width="1" height="35" fill="#0A2240"/>
+  <rect x="274" y="245" width="3" height="35" fill="#0A2240"/>
+  <rect x="280" y="245" width="2" height="35" fill="#0A2240"/>
+  <rect x="285" y="245" width="1" height="35" fill="#0A2240"/>
+  <rect x="289" y="245" width="3" height="35" fill="#0A2240"/>
+  <rect x="295" y="245" width="2" height="35" fill="#0A2240"/>
+  <rect x="300" y="245" width="1" height="35" fill="#0A2240"/>
+  <rect x="304" y="245" width="3" height="35" fill="#0A2240"/>
+  <rect x="310" y="245" width="2" height="35" fill="#0A2240"/>
+  <rect x="315" y="245" width="1" height="35" fill="#0A2240"/>
+  <rect x="319" y="245" width="3" height="35" fill="#0A2240"/>
+  <rect x="325" y="245" width="2" height="35" fill="#0A2240"/>
+  <rect x="330" y="245" width="1" height="35" fill="#0A2240"/>
+  <rect x="334" y="245" width="3" height="35" fill="#0A2240"/>
+  <rect x="340" y="245" width="2" height="35" fill="#0A2240"/>
+  <rect x="345" y="245" width="1" height="35" fill="#0A2240"/>
+  <rect x="349" y="245" width="3" height="35" fill="#0A2240"/>
+  <rect x="355" y="245" width="2" height="35" fill="#0A2240"/>
+  <rect x="360" y="245" width="1" height="35" fill="#0A2240"/>
+  <rect x="364" y="245" width="3" height="35" fill="#0A2240"/>
+  <rect x="370" y="245" width="2" height="35" fill="#0A2240"/>
+  <rect x="375" y="245" width="1" height="35" fill="#0A2240"/>
+  <rect x="379" y="245" width="3" height="35" fill="#0A2240"/>
+  <rect x="385" y="245" width="2" height="35" fill="#0A2240"/>
+  <rect x="390" y="245" width="1" height="35" fill="#0A2240"/>
+  <rect x="394" y="245" width="3" height="35" fill="#0A2240"/>
+  <rect x="400" y="245" width="2" height="35" fill="#0A2240"/>
+  <rect x="405" y="245" width="1" height="35" fill="#0A2240"/>
+  <rect x="409" y="245" width="3" height="35" fill="#0A2240"/>
+  <rect x="415" y="245" width="2" height="35" fill="#0A2240"/>
+  <rect x="420" y="245" width="1" height="35" fill="#0A2240"/>
+  <rect x="424" y="245" width="3" height="35" fill="#0A2240"/>
+  <rect x="430" y="245" width="2" height="35" fill="#0A2240"/>
+  <rect x="435" y="245" width="1" height="35" fill="#0A2240"/>
+  <rect x="439" y="245" width="3" height="35" fill="#0A2240"/>
+  <rect x="445" y="245" width="2" height="35" fill="#0A2240"/>
+  <rect x="450" y="245" width="1" height="35" fill="#0A2240"/>
+  <rect x="454" y="245" width="3" height="35" fill="#0A2240"/>
+  
+  <!-- Premium Footer -->
+  <rect x="0" y="305" width="500" height="28" fill="url(#goldGradient)"/>
+  <text x="40" y="323" class="footer-text" fill="white" filter="url(#shadow)">VISION 2050</text>
+  <text x="460" y="323" text-anchor="end" class="footer-text" fill="white" filter="url(#shadow)">www.latcltd.rw</text>
+</svg>
