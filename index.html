@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LATC Ltd | Technology Infrastructure for Rwanda Vision 2050</title>
+    <meta name="description" content="Luxury Africa Technology Center Ltd - RDB Registered Technology Company developing digital infrastructure for Rwanda.">
+    
+    <!-- GoatCounter - Real Analytics Only -->
+    <script data-goatcounter="https://latcltd.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --navy: #0a1a2f;
+            --gold: #c9a961;
+            --gold-light: #d4b87a;
+            --white: #ffffff;
+            --grey: #f8f9fa;
+            --text: #1a2b4c;
+            --shadow: 0 10px 30px rgba(10, 26, 47, 0.12);
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: var(--grey);
+            color: var(--text);
+            line-height: 1.8;
+            overflow-x: hidden;
+        }
+        
+        .nav {
+            background: rgba(10, 26, 47, 0.98);
+            backdrop-filter: blur(10px);
+            padding: 20px 5%;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(201, 169, 97, 0.2);
+        }
+        
+        .nav-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .nav-logo img {
+            height: 45px;
+            background: white;
+            padding: 8px;
+            border-radius: 6px;
+        }
+        
+        .nav-logo-text {
+            color: white;
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+        
+        .nav-logo-text strong {
+            color: var(--gold);
+            font-weight: 600;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #0a1a2f 0%, #1a2b4c 100%);
+            padding: 180px 5% 100px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('logo-hero-3.png') center/cover no-repeat;
+            opacity: 0.08;
+            z-index: 0;
+        }
+        
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 52px;
+            color: white;
+            font-weight: 700;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .hero h1 span {
+            color: var(--gold);
+        }
+        
+        .hero p {
+            font-size: 18px;
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 40px;
+            font-weight: 300;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .trust-badges {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-top: 50px;
+        }
+        
+        .badge {
+            background: rgba(255,255,255,0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(201, 169, 97, 0.3);
+            padding: 15px 30px;
+            border-radius: 8px;
+            color: white;
+            font-size: 13px;
+            letter-spacing: 0.5px;
+        }
+        
+        .badge strong {
+            color: var(--gold);
+            display: block;
+            font-size: 16px;
+            margin-bottom: 3px;
+        }
+        
+        .section {
+            padding: 100px 5%;
+        }
+        
+        .section-dark {
+            background: var(--navy);
+            color: white;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 42px;
+            text-align: center;
+            margin-bottom: 20px;
+            color: var(--navy);
+        }
+        
+        .section-dark .section-title {
+            color: white;
+        }
+        
+        .section-title span {
+            color: var(--gold);
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            font-size: 16px;
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto 60px;
+        }
+        
+        .section-dark .section-subtitle {
+            color: rgba(255,255,255,0.7);
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 60px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(10, 26, 47, 0.08);
+        }
+        
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(10, 26, 47, 0.15);
+            border-color: var(--gold);
+        }
+        
+        .card-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            margin-bottom: 25px;
+        }
+        
+        .card h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: var(--navy);
+            font-weight: 600;
+        }
+        
+        .card p {
+            color: #555;
+            line-height: 1.8;
+            font-size: 15px;
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, var(--navy) 0%, #1a2b4c 100%);
+            padding: 80px 5%;
+            text-align: center;
+            border-top: 3px solid var(--gold);
+            border-bottom: 3px solid var(--gold);
+        }
+        
+        .btn {
+            background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
+            color: var(--navy);
+            padding: 18px 45px;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: 600;
+            font-size: 16px;
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 20px rgba(201, 169, 97, 0.3);
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(201, 169, 97, 0.5);
+        }
+        
+        .contact-form {
+            max-width: 600px;
+            margin: 50px auto 0;
+            background: rgba(255,255,255,0.05);
+            padding: 40px;
+            border-radius: 12px;
+            border: 1px solid rgba(201, 169, 97, 0.2);
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        
+        .form-group label {
+            display: block;
+            color: var(--gold);
+            font-size: 13px;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 14px;
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(201, 169, 97, 0.3);
+            border-radius: 6px;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 15px;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--gold);
+            background: rgba(255,255,255,0.12);
+        }
+        
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        
+        .footer {
+            background: #000;
+            padding: 60px 5% 30px;
+            color: rgba(255,255,255,0.6);
+            font-size: 13px;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer h4 {
+            color: var(--gold);
+            font-size: 14px;
+            margin-bottom: 15px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+        
+        .footer p, .footer a {
+            color: rgba(255,255,255,0.6);
+            text-decoration: none;
+            line-height: 2;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 12px;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 36px; }
+            .section-title { font-size: 32px; }
+            .nav-logo-text { display: none; }
+            .grid { grid-template-columns: 1fr; }
+            .trust-badges { gap: 15px; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-content">
+            <div class="nav-logo">
+                <img src="logo-header-3.png" alt="LATC">
+                <div class="nav-logo-text">
+                    <strong>LATC Ltd</strong><br>
+                    RDB 260961049576660
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Digital Infrastructure for <span>Rwanda Vision 2050</span></h1>
+            <p>Luxury Africa Technology Center develops enterprise-grade technology solutions supporting Rwanda's transformation into a knowledge-based economy.</p>
+            
+            <div class="trust-badges">
+                <div class="badge">
+                    <strong>RDB Registered</strong>
+                    260961049576660
+                </div>
+                <div class="badge">
+                    <strong>Established</strong>
+                    Kigali, Rwanda
+                </div>
+                <div class="badge">
+                    <strong>Compliance</strong>
+                    Law N°058/2021 Ready
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Strategic Technology <span>Capabilities</span></h2>
+            <p class="section-subtitle">LATC Ltd delivers institutional-grade solutions designed for national-scale deployment and government partnership frameworks.</p>
+            
+            <div class="grid">
+                <div class="card">
+                    <div class="card-icon">🏛️</div>
+                    <h3>Government Systems Integration</h3>
+                    <p>Secure API architecture and data infrastructure designed for public sector interoperability. Built to RISA and RURA compliance standards.</p>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon">🔒</div>
+                    <h3>Data Sovereignty Solutions</h3>
+                    <p>On-premise and sovereign cloud architecture ensuring all citizen data remains within Rwanda's borders per Law N°058/2021.</p>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon">📊</div>
+                    <h3>Analytics & Intelligence</h3>
+                    <p>Real-time data processing and business intelligence platforms for policy makers and institutional stakeholders.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-dark">
+        <div class="container">
+            <h2 class="section-title">Partnership <span>Framework</span></h2>
+            <p class="section-subtitle">LATC Ltd operates under Public-Private Partnership models designed to deliver national infrastructure at zero risk to government partners.</p>
+            
+            <div class="grid">
+                <div class="card" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(201,169,97,0.3);">
+                    <h3 style="color: var(--gold);">Technical Excellence</h3>
+                    <p style="color: rgba(255,255,255,0.8);">IATF16949 and A-SPICE compliant development processes. Enterprise architecture designed for 99.9% uptime.</p>
+                </div>
+                
+                <div class="card" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(201,169,97,0.3);">
+                    <h3 style="color: var(--gold);">Regulatory Compliance</h3>
+                    <p style="color: rgba(255,255,255,0.8);">Full compliance with RURA, RISA, and RDB frameworks. Data protection by design per Law N°058/2021.</p>
+                </div>
+                
+                <div class="card" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(201,169,97,0.3);">
+                    <h3 style="color: var(--gold);">Sustainable Funding</h3>
+                    <p style="color: rgba(255,255,255,0.8);">Structured financing through BRD Smart Cities and international development partners. Zero cost to government.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="section-title" style="color: white; margin-bottom: 15px;">Initiate Partnership Discussion</h2>
+            <p class="section-subtitle">For qualified institutional partners. All technical disclosures under NDA.</p>
+            
+            <div class="contact-form">
+                <form action="https://formspree.io/f/xpzgkqvd" method="POST">
+                    <div class="form-group">
+                        <label>Full Name *</label>
+                        <input type="text" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Official Email *</label>
+                        <input type="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Organization *</label>
+                        <input type="text" name="organization" placeholder="RCA / BRD / RNP / MINICT" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea name="message" placeholder="Brief description of partnership interest"></textarea>
+                    </div>
+                    <button type="submit" class="btn">Submit Secure Inquiry</button>
+                </form>
+                <p style="font-size: 11px; color: rgba(255,255,255,0.5); margin-top: 20px;">
+                    Submissions encrypted and sent directly to Founder@latcltd.rw. No data stored on this website.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div>
+                <h4>LUXURY AFRICA TECHNOLOGY CENTER LTD</h4>
+                <p>RDB Registration: 260961049576660</p>
+                <p>TIN: 156116372</p>
+                <p>Technology Company</p>
+            </div>
+            <div>
+                <h4>REGISTERED OFFICE</h4>
+                <p>Cyugamo, Gako</p>
+                <p>Masaka, Kicukiro</p>
+                <p>Kigali, Rwanda</p>
+            </div>
+            <div>
+                <h4>CONTACT</h4>
+                <p>Founder@latcltd.rw</p>
+                <p>+250 782 224 677</p>
+                <p>Partnership Inquiries Only</p>
+            </div>
+            <div>
+                <h4>COMPLIANCE</h4>
+                <p>Law N°058/2021 Compliant</p>
+                <p>RDB Registered</p>
+                <p>RURA Framework Ready</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Luxury Africa Technology Center Ltd. All Rights Reserved. | This site uses GoatCounter for aggregate analytics only. No personal data collected.</p>
+        </div>
+    </footer>
+</body>
+</html>
