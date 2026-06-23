@@ -29,7 +29,9 @@ background:#050505;
 color:white;
 line-height:1.8;
 }
-
+html {
+  scroll-padding-top: 100px;
+}
 .container{
 width:90%;
 max-width:1200px;
@@ -37,11 +39,12 @@ margin:auto;
 }
 
 header{
-background:#000;
-border-bottom:1px solid rgba(212,175,55,0.25);
-position:sticky;
-top:0;
-z-index:1000;
+  background:#000;
+  border-bottom:1px solid rgba(212,175,55,0.25);
+  position:sticky;
+  top:0;
+  z-index:1000;
+  height: 80px;
 }
 
 nav{
@@ -67,14 +70,14 @@ letter-spacing:1px;
 }
 
 .hero{
-background:none;
-min-height:auto;
-padding:80px 20px;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-position:relative;
+  background:none;
+  min-height: calc(100vh - 80px);
+  padding:40px 20px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  position:relative;
 }
 
 .hero::before{
