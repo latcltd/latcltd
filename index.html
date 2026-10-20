@@ -1,855 +1,478 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Luxury Africa Technology Center Ltd (LATC)</title>
-
-<meta name="description" content="Luxury Africa Technology Center Ltd (LATC) is a Rwanda-based automotive technology and engineering company focused on embedded systems, OBD-II telematics, intelligent mobility solutions, and engineering research & development.">
-
-<meta name="keywords" content="LATC, Luxury Africa Technology Center, Automotive Technology, OBD-II, Telematics, Embedded Systems, Engineering Research, Rwanda Technology Company, Intelligent Mobility">
-
-<meta name="author" content="Luxury Africa Technology Center Ltd">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LATC — African-built technology for business and mobility</title>
+<meta name="description" content="Luxury Africa Technology Center Ltd (LATC) is a Rwanda-based technology company building business software and automotive technology for real African conditions.">
+<link rel="canonical" href="https://latcltd.rw/">
+<meta name="theme-color" content="#050706" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f7faf8" media="(prefers-color-scheme: light)">
+<link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="LATC">
+<meta property="og:title" content="LATC — African-built technology for business and mobility">
+<meta property="og:description" content="Business software and automotive technology made in Rwanda. LATC Flow Suite is coming soon — get early access.">
+<meta property="og:url" content="https://latcltd.rw/">
+<meta property="og:image" content="https://latcltd.rw/assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"Luxury Africa Technology Center Ltd","alternateName":"LATC","url":"https://latcltd.rw/","logo":"https://latcltd.rw/assets/icon-512.png","email":"info@latcltd.rw","telephone":"+250782224677","address":{"@type":"PostalAddress","addressLocality":"Kicukiro, Kigali","addressCountry":"RW"},"sameAs":["https://www.linkedin.com/company/latcltd/"]}
+</script>
+<script>
+/* Theme before first paint: saved choice, else the device setting. */
+(function(){var t=null;try{t=localStorage.getItem('latc-theme')}catch(e){}
+if(t!=='light'&&t!=='dark'){t=window.matchMedia&&matchMedia('(prefers-color-scheme: light)').matches?'light':'dark'}
+document.documentElement.setAttribute('data-theme',t)})();
+</script>
 <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
+:root{--bg:#050706;--panel:#0d1210;--line:#1d2622;--text:#fff;--muted:#a9b3ae;--green:#22DC6E;--blue:#2563eb;--blue2:#4f8dff;--navbg:rgba(5,7,6,.92);--onGreen:#03140a;--shadow:none;
+--heroBg:radial-gradient(700px 450px at 90% 10%,rgba(37,99,235,.22),transparent 60%),radial-gradient(700px 450px at 70% 60%,rgba(34,220,110,.14),transparent 60%);
+--glow:radial-gradient(closest-side,rgba(34,220,110,.22),transparent 70%);--cardG:rgba(34,220,110,.10);--cardB:rgba(37,99,235,.14)}
+:root[data-theme="light"]{--bg:#f7faf8;--panel:#fff;--line:#dfe7e2;--text:#0b1410;--muted:#55635c;--green:#14a352;--blue:#2563eb;--blue2:#1d4ed8;--navbg:rgba(255,255,255,.94);--onGreen:#fff;--shadow:0 6px 24px rgba(10,30,20,.06);
+--heroBg:radial-gradient(700px 450px at 90% 10%,rgba(37,99,235,.12),transparent 60%),radial-gradient(700px 450px at 70% 60%,rgba(20,163,82,.10),transparent 60%);
+--glow:radial-gradient(closest-side,rgba(20,163,82,.14),transparent 70%);--cardG:rgba(20,163,82,.08);--cardB:rgba(37,99,235,.08)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--blue2);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--green);color:var(--onGreen);padding:10px 14px;border-radius:8px;z-index:20}
+.skip:focus{left:12px}
+nav{position:sticky;top:0;z-index:10;background:var(--navbg);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid transparent;border-image:linear-gradient(90deg,var(--green),var(--blue)) 1}
+nav .wrap{display:flex;align-items:center;gap:22px;height:76px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.5px;text-decoration:none}
+.brand img{width:48px;height:48px}
+.brand small{display:block;font-weight:500;color:var(--muted);font-size:11px;letter-spacing:1.5px;text-transform:uppercase}
+.links{display:flex;gap:24px;margin-left:auto;font-size:15px}
+.links a{color:var(--muted);text-decoration:none}.links a:hover{color:var(--text)}
+.iconbtn{width:44px;height:44px;flex:none;border:1px solid var(--line);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:19px;background:var(--panel);cursor:pointer;color:var(--text)}
+.menu{display:none}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:12px;font-weight:700;font-size:15px;text-decoration:none;white-space:nowrap;border:0;cursor:pointer;font-family:inherit;transition:transform .15s,filter .15s}
+.btn:hover{transform:translateY(-1px);filter:brightness(1.06)}
+.btn.g{background:var(--green);color:var(--onGreen)}.btn.b{background:var(--blue);color:#fff}.btn.o{border:1.5px solid var(--line);color:var(--text);background:transparent}
+.mobile{display:none;border-top:1px solid var(--line);padding:10px 24px 18px}
+.mobile a{display:block;padding:13px 0;text-decoration:none;border-bottom:1px solid var(--line);font-weight:600}
+.mobile .btn{margin-top:14px;width:100%;justify-content:center}
+nav.open .mobile{display:block}
+.hero{padding:84px 0 70px;background:var(--heroBg)}
+.hero .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:50px;align-items:center}
+.eyebrow{display:inline-block;color:var(--green);font-weight:700;font-size:13px;letter-spacing:2px;text-transform:uppercase;margin-bottom:18px}
+.eyebrow.b{color:var(--blue2)}
+h1{font-size:56px;line-height:1.06;letter-spacing:-1.5px;font-weight:800}
+h1 .g{color:var(--green)}h1 .b{color:var(--blue2)}
+.lead{color:var(--muted);font-size:19px;margin:22px 0 32px;max-width:540px}
+.cta{display:flex;gap:14px;flex-wrap:wrap}
+.trust{display:flex;gap:10px 22px;margin-top:34px;color:var(--muted);font-size:14px;flex-wrap:wrap}
+.trust b{color:var(--text)}
+.glow{display:flex;justify-content:center;align-items:center;min-height:380px;background:var(--glow)}
+.glow img{width:330px;max-width:80%;height:auto}
+section{padding:80px 0;border-top:1px solid var(--line)}
+h2{font-size:38px;letter-spacing:-.8px;line-height:1.15;margin-bottom:14px}
+.sub{color:var(--muted);font-size:17px;max-width:640px;margin-bottom:40px}
+.products{display:grid;grid-template-columns:1.25fr 1fr;gap:22px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:22px;padding:34px;box-shadow:var(--shadow)}
+.card.main{border-color:rgba(34,220,110,.45);background:linear-gradient(160deg,var(--cardG),var(--panel) 50%)}
+.card.blue{border-color:rgba(79,141,255,.45);background:linear-gradient(160deg,var(--cardB),var(--panel) 50%)}
+.tag{display:inline-block;font-size:12px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase;padding:6px 11px;border-radius:999px;background:rgba(34,220,110,.14);color:var(--green);margin-bottom:16px}
+.tag.b{background:rgba(37,99,235,.18);color:var(--blue2)}
+.card h3{font-size:28px;margin-bottom:8px}
+.card p{color:var(--muted);margin-bottom:22px}
+.soon{border:1px dashed rgba(34,220,110,.5);border-radius:14px;padding:16px 18px;margin-bottom:24px}
+.soon small{color:var(--muted)}
+.ticks{list-style:none;display:grid;gap:10px;margin-bottom:28px}
+.ticks li{padding-left:28px;position:relative}
+.ticks li:before{content:"";position:absolute;left:0;top:7px;width:16px;height:10px;border-left:3px solid var(--blue2);border-bottom:3px solid var(--blue2);transform:rotate(-45deg)}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.feat{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:24px;box-shadow:var(--shadow)}
+a.feat{text-decoration:none;display:block}
+.ico{width:44px;height:44px;border-radius:12px;background:rgba(34,220,110,.14);display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:14px;font-weight:800;color:var(--blue2)}
+.ico.b{background:rgba(37,99,235,.2)}
+.feat h4{font-size:17px;margin-bottom:6px}.feat p{color:var(--muted);font-size:14.5px;overflow-wrap:anywhere}
+.about{display:grid;grid-template-columns:1.2fr 1fr;gap:40px}
+.facts{display:grid;gap:14px}
+.fact{border-left:3px solid;border-image:linear-gradient(var(--green),var(--blue)) 1;padding:6px 0 6px 16px}
+.fact small{color:var(--muted);display:block;font-size:13px}
+.fact a{color:var(--blue2);text-decoration:none}
+.contact{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.band-wrap{border-top:0;padding-top:0}
+.band{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;padding:40px;border-radius:24px;border:1px solid var(--line);background:linear-gradient(120deg,var(--cardG),var(--cardB));box-shadow:var(--shadow)}
+.band h2{margin-bottom:6px}.band p{color:var(--muted);font-size:17px}
+footer{border-top:1px solid var(--line);padding:30px 0 40px;color:var(--muted);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+footer small a{color:var(--blue2)}
+.lang{display:flex;gap:8px}
+.lang button{padding:6px 11px;border:1px solid var(--line);border-radius:8px;background:transparent;color:var(--muted);cursor:pointer;font:inherit;font-weight:600}
+.lang button[aria-pressed="true"]{border-color:var(--green);color:var(--text)}
+.consent{position:fixed;left:16px;right:16px;bottom:16px;z-index:30;max-width:560px;margin:0 auto;background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:16px 18px;box-shadow:0 12px 40px rgba(0,0,0,.35);display:none;gap:14px;align-items:center;flex-wrap:wrap;font-size:14px;color:var(--muted)}
+.consent.show{display:flex}.consent p{flex:1 1 260px}.consent a{color:var(--blue2)}
+.consent .btn{padding:10px 16px;font-size:14px}
+@media(max-width:900px){
+ .links,nav .wrap>.btn{display:none}.menu{display:flex}
+ #themeBtn{margin-left:auto}
+ .hero{padding:44px 0 50px}.hero .wrap,.products,.about{grid-template-columns:minmax(0,1fr)}
+ .glow{min-height:240px}.glow img{width:200px}
+ h1{font-size:38px;letter-spacing:-.8px}.lead{font-size:17px}
+ .grid4{grid-template-columns:1fr 1fr}.contact{grid-template-columns:1fr}
+ section{padding:56px 0}h2{font-size:29px}.card{padding:24px}
+ .brand img{width:44px;height:44px}
 }
-
-body{
-background:#050505;
-color:white;
-line-height:1.8;
-}
-html {
-  scroll-padding-top: 100px;
-}
-.container{
-width:90%;
-max-width:1200px;
-margin:auto;
-}
-
-header{
-  background:#000;
-  border-bottom:1px solid rgba(212,175,55,0.25);
-  position:sticky;
-  top:0;
-  z-index:1000;
-  height: 80px;
-}
-
-nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:18px 0;
-}
-
-.logo{
-font-size:32px;
-font-weight:800;
-color:#d4af37;
-letter-spacing:2px;
-}
-
-.logo span{
-display:block;
-font-size:12px;
-font-weight:400;
-color:#ffffff;
-letter-spacing:1px;
-}
-
-.hero{
-  background:none;
-  min-height: calc(100vh - 80px);
-  padding:40px 20px;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
-  position:relative;
-}
-
-.hero::before{
-display:none;
-}
-
-.hero-content{
-  position:relative;
-  z-index:2;
-  max-width:700px;
-  text-align:center;
-  margin:0 auto;
-}
-.hero-logo{
-  display:block;
-  margin:0 auto 30px auto;
-  max-width:280px;
-  width:100%;
-  height:auto;
-}
-.hero h2{
-font-size:22px;
-font-weight:400;
-margin-top:10px;
-color:#ffffff;
-}
-
-.hero p{
-margin-top:20px;
-font-size:18px;
-color:#dddddd;
-}
-
-.btn{
-display:block;
-width:fit-content;
-margin:30px auto 0;
-padding:14px 35px;
-background:#d4af37;
-color:#000;
-text-decoration:none;
-font-weight:700;
-font-size:16px;
-border-radius:40px;
-transition:all .3s ease;
-}
-
-.btn:hover{
-transform:translateY(-3px);
-box-shadow:0 8px 20px rgba(212,175,55,.35);
-}
-
-section{
-padding:90px 0;
-}
-
-.section-title{
-font-size:40px;
-color:#d4af37;
-text-align:center;
-margin-bottom:50px;
-font-weight:700;
-}
-
-.about{
-background:#0a0a0a;
-}
-
-.about p{
-font-size:18px;
-color:#dddddd;
-margin-bottom:20px;
-}
-
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-margin-top:50px;
-}
-
-.card{
-background:#111;
-padding:30px;
-border:1px solid rgba(212,175,55,0.2);
-border-radius:15px;
-transition:.3s;
-}
-
-.card:hover{
-transform:translateY(-8px);
-border-color:#d4af37;
-}
-
-.card h3{
-color:#d4af37;
-margin-bottom:15px;
-}
-
-.card p{
-color:#cccccc;
-font-size:15px;
-}
-
-.highlight{
-    color:#d4af37;
-    font-weight:600;
-}
-
-.card a{
-    color:#d4af37;
-    text-decoration:none;
-    font-weight:600;
-}
-
-.card a:hover{
-    color:#f0c75e;
-}
-
-.card a:visited{
-    color:#d4af37;
-}
-
-.card a:active{
-    color:#f0c75e;
-}
-
-.highlight{
-color:#d4af37;
-font-weight:600;
-}
-
+@media(max-width:420px){.grid4{grid-template-columns:minmax(0,1fr)}.btn{white-space:normal;text-align:center}.brand small{font-size:10px;letter-spacing:1px}.cta .btn{width:100%;justify-content:center}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
 </style>
-
 </head>
-
 <body>
+<a class="skip" href="#main" data-i18n="skip">Skip to content</a>
 
-<header>
-
-<div class="container">
-
-<nav>
-
-<div class="logo">
-LATC
-<span>Luxury Africa Technology Center Ltd</span>
-</div>
-
+<nav id="nav" aria-label="Main">
+ <div class="wrap">
+  <a class="brand" href="#top"><img src="assets/logo-circle-96.png" alt="LATC logo" width="48" height="48"><div>LATC<small>Luxury Africa Technology Center</small></div></a>
+  <div class="links">
+   <a href="#products" data-i18n="nav.products">Products</a>
+   <a href="#lfs" data-i18n="nav.lfs">LATC Flow Suite</a>
+   <a href="#engineering" data-i18n="nav.engineering">Engineering</a>
+   <a href="#about" data-i18n="nav.about">About</a>
+   <a href="#contact" data-i18n="nav.contact">Contact</a>
+  </div>
+  <button class="iconbtn" id="themeBtn" type="button" aria-label="Switch light / dark theme">🌙</button>
+  <a class="btn g js-wa" href="https://wa.me/250782224677" target="_blank" rel="noopener" data-track="early_access_nav" data-i18n="cta.early">Get early access</a>
+  <button class="iconbtn menu" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">☰</button>
+ </div>
+ <div class="mobile" id="mobileMenu">
+  <a href="#products" data-i18n="nav.products">Products</a>
+  <a href="#lfs" data-i18n="nav.lfs">LATC Flow Suite</a>
+  <a href="#engineering" data-i18n="nav.engineering">Engineering</a>
+  <a href="#about" data-i18n="nav.about">About</a>
+  <a href="#contact" data-i18n="nav.contact">Contact</a>
+  <a class="btn g js-wa" href="https://wa.me/250782224677" target="_blank" rel="noopener" data-track="early_access_menu" data-i18n="cta.early">Get early access</a>
+ </div>
 </nav>
 
-</div>
-
+<main id="main">
+<header class="hero" id="top">
+ <div class="wrap">
+  <div>
+   <span class="eyebrow" data-i18n="hero.eyebrow">Made in Rwanda · Built for Africa</span>
+   <h1 data-i18n-html="hero.title">African-built technology for <span class="g">business</span> and <span class="b">mobility</span>.</h1>
+   <p class="lead" data-i18n="hero.lead">Technology that keeps working when the internet doesn't, speaks your language, and gives you clear control of every sale, every item and every decision — designed in Rwanda for the way Africa really does business.</p>
+   <div class="cta">
+    <a class="btn g js-wa" href="https://wa.me/250782224677" target="_blank" rel="noopener" data-track="early_access_hero" data-i18n="cta.earlyLfs">💬 Get early access to LFS</a>
+    <a class="btn b" href="#products" data-track="explore_latc" data-i18n="cta.explore">Explore LATC</a>
+   </div>
+   <div class="trust">
+    <span data-i18n-html="trust.rdb"><b>RDB</b> registered company</span>
+    <span data-i18n-html="trust.city"><b>Kigali</b>, Rwanda</span>
+    <span data-i18n-html="trust.focus"><b>Software</b> · <b>Mobility</b> · <b>R&amp;D</b></span>
+   </div>
+  </div>
+  <div class="glow"><img src="assets/logo-circle.png" alt="LATC — Luxury Africa Technology Center" width="330" height="330"></div>
+ </div>
 </header>
 
-<section class="hero">
-
-<div class="container">
-
-<div class="hero-content">
-
-<img src="./latc-africa-logo.png"
-alt="LATC Logo"
-style="
-width:220px;
-max-width:80%;
-height:auto;
-display:block;
-margin:0 auto 25px;
-">
-
-<h2 style="
-color:#ffffff;
-font-size:32px;
-font-weight:700;
-margin-bottom:15px;
-">
-Luxury Africa Technology Center Ltd
-</h2>
-
-<p style="
-color:#999;
-margin-bottom:20px;
-">
-Building Africa's Future Through Automotive Technology & Intelligent Mobility
-</p>
-
-<p style="
-color:#d4af37;
-font-size:18px;
-font-weight:600;
-margin-bottom:20px;
-">
-RDB Registered • Automotive R&D • OBD-II Telematics
-</p>
-
-<a href="#about" class="btn">
-Explore Our Technology
-</a>
-
-</div>
-
-</div>
-
+<section id="products">
+ <div class="wrap">
+  <span class="eyebrow" data-i18n="products.eyebrow">Our products</span>
+  <h2 data-i18n="products.title">Two product lines. One engineering team.</h2>
+  <p class="sub" data-i18n="products.sub">Practical technology designed in Rwanda — from the shop counter to the road.</p>
+  <div class="products">
+   <div class="card main" id="lfs">
+    <span class="tag" data-i18n="lfs.tag">Coming soon</span>
+    <h3>LATC Flow Suite</h3>
+    <p data-i18n="lfs.text">The business system made in Rwanda for shops, pharmacies, restaurants, hotels and growing companies. Sell faster, stop losses and see your whole business clearly — online or offline, on any device.</p>
+    <div class="soon"><b data-i18n="lfs.first">Be among the first</b><br><small data-i18n="lfs.firstSub">Early-access businesses hear first on launch day.</small></div>
+    <div class="cta"><a class="btn g js-wa" href="https://wa.me/250782224677" target="_blank" rel="noopener" data-track="early_access_card" data-i18n="cta.earlyWa">💬 Get early access on WhatsApp</a></div>
+   </div>
+   <div class="card blue">
+    <span class="tag b" data-i18n="fleet.tag">Mobility</span>
+    <h3 data-i18n="fleet.title">Fleet &amp; Telematics</h3>
+    <p data-i18n="fleet.text">Connected-vehicle technology for safer roads and smarter fleets, built on our automotive research.</p>
+    <ul class="ticks">
+     <li data-i18n="fleet.t1">OBD-II and CAN bus vehicle data</li>
+     <li data-i18n="fleet.t2">Vehicle diagnostics and road-safety insight</li>
+     <li data-i18n="fleet.t3">Fleet monitoring for African operators</li>
+    </ul>
+    <a class="btn b" href="https://fleet.latcltd.rw" target="_blank" rel="noopener" data-track="visit_fleet" data-i18n="fleet.cta">Visit LATC Fleet →</a>
+   </div>
+  </div>
+ </div>
 </section>
 
-<section class="about">
-
-<div class="container">
-
-<h2 class="section-title">
-About LATC
-</h2>
-
-<p>
-Luxury Africa Technology Center Ltd (LATC) is a Rwanda-based engineering
-and technology company specializing in automotive innovation,
-embedded systems development, intelligent mobility technologies,
-and engineering research & development.
-</p>
-
-<p>
-The company operates under RDB registration and focuses on the design,
-development, integration, and advancement of next-generation
-technology solutions for the automotive sector.
-</p>
-
-<p>
-LATC is committed to building African technological capability
-through innovation, engineering excellence, research,
-and proprietary technology development.
-</p>
-
-</div>
-
+<section id="why">
+ <div class="wrap">
+  <span class="eyebrow" data-i18n="why.eyebrow">Why LATC</span>
+  <h2 data-i18n="why.title">We solve the problems others ignore.</h2>
+  <p class="sub" data-i18n="why.sub">Most software is built for perfect internet, perfect power and one language. Africa deserves better — so we engineered for reality.</p>
+  <div class="grid4">
+   <div class="feat"><div class="ico" aria-hidden="true">📶</div><h4 data-i18n="why.p1">Internet drops. Your business doesn't.</h4><p data-i18n="why.p1t">Keep serving customers through network cuts — everything catches up on its own when you're back online.</p></div>
+   <div class="feat"><div class="ico b" aria-hidden="true">🧾</div><h4 data-i18n="why.p2">Every franc accounted for.</h4><p data-i18n="why.p2t">Clear records of every sale, payment and item, so losses, mistakes and guesswork have nowhere to hide.</p></div>
+   <div class="feat"><div class="ico" aria-hidden="true">📱</div><h4 data-i18n="why.p3">Your business in your pocket.</h4><p data-i18n="why.p3t">See what's happening in every shop or branch from your phone, wherever you are.</p></div>
+   <div class="feat"><div class="ico b" aria-hidden="true">🇷🇼</div><h4 data-i18n="why.p4">Built here. Supported here.</h4><p data-i18n="why.p4t">Designed in Kigali, in your language, by a team that answers when you call.</p></div>
+  </div>
+ </div>
 </section>
 
-<section>
-
-<div class="container">
-
-<h2 class="section-title">
-Core Focus Areas
-</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>Automotive Technology</h3>
-<p>
-Advanced automotive technology solutions designed
-for modern vehicle ecosystems.
-</p>
-</div>
-
-<div class="card">
-<h3>Embedded Systems</h3>
-<p>
-Design and integration of intelligent embedded
-hardware and firmware solutions.
-</p>
-</div>
-
-<div class="card">
-<h3>Vehicle Telematics</h3>
-<p>
-Research and development of OBD-II telematics
-and connected vehicle technologies.
-</p>
-</div>
-
-<div class="card">
-<h3>Research & Development</h3>
-<p>
-Engineering research focused on innovation,
-performance, security and intelligent mobility.
-</p>
-</div>
-
-</div>
-
-</div>
-
-</section> <section style="background:#0a0a0a;">
-
-<div class="container">
-
-<h2 class="section-title">
-Intellectual Property & Innovation
-</h2>
-
-<p style="color:#ddd;font-size:18px;margin-bottom:20px;">
-
-LATC develops proprietary technologies and engineering solutions
-through continuous research and innovation.
-
-</p>
-
-<p style="color:#ddd;font-size:18px;margin-bottom:20px;">
-
-Certain technologies developed by LATC are protected through
-trade secret protection, intellectual property rights,
-confidential engineering processes, and internal innovation programs.
-
-</p>
-
-<p style="color:#ddd;font-size:18px;">
-
-To protect the integrity and commercial value of proprietary innovations,
-technical implementation details are not publicly disclosed.
-
-</p>
-
-</div>
-
+<section id="engineering">
+ <div class="wrap">
+  <span class="eyebrow b" data-i18n="eng.eyebrow">What we do</span>
+  <h2 data-i18n="eng.title">Engineering for real African conditions.</h2>
+  <p class="sub" data-i18n="eng.sub">From embedded electronics to business software, we build technology that lasts.</p>
+  <div class="grid4">
+   <div class="feat"><div class="ico" aria-hidden="true">💻</div><h4 data-i18n="eng.f1">Business software</h4><p data-i18n="eng.f1t">Practical tools for shops, restaurants, hotels and growing companies.</p></div>
+   <div class="feat"><div class="ico b" aria-hidden="true">🚗</div><h4 data-i18n="eng.f2">Automotive technology</h4><p data-i18n="eng.f2t">OBD-II, CAN bus and vehicle diagnostics research.</p></div>
+   <div class="feat"><div class="ico" aria-hidden="true">📡</div><h4 data-i18n="eng.f3">IoT &amp; telematics</h4><p data-i18n="eng.f3t">Connected devices and fleet intelligence.</p></div>
+   <div class="feat"><div class="ico b" aria-hidden="true">🧠</div><h4 data-i18n="eng.f4">Data &amp; AI</h4><p data-i18n="eng.f4t">Turning data into decisions for African businesses.</p></div>
+  </div>
+ </div>
 </section>
 
-<section>
-
-<div class="container">
-
-<h2 class="section-title">
-Research Programs
-</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>OBD-II Telematics Research</h3>
-<p>
-Research and development of vehicle data acquisition,
-diagnostics, fleet intelligence and connected mobility systems.
-</p>
-</div>
-
-<div class="card">
-<h3>Embedded Vehicle Electronics</h3>
-<p>
-Design and testing of embedded systems,
-microcontrollers, firmware and automotive electronics.
-</p>
-</div>
-
-<div class="card">
-<h3>Road Safety Technology</h3>
-<p>
-Development of technologies that improve
-vehicle safety, monitoring and compliance.
-</p>
-</div>
-
-<div class="card">
-<h3>Mobility Intelligence</h3>
-<p>
-Data-driven mobility solutions supporting
-fleet optimization and intelligent transportation.
-</p>
-</div>
-
-</div>
-
-</div>
-
+<section id="promise">
+ <div class="wrap">
+  <span class="eyebrow b" data-i18n="promise.eyebrow">Our promise</span>
+  <h2 data-i18n="promise.title">Technology you can trust with your business.</h2>
+  <p class="sub" data-i18n="promise.sub">Your business runs on it every day, so we hold ourselves to four commitments.</p>
+  <div class="grid4">
+   <div class="feat"><div class="ico b" aria-hidden="true">⚡</div><h4 data-i18n="promise.q1">Offline-first engineering</h4><p data-i18n="promise.q1t">Built to work without internet from day one — not added as an afterthought.</p></div>
+   <div class="feat"><div class="ico" aria-hidden="true">🗄️</div><h4 data-i18n="promise.q2">Your data stays yours</h4><p data-i18n="promise.q2t">Each business's information is kept separate, protected and safely stored.</p></div>
+   <div class="feat"><div class="ico b" aria-hidden="true">🔒</div><h4 data-i18n="promise.q3">Security built in</h4><p data-i18n="promise.q3t">Protected sign-in, staff roles and a record of every important action.</p></div>
+   <div class="feat"><div class="ico" aria-hidden="true">🤝</div><h4 data-i18n="promise.q4">Fair and transparent</h4><p data-i18n="promise.q4t">Clear monthly pricing, no hidden fees, cancel anytime.</p></div>
+  </div>
+ </div>
 </section>
 
-<section style="background:#0a0a0a;">
-
-<div class="container">
-
-<h2 class="section-title">
-Technology Stack
-</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>OBD-II</h3>
-</div>
-
-<div class="card">
-<h3>CAN Bus</h3>
-</div>
-
-<div class="card">
-<h3>Embedded Electronics</h3>
-</div>
-
-<div class="card">
-<h3>IoT Systems</h3>
-</div>
-
-<div class="card">
-<h3>Data Analytics</h3>
-</div>
-
-<div class="card">
-<h3>AI & Machine Learning</h3>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<div class="container">
-
-<h2 class="section-title">
-Why LATC
-</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>Innovation First</h3>
-<p>
-Building advanced technologies designed for the future of mobility.
-</p>
-</div>
-
-<div class="card">
-<h3>Engineering Excellence</h3>
-<p>
-Professional engineering methodologies focused on quality and reliability.
-</p>
-</div>
-
-<div class="card">
-<h3>African Vision</h3>
-<p>
-Creating world-class technology solutions developed from Africa.
-</p>
-</div>
-
-<div class="card">
-<h3>Long-Term Value</h3>
-<p>
-Research-driven development focused on sustainable innovation.
-</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<section style="background:#0a0a0a;">
-
-<div class="container">
-
-<h2 class="section-title">
-Founder & Leadership
-</h2>
-
-<p style="color:#ddd;font-size:18px;max-width:900px;margin:auto;text-align:center;">
-
-Founder & Chief Executive Officer Jean Bosco Ombeni Mukunzi leads Luxury Africa Technology Center Ltd with a vision of building a globally recognized African automotive technology and engineering company.
-
-<br>
-
-<br>
-
-His leadership focuses on automotive innovation, engineering research, embedded systems, intelligent mobility, telematics technologies, road safety solutions, and proprietary technology development.
-
-<br><br>
-
-Under his direction, LATC is committed to developing African-built technologies that contribute to safer, smarter, and more connected mobility systems across Africa and beyond.
-
-</p>
-
-</div>
-
-</section>
-
-<section>
-
-<div class="container">
-
-<h2 class="section-title">
-Partnership & Collaboration
-</h2>
-
-<p style="color:#ddd;font-size:18px;max-width:900px;margin:auto;text-align:center;">
-
-LATC welcomes collaboration with automotive manufacturers,
-technology companies, research institutions,
-universities, insurers, fleet operators,
-government agencies, mobility innovators,
-and strategic partners committed to advancing
-the future of transportation and engineering innovation.
-
-</p>
-
-</div>
-
-</section>
-
-<section style="background:#0a0a0a;">
-
-<div class="container">
-
-<h2 class="section-title">
-Future Research Areas
-</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>Connected Vehicles</h3>
-<p>
-Research into connected mobility systems and intelligent vehicle communication.
-</p>
-</div>
-
-<div class="card">
-<h3>Vehicle Data Intelligence</h3>
-<p>
-Transforming vehicle data into actionable operational insights.
-</p>
-</div>
-
-<div class="card">
-<h3>Road Safety Innovation</h3>
-<p>
-Technology-driven solutions for safer transportation systems.
-</p>
-</div>
-
-<div class="card">
-<h3>Smart Mobility</h3>
-<p>
-Engineering next-generation mobility technologies for Africa.
-</p>
-</div>
-
-</div>
-
-</div>
-
+<section id="about">
+ <div class="wrap about">
+  <div>
+   <span class="eyebrow" data-i18n="about.eyebrow">About LATC</span>
+   <h2 data-i18n="about.title">Engineering excellence with an African vision.</h2>
+   <p class="sub" style="margin-bottom:0" data-i18n="about.text">Luxury Africa Technology Center Ltd is a Rwanda-based technology company. We design business software and automotive electronics — embedded systems, telematics and data intelligence — built for long-term value across Africa.</p>
+  </div>
+  <div class="facts">
+   <div class="fact"><small data-i18n="about.k1">Company</small><span data-i18n="about.v1">Registered with the Rwanda Development Board, 2026</span></div>
+   <div class="fact"><small data-i18n="about.k2">Focus</small><span data-i18n="about.v2">Business software · Embedded systems · Telematics · R&amp;D</span></div>
+   <div class="fact"><small data-i18n="about.k3">Location</small><span data-i18n="about.v3">Kicukiro District, Kigali, Rwanda</span></div>
+   <div class="fact"><small data-i18n="about.k4">Founder &amp; CEO</small><a href="https://www.linkedin.com/in/jean-bosco-ombeni-mukunzi-2002a3160" target="_blank" rel="noopener" data-track="linkedin_founder">Jean Bosco Ombeni Mukunzi</a></div>
+   <div class="fact"><small data-i18n="about.k5">Partnerships</small><span data-i18n="about.v5">Open to manufacturers, distributors, investors and institutions</span></div>
+  </div>
+ </div>
 </section>
 
 <section id="contact">
-
-<div class="container">
-
-<h2 class="section-title">
-Contact Us
-</h2>
-
-<p style="color:#ddd;font-size:18px;max-width:900px;margin:auto;text-align:center;margin-bottom:40px;">
-
-Luxury Africa Technology Center Ltd (LATC) welcomes collaboration opportunities with automotive manufacturers, telematics providers, technology companies, insurers, fleet operators, government agencies, research institutions, investors and strategic partners seeking innovative mobility, vehicle safety and engineering solutions for Africa.
-
-</p>
-
-<div class="cards">
-
-<div class="card">
-<h3>Email</h3>
-<p>
-<a href="mailto:info@latcltd.rw">info@latcltd.rw</a>
-</p>
-<p>
-<a href="mailto:founder@latcltd.rw">founder@latcltd.rw</a>
-</p>
-</div>
-
-<div class="card">
-<h3>Phone & WhatsApp</h3>
-<p>
-<a href="tel:+250782224677">+250 782 224 677</a>
-</p>
-<p>
-<a href="https://wa.me/250782224677" target="_blank">
-WhatsApp LATC</a>
-</p>
-</div>
-
-<div class="card">
-<h3>Website</h3>
-<p>
-
-<a href="https://latcltd.rw" target="_blank">
-www.latcltd.rw</a>
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>LinkedIn & Corporate Profiles</h3>
-
-<p>
-<a href="https://www.linkedin.com/company/latcltd/" target="_blank">
-LATC Official LinkedIn Page
-</a>
-</p>
-
-<p>
-<a href="https://www.linkedin.com/in/jean-bosco-ombeni-mukunzi-2002a3160" target="_blank">
-Jean Bosco Ombeni Mukunzi – Founder & Chief Executive Officer
-</a>
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Location</h3>
-
-<p>
-Kicukiro District, Kigali City, Rwanda
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Company Status</h3>
-
-<p>
-Registered Private Limited Company (Ltd)
-</p>
-
-<p>
-Officially Registered with the Rwanda Development Board (RDB), Republic of Rwanda
-</p>
-
-<p>
-Registration Date: 06 April 2026
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Business Focus</h3>
-
-<p>
-Automotive Technology<br>
-Embedded Systems & Firmware Development<br>
-Telematics & Connected Vehicle Solutions<br>
-Engineering Research & Development<br>
-Intelligent Mobility Systems<br>
-Vehicle Safety & Diagnostics Technologies
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Strategic Partnerships</h3>
-
-<p>
-LATC actively seeks partnerships with automotive manufacturers, telematics providers, technology companies, distributors, research institutions, government agencies and investors interested in advancing African-built mobility technologies and engineering innovation.
-</p>
-
-
-</div>
-
-</div>
-
-</section>
-<section style="
-background:#0a0a0a;
-padding:80px 20px;
-border-top:1px solid rgba(212,175,55,.2);
-">
-
-<div class="container">
-
-<h2 class="section-title">
-Fleet Management Platform
-</h2>
-
-<p style="
-font-size:18px;
-color:#dddddd;
-text-align:center;
-max-width:800px;
-margin:auto;
-line-height:1.8;
-">
-
-LATC operates a cloud-based fleet management platform supporting vehicle tracking, telematics, asset monitoring, and intelligent mobility solutions across Rwanda and East Africa.
-
-</p>
-
-<div style="text-align:center;margin-top:35px;">
-
-<a href="https://fleet.latcltd.rw"
-target="_blank"
-style="
-display:inline-block;
-padding:18px 40px;
-background:#d4af37;
-color:#000;
-text-decoration:none;
-border-radius:50px;
-font-weight:700;
-font-size:18px;
-box-shadow:0 10px 25px rgba(212,175,55,0.3);
-transition:0.3s;
-">
-
-Launch LATC Fleet Platform
-
-</a>
-
-</div>
-
-<p style="
-margin-top:30px;
-text-align:center;
-">
-
-<a href="https://fleet.latcltd.rw"
-target="_blank"
-style="
-color:#d4af37;
-text-decoration:none;
-font-size:18px;
-font-weight:600;
-">
-
-fleet.latcltd.rw
-
-</a>
-
-</p>
-
-
-</div>
-
+ <div class="wrap">
+  <span class="eyebrow b" data-i18n="contact.eyebrow">Contact</span>
+  <h2 data-i18n="contact.title">Let's build together.</h2>
+  <p class="sub" data-i18n="contact.sub">Questions, demos or partnerships — we reply fast.</p>
+  <div class="contact">
+   <a class="feat" href="mailto:info@latcltd.rw" data-track="contact_email"><div class="ico b" aria-hidden="true">✉️</div><h4 data-i18n="contact.email">Email</h4><p>info@latcltd.rw</p></a>
+   <a class="feat js-wa" href="https://wa.me/250782224677" target="_blank" rel="noopener" data-track="contact_whatsapp" data-wa="contact"><div class="ico" aria-hidden="true">💬</div><h4>WhatsApp</h4><p>+250 782 224 677</p></a>
+   <a class="feat" href="https://www.linkedin.com/company/latcltd/" target="_blank" rel="noopener" data-track="contact_linkedin"><div class="ico b" aria-hidden="true">in</div><h4>LinkedIn</h4><p data-i18n="contact.li">LATC official page</p></a>
+  </div>
+ </div>
 </section>
 
-<footer style="
-background:#000;
-padding:50px 0;
-border-top:1px solid rgba(212,175,55,.2);
-">
+<section class="band-wrap">
+ <div class="wrap">
+  <div class="band">
+   <div><h2 data-i18n="band.title">Be part of what Africa builds next.</h2><p data-i18n="band.text">Get early access to LATC Flow Suite, or talk to us about partnership.</p></div>
+   <div class="cta">
+    <a class="btn g js-wa" href="https://wa.me/250782224677" target="_blank" rel="noopener" data-track="early_access_band" data-i18n="cta.early">Get early access</a>
+    <a class="btn b" href="mailto:info@latcltd.rw?subject=Partnership%20with%20LATC" data-track="partner_email" data-i18n="band.partner">Partner with us</a>
+   </div>
+  </div>
+ </div>
+</section>
+</main>
 
-<div class="container" style="text-align:center;">
+<footer>
+ <div class="wrap">
+  <span>© <span id="year">2026</span> Luxury Africa Technology Center Ltd · Kigali, Rwanda<br>
+   <small><span data-i18n="footer.count">We count visits anonymously to improve our service.</span> <a href="privacy.html" data-i18n="footer.privacy">Privacy</a></small></span>
+  <div class="lang" role="group" aria-label="Language">
+   <button type="button" data-lang="en" aria-pressed="true">EN</button>
+   <button type="button" data-lang="rw" aria-pressed="false">RW</button>
+   <button type="button" data-lang="fr" aria-pressed="false">FR</button>
+  </div>
+ </div>
+</footer>
 
-<img src="logo-header_3.png"
-alt="LATC Logo"
-style="
-max-width:120px;
-margin-bottom:20px;
-">
-
-<h2 style="color:#d4af37;">
-Luxury Africa Technology Center Ltd
-</h2>
-
-<p style="color:#666;font-size:14px;">
-© <span id="year"></span> Luxury Africa Technology Center Ltd. All Rights Reserved.
-</p>
-
+<div class="consent" id="consent" role="dialog" aria-live="polite" aria-label="Visit counting">
+ <p data-i18n-html="consent.text">We'd like to count visits (anonymous Google Analytics) to improve this site. <a href="privacy.html">Privacy</a></p>
+ <button class="btn o" type="button" id="consentNo" data-i18n="consent.no">No thanks</button>
+ <button class="btn g" type="button" id="consentYes" data-i18n="consent.yes">OK</button>
 </div>
 
 <script>
-document.getElementById("year").textContent =
-new Date().getFullYear();
+(function(){
+'use strict';
+/* Google Analytics 4 Measurement ID (e.g. "G-ABC123XYZ"). Empty = no analytics loaded and no consent bar. */
+var GA_ID='';
+var WA_NUMBER='250782224677';
+
+var T={
+en:{},
+rw:{
+'skip':'Jya ku bikubiyemo',
+'nav.products':'Ibyo dukora','nav.lfs':'LATC Flow Suite','nav.engineering':'Ubuhanga','nav.about':'Abo turi bo','nav.contact':'Twandikire',
+'cta.early':'Iyandikishe mbere','cta.earlyLfs':'💬 Iyandikishe mbere kuri LFS','cta.explore':'Menya LATC','cta.earlyWa':'💬 Iyandikishe kuri WhatsApp',
+'hero.eyebrow':'Byakorewe mu Rwanda · Bigenewe Afurika',
+'hero.title':'Ikoranabuhanga ryakorewe muri Afurika mu <span class="g">bucuruzi</span> no mu <span class="b">gutwara abantu n\'ibintu</span>.',
+'hero.lead':"Ikoranabuhanga rikomeza gukora n'iyo interineti yabuze, rivuga ururimi rwawe, kandi rigufasha kugenzura neza ibyagurishijwe byose, ububiko n'ibyemezo byose — ryakorewe mu Rwanda rijyanye n'uko ubucuruzi bukorwa muri Afurika.",
+'trust.rdb':'Ikigo cyanditswe muri <b>RDB</b>','trust.city':'<b>Kigali</b>, Rwanda','trust.focus':'<b>Porogaramu</b> · <b>Ibinyabiziga</b> · <b>Ubushakashatsi</b>',
+'products.eyebrow':'Ibyo dukora','products.title':'Ibice bibiri. Itsinda rimwe ry\'abahanga.','products.sub':'Ikoranabuhanga rifatika ryakorewe mu Rwanda — kuva ku iduka kugera mu muhanda.',
+'lfs.tag':'Iraje vuba','lfs.text':"Porogaramu y'ubucuruzi yakorewe mu Rwanda ku maduka, farumasi, resitora, amahoteli n'ibigo bikura. Gurisha vuba, irinde ibihombo kandi urebe neza uko ubucuruzi bwawe bwose bugenda — ufite cyangwa udafite interineti, ku gikoresho icyo ari cyo cyose.",
+'lfs.first':'Ba mu ba mbere','lfs.firstSub':'Abiyandikishije mbere ni bo bamenya bwa mbere umunsi wo gutangiza.',
+'fleet.tag':'Ibinyabiziga','fleet.title':'Gukurikirana ibinyabiziga','fleet.text':'Ikoranabuhanga rihuza ibinyabiziga, rigamije umutekano wo mu muhanda no gucunga neza imodoka, rishingiye ku bushakashatsi bwacu.',
+'fleet.t1':'Amakuru y\'ibinyabiziga binyuze kuri OBD-II na CAN bus','fleet.t2':'Gusuzuma ibinyabiziga n\'amakuru y\'umutekano wo mu muhanda','fleet.t3':'Gukurikirana imodoka z\'ibigo byo muri Afurika','fleet.cta':'Sura LATC Fleet →',
+'eng.eyebrow':'Ibyo dukora','eng.title':'Ubuhanga bujyanye n\'imiterere nyayo ya Afurika.','eng.sub':'Kuva ku byuma by\'ikoranabuhanga kugera kuri porogaramu z\'ubucuruzi, dukora ikoranabuhanga rirambye.',
+'eng.f1':'Porogaramu z\'ubucuruzi','eng.f1t':'Ibikoresho bifatika ku maduka, resitora, amahoteli n\'ibigo bikura.',
+'eng.f2':'Ikoranabuhanga ry\'ibinyabiziga','eng.f2t':'Ubushakashatsi kuri OBD-II, CAN bus no gusuzuma ibinyabiziga.',
+'eng.f3':'IoT n\'ikurikiranabikorwa','eng.f3t':'Ibikoresho bihujwe n\'ubumenyi bwo gucunga imodoka.',
+'eng.f4':'Amakuru na AI','eng.f4t':'Guhindura amakuru ibyemezo ku bucuruzi bwo muri Afurika.',
+'about.eyebrow':'Abo turi bo','about.title':'Ubuhanga buhanitse bufite icyerekezo cya Afurika.','about.text':'Luxury Africa Technology Center Ltd ni ikigo cy\'ikoranabuhanga gikorera mu Rwanda. Dukora porogaramu z\'ubucuruzi n\'ikoranabuhanga ry\'ibinyabiziga — ibyuma by\'ikoranabuhanga, ikurikiranabikorwa n\'isesengura ry\'amakuru — bifitiye Afurika akamaro kirambye.',
+'about.k1':'Ikigo','about.v1':'Cyanditswe mu Rwanda Development Board (RDB), 2026','about.k2':'Ibyo twibandaho','about.v2':'Porogaramu z\'ubucuruzi · Ibyuma by\'ikoranabuhanga · Ikurikiranabikorwa · Ubushakashatsi',
+'about.k3':'Aho dukorera','about.v3':'Akarere ka Kicukiro, Kigali, Rwanda','about.k4':'Uwashinze akaba n\'Umuyobozi Mukuru','about.k5':'Ubufatanye','about.v5':'Twakira abakora ibinyabiziga, abaranguzi, abashoramari n\'ibigo',
+'contact.eyebrow':'Twandikire','contact.title':'Twubakire hamwe.','contact.sub':'Ibibazo, kwerekwa uko bikora cyangwa ubufatanye — dusubiza vuba.','contact.email':'Imeyili','contact.li':'Urubuga rwemewe rwa LATC',
+'footer.count':'Tubara abasura urubuga tutamenye abo ari bo, kugira ngo tunoze serivisi.','footer.privacy':'Ibanga ry\'amakuru',
+'consent.text':'Twifuza kubara abasura urubuga (Google Analytics, tutamenye abo ari bo) kugira ngo turunoze. <a href="privacy.html">Ibanga ry\'amakuru</a>','consent.no':'Oya, urakoze','consent.yes':'Yego',
+'why.eyebrow':"Impamvu LATC",
+'why.title':"Dukemura ibibazo abandi birengagiza.",
+'why.sub':"Porogaramu nyinshi zikorerwa ahari interineti n'amashanyarazi bihoraho n'ururimi rumwe. Afurika ikwiye ibirenzeho — ni yo mpamvu twakoze ibijyanye n'ukuri.",
+'why.p1':"Interineti iragenda. Ubucuruzi bwawe ntibuhagarara.",
+'why.p1t':"Komeza kwakira abakiriya n'iyo umuyoboro wacitse — byose byihuza ubwabyo interineti igarutse.",
+'why.p2':"Buri faranga rirabarurwa.",
+'why.p2t':"Amakuru asobanutse ya buri cyagurishijwe, buri bwishyu na buri gicuruzwa, ku buryo ibihombo, amakosa n'ibikekwa bitabona aho byihisha.",
+'why.p3':"Ubucuruzi bwawe mu mufuka wawe.",
+'why.p3t':"Reba ibibera mu iduka cyangwa ishami ryose ukoresheje telefone yawe, aho waba uri hose.",
+'why.p4':"Byakorewe hano. Dufasha hano.",
+'why.p4t':"Byakorewe i Kigali, mu rurimi rwawe, n'itsinda rigusubiza igihe uduhamagaye.",
+'promise.eyebrow':"Isezerano ryacu",
+'promise.title':"Ikoranabuhanga wakwizera mu bucuruzi bwawe.",
+'promise.sub':"Ubucuruzi bwawe burikoresha buri munsi, ni yo mpamvu twiyemeje ibintu bine.",
+'promise.q1':"Byubatswe gukora nta interineti",
+'promise.q1t':"Byubatswe gukora nta interineti kuva ku munsi wa mbere — si ikintu cyongeweho nyuma.",
+'promise.q2':"Amakuru yawe ni ayawe",
+'promise.q2t':"Amakuru ya buri bucuruzi abikwa ukwayo, arinzwe kandi abitswe neza.",
+'promise.q3':"Umutekano wubatswemo",
+'promise.q3t':"Kwinjira kurinzwe, inshingano z'abakozi n'inyandiko ya buri gikorwa cy'ingenzi.",
+'promise.q4':"Biboneye kandi bisobanutse",
+'promise.q4t':"Ibiciro bya buri kwezi bisobanutse, nta mafaranga yihishe, wahagarika igihe ushakiye.",
+'band.title':"Ba umwe mu bubaka ejo hazaza ha Afurika.",
+'band.text':"Iyandikishe mbere kuri LATC Flow Suite, cyangwa tuganire ku bufatanye.",
+'band.partner':"Dufatanye",
+'wa.early':'Muraho LATC, nifuza kwiyandikisha mbere kuri LATC Flow Suite.\nIzina ry\'ubucuruzi: \nUbwoko bw\'ubucuruzi: \nAho dukorera: ',
+'wa.contact':'Muraho LATC, '
+},
+fr:{
+'skip':'Aller au contenu',
+'nav.products':'Produits','nav.lfs':'LATC Flow Suite','nav.engineering':'Ingénierie','nav.about':'À propos','nav.contact':'Contact',
+'cta.early':'Accès anticipé','cta.earlyLfs':'💬 Accès anticipé à LFS','cta.explore':'Découvrir LATC','cta.earlyWa':'💬 Accès anticipé sur WhatsApp',
+'hero.eyebrow':'Fabriqué au Rwanda · Conçu pour l\'Afrique',
+'hero.title':'Une technologie africaine pour le <span class="g">commerce</span> et la <span class="b">mobilité</span>.',
+'hero.lead':"Une technologie qui continue de fonctionner quand Internet s'arrête, qui parle votre langue et qui vous donne le contrôle de chaque vente, de chaque article et de chaque décision — conçue au Rwanda pour la façon dont l'Afrique fait vraiment des affaires.",
+'trust.rdb':'Société enregistrée au <b>RDB</b>','trust.city':'<b>Kigali</b>, Rwanda','trust.focus':'<b>Logiciels</b> · <b>Mobilité</b> · <b>R&amp;D</b>',
+'products.eyebrow':'Nos produits','products.title':'Deux gammes de produits. Une seule équipe d\'ingénieurs.','products.sub':'Une technologie pratique conçue au Rwanda — du comptoir de la boutique jusqu\'à la route.',
+'lfs.tag':'Bientôt disponible','lfs.text':"Le système de gestion conçu au Rwanda pour les boutiques, pharmacies, restaurants, hôtels et entreprises en croissance. Vendez plus vite, stoppez les pertes et voyez clairement toute votre activité — en ligne ou hors ligne, sur tout appareil.",
+'lfs.first':'Soyez parmi les premiers','lfs.firstSub':'Les entreprises inscrites en avance sont informées en premier le jour du lancement.',
+'fleet.tag':'Mobilité','fleet.title':'Flotte et télématique','fleet.text':'Une technologie de véhicules connectés pour des routes plus sûres et des flottes mieux gérées, issue de notre recherche automobile.',
+'fleet.t1':'Données véhicule OBD-II et bus CAN','fleet.t2':'Diagnostic des véhicules et sécurité routière','fleet.t3':'Suivi de flotte pour les opérateurs africains','fleet.cta':'Visiter LATC Fleet →',
+'eng.eyebrow':'Ce que nous faisons','eng.title':'Une ingénierie adaptée aux réalités africaines.','eng.sub':'De l\'électronique embarquée aux logiciels de gestion, nous créons une technologie durable.',
+'eng.f1':'Logiciels de gestion','eng.f1t':'Des outils pratiques pour boutiques, restaurants, hôtels et entreprises en croissance.',
+'eng.f2':'Technologie automobile','eng.f2t':'Recherche sur l\'OBD-II, le bus CAN et le diagnostic des véhicules.',
+'eng.f3':'IoT et télématique','eng.f3t':'Objets connectés et intelligence de flotte.',
+'eng.f4':'Données et IA','eng.f4t':'Transformer les données en décisions pour les entreprises africaines.',
+'about.eyebrow':'À propos de LATC','about.title':'L\'excellence en ingénierie, avec une vision africaine.','about.text':'Luxury Africa Technology Center Ltd est une entreprise technologique basée au Rwanda. Nous concevons des logiciels de gestion et de l\'électronique automobile — systèmes embarqués, télématique et intelligence des données — pour une valeur durable en Afrique.',
+'about.k1':'Société','about.v1':'Enregistrée auprès du Rwanda Development Board, 2026','about.k2':'Domaines','about.v2':'Logiciels de gestion · Systèmes embarqués · Télématique · R&D',
+'about.k3':'Adresse','about.v3':'District de Kicukiro, Kigali, Rwanda','about.k4':'Fondateur et PDG','about.k5':'Partenariats','about.v5':'Ouverts aux constructeurs, distributeurs, investisseurs et institutions',
+'contact.eyebrow':'Contact','contact.title':'Construisons ensemble.','contact.sub':'Questions, démonstrations ou partenariats — nous répondons vite.','contact.email':'E-mail','contact.li':'Page officielle de LATC',
+'footer.count':'Nous comptons les visites de façon anonyme pour améliorer notre service.','footer.privacy':'Confidentialité',
+'consent.text':'Nous souhaitons compter les visites (Google Analytics, anonyme) pour améliorer ce site. <a href="privacy.html">Confidentialité</a>','consent.no':'Non merci','consent.yes':'OK',
+'why.eyebrow':"Pourquoi LATC",
+'why.title':"Nous résolvons les problèmes que les autres ignorent.",
+'why.sub':"La plupart des logiciels sont conçus pour un Internet parfait, une électricité parfaite et une seule langue. L'Afrique mérite mieux — alors nous avons conçu pour la réalité.",
+'why.p1':"Internet coupe. Votre activité continue.",
+'why.p1t':"Continuez à servir vos clients pendant les coupures — tout se synchronise seul au retour de la connexion.",
+'why.p2':"Chaque franc compte.",
+'why.p2t':"Un suivi clair de chaque vente, paiement et article : pertes, erreurs et approximations n'ont plus où se cacher.",
+'why.p3':"Votre entreprise dans votre poche.",
+'why.p3t':"Voyez ce qui se passe dans chaque boutique ou succursale depuis votre téléphone, où que vous soyez.",
+'why.p4':"Conçu ici. Accompagné ici.",
+'why.p4t':"Conçu à Kigali, dans votre langue, par une équipe qui répond quand vous appelez.",
+'promise.eyebrow':"Notre engagement",
+'promise.title':"Une technologie à qui confier votre entreprise.",
+'promise.sub':"Votre entreprise l'utilise chaque jour : nous prenons donc quatre engagements.",
+'promise.q1':"Pensé hors ligne d'abord",
+'promise.q1t':"Conçu pour fonctionner sans Internet dès le premier jour — pas ajouté après coup.",
+'promise.q2':"Vos données vous appartiennent",
+'promise.q2t':"Les informations de chaque entreprise sont séparées, protégées et stockées en sécurité.",
+'promise.q3':"Sécurité intégrée",
+'promise.q3t':"Connexion protégée, rôles du personnel et historique de chaque action importante.",
+'promise.q4':"Juste et transparent",
+'promise.q4t':"Tarifs mensuels clairs, sans frais cachés, résiliable à tout moment.",
+'band.title':"Participez à ce que l'Afrique construit.",
+'band.text':"Inscrivez-vous en avance pour LATC Flow Suite, ou parlons partenariat.",
+'band.partner':"Devenir partenaire",
+'wa.early':'Bonjour LATC, je souhaite un accès anticipé à LATC Flow Suite.\nNom de l\'entreprise : \nType d\'activité : \nVille : ',
+'wa.contact':'Bonjour LATC, '
+}};
+var EN_WA={'wa.early':'Hello LATC, I would like early access to LATC Flow Suite.\nBusiness name: \nType of business: \nLocation: ','wa.contact':'Hello LATC, '};
+
+function store(k,v){try{if(v===undefined)return localStorage.getItem(k);localStorage.setItem(k,v)}catch(e){return null}}
+var root=document.documentElement;
+
+/* Remember the English originals so switching back works. */
+var nodes=[].slice.call(document.querySelectorAll('[data-i18n],[data-i18n-html]'));
+nodes.forEach(function(n){n._en=n.hasAttribute('data-i18n-html')?n.innerHTML:n.textContent});
+
+function setLang(l){
+ if(!T[l])l='en';
+ nodes.forEach(function(n){
+  var k=n.getAttribute('data-i18n')||n.getAttribute('data-i18n-html'),v=(l==='en'?null:T[l][k]);
+  if(n.hasAttribute('data-i18n-html'))n.innerHTML=v||n._en;else n.textContent=v||n._en;
+ });
+ root.lang=l==='rw'?'rw':l;
+ [].forEach.call(document.querySelectorAll('.lang button'),function(b){b.setAttribute('aria-pressed',b.dataset.lang===l?'true':'false')});
+ [].forEach.call(document.querySelectorAll('.js-wa'),function(a){
+  var key=a.dataset.wa==='contact'?'wa.contact':'wa.early',msg=(l==='en'?EN_WA:T[l])[key];
+  a.href='https://wa.me/'+WA_NUMBER+'?text='+encodeURIComponent(msg);
+ });
+ store('latc-lang',l);
+}
+var saved=store('latc-lang'),nav0=(navigator.language||'en').slice(0,2).toLowerCase();
+setLang(saved||(nav0==='rw'||nav0==='fr'?nav0:'en'));
+[].forEach.call(document.querySelectorAll('.lang button'),function(b){b.addEventListener('click',function(){setLang(b.dataset.lang);track('language_'+b.dataset.lang)})});
+
+/* Theme toggle */
+var tb=document.getElementById('themeBtn');
+function paintTheme(){var d=root.getAttribute('data-theme')==='dark';tb.textContent=d?'☀️':'🌙'}
+tb.addEventListener('click',function(){var t=root.getAttribute('data-theme')==='dark'?'light':'dark';root.setAttribute('data-theme',t);store('latc-theme',t);paintTheme();track('theme_'+t)});
+if(window.matchMedia){var mq=matchMedia('(prefers-color-scheme: light)');var onSys=function(e){if(!store('latc-theme')){root.setAttribute('data-theme',e.matches?'light':'dark');paintTheme()}};
+ if(mq.addEventListener)mq.addEventListener('change',onSys);else if(mq.addListener)mq.addListener(onSys)}
+paintTheme();
+
+/* Mobile menu */
+var nav=document.getElementById('nav'),mb=document.getElementById('menuBtn');
+mb.addEventListener('click',function(){var o=nav.classList.toggle('open');mb.setAttribute('aria-expanded',o?'true':'false');mb.textContent=o?'✕':'☰'});
+[].forEach.call(document.querySelectorAll('#mobileMenu a'),function(a){a.addEventListener('click',function(){nav.classList.remove('open');mb.setAttribute('aria-expanded','false');mb.textContent='☰'})});
+
+document.getElementById('year').textContent=new Date().getFullYear();
+
+/* Analytics: loads only with a Measurement ID and the visitor's OK. */
+var gaOn=false;
+function loadGA(){if(gaOn||!GA_ID)return;gaOn=true;var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id='+GA_ID;document.head.appendChild(s);
+ window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments)};gtag('js',new Date());gtag('config',GA_ID,{anonymize_ip:true})}
+function track(name){if(gaOn&&window.gtag)gtag('event',name,{language:root.lang})}
+[].forEach.call(document.querySelectorAll('[data-track]'),function(el){el.addEventListener('click',function(){track(el.dataset.track)})});
+var c=store('latc-consent'),bar=document.getElementById('consent');
+if(GA_ID){if(c==='yes')loadGA();else if(c!=='no')bar.classList.add('show')}
+document.getElementById('consentYes').addEventListener('click',function(){store('latc-consent','yes');bar.classList.remove('show');loadGA()});
+document.getElementById('consentNo').addEventListener('click',function(){store('latc-consent','no');bar.classList.remove('show')});
+})();
 </script>
-
-</footer>
-
 </body>
 </html>
