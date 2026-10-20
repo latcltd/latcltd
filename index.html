@@ -113,7 +113,7 @@ footer small a{color:var(--blue2)}
 .lang button[aria-pressed="true"]{border-color:var(--green);color:var(--text)}
 .consent{position:fixed;left:16px;right:16px;bottom:16px;z-index:30;max-width:560px;margin:0 auto;background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:16px 18px;box-shadow:0 12px 40px rgba(0,0,0,.35);display:none;gap:14px;align-items:center;flex-wrap:wrap;font-size:14px;color:var(--muted)}
 .consent.show{display:flex}.consent p{flex:1 1 260px}.consent a{color:var(--blue2)}
-.consent .btn{padding:10px 16px;font-size:14px}
+.consent .btn{padding:10px 16px;font-size:14px}.consent #consentYes{padding:12px 30px;font-size:15px}
 @media(max-width:900px){
  .links,nav .wrap>.btn{display:none}.menu{display:flex}
  #themeBtn{margin-left:auto}
@@ -312,6 +312,8 @@ footer small a{color:var(--blue2)}
 'use strict';
 /* Google Analytics 4 Measurement ID (e.g. "G-ABC123XYZ"). Empty = no analytics loaded and no consent bar. */
 var GA_ID='G-CZ7QPLQ82P';
+/* Cloudflare Web Analytics token (public, from Cloudflare > Web Analytics > Manage site). Empty = off. */
+var CF_TOKEN='';
 var WA_NUMBER='250782224677';
 
 var T={
@@ -462,18 +464,25 @@ mb.addEventListener('click',function(){var o=nav.classList.toggle('open');mb.set
 
 document.getElementById('year').textContent=new Date().getFullYear();
 
-/* Analytics: loads only with a Measurement ID and the visitor's OK. */
-var gaOn=false;
-function loadGA(){if(gaOn||!GA_ID)return;gaOn=true;var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id='+GA_ID;document.head.appendChild(s);
- window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments)};gtag('js',new Date());gtag('config',GA_ID,{anonymize_ip:true})}
-function track(name){if(gaOn&&window.gtag)gtag('event',name,{language:root.lang})}
-[].forEach.call(document.querySelectorAll('[data-track]'),function(el){el.addEventListener('click',function(){track(el.dataset.track)})});
+/* Cloudflare Web Analytics: cookie-free count of every visit, no consent needed. */
+if(CF_TOKEN){var cf=document.createElement('script');cf.defer=true;cf.src='https://static.cloudflareinsights.com/beacon.min.js';cf.setAttribute('data-cf-beacon',JSON.stringify({token:CF_TOKEN}));document.head.appendChild(cf)}
+
+/* Google Analytics with Consent Mode: loads for everyone with cookies OFF;
+   cookies switch on only after the visitor's OK. "No thanks" keeps them off. */
 var c=store('latc-consent'),bar=document.getElementById('consent');
+window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments)};
+function track(name){if(GA_ID)gtag('event',name,{language:root.lang})}
+if(GA_ID){
+ gtag('consent','default',{analytics_storage:c==='yes'?'granted':'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});
+ gtag('js',new Date());gtag('config',GA_ID);
+ var g=document.createElement('script');g.async=true;g.src='https://www.googletagmanager.com/gtag/js?id='+GA_ID;document.head.appendChild(g);
+}
+[].forEach.call(document.querySelectorAll('[data-track]'),function(el){el.addEventListener('click',function(){track(el.dataset.track)})});
 /* While the bar is open, pad the page so the footer (language buttons) can scroll above it. */
 function showBar(){bar.classList.add('show');document.body.style.paddingBottom=(bar.offsetHeight+32)+'px'}
 function hideBar(){bar.classList.remove('show');document.body.style.paddingBottom=''}
-if(GA_ID){if(c==='yes')loadGA();else if(c!=='no')showBar()}
-document.getElementById('consentYes').addEventListener('click',function(){store('latc-consent','yes');hideBar();loadGA()});
+if(GA_ID&&c!=='yes'&&c!=='no')showBar();
+document.getElementById('consentYes').addEventListener('click',function(){store('latc-consent','yes');hideBar();gtag('consent','update',{analytics_storage:'granted'});track('consent_yes')});
 document.getElementById('consentNo').addEventListener('click',function(){store('latc-consent','no');hideBar()});
 })();
 </script>
