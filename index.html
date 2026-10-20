@@ -311,7 +311,7 @@ footer small a{color:var(--blue2)}
 (function(){
 'use strict';
 /* Google Analytics 4 Measurement ID (e.g. "G-ABC123XYZ"). Empty = no analytics loaded and no consent bar. */
-var GA_ID='';
+var GA_ID='G-CZ7QPLQ82P';
 var WA_NUMBER='250782224677';
 
 var T={
@@ -469,9 +469,12 @@ function loadGA(){if(gaOn||!GA_ID)return;gaOn=true;var s=document.createElement(
 function track(name){if(gaOn&&window.gtag)gtag('event',name,{language:root.lang})}
 [].forEach.call(document.querySelectorAll('[data-track]'),function(el){el.addEventListener('click',function(){track(el.dataset.track)})});
 var c=store('latc-consent'),bar=document.getElementById('consent');
-if(GA_ID){if(c==='yes')loadGA();else if(c!=='no')bar.classList.add('show')}
-document.getElementById('consentYes').addEventListener('click',function(){store('latc-consent','yes');bar.classList.remove('show');loadGA()});
-document.getElementById('consentNo').addEventListener('click',function(){store('latc-consent','no');bar.classList.remove('show')});
+/* While the bar is open, pad the page so the footer (language buttons) can scroll above it. */
+function showBar(){bar.classList.add('show');document.body.style.paddingBottom=(bar.offsetHeight+32)+'px'}
+function hideBar(){bar.classList.remove('show');document.body.style.paddingBottom=''}
+if(GA_ID){if(c==='yes')loadGA();else if(c!=='no')showBar()}
+document.getElementById('consentYes').addEventListener('click',function(){store('latc-consent','yes');hideBar();loadGA()});
+document.getElementById('consentNo').addEventListener('click',function(){store('latc-consent','no');hideBar()});
 })();
 </script>
 </body>
