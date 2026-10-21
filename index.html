@@ -295,7 +295,7 @@ footer small a{color:var(--blue2)}
    <small><span data-i18n="footer.count">We count visits anonymously to improve our service.</span> <a href="privacy.html" data-i18n="footer.privacy">Privacy</a></small></span>
   <div class="lang" role="group" aria-label="Language">
    <button type="button" data-lang="en" aria-pressed="true">EN</button>
-   <button type="button" data-lang="rw" aria-pressed="false">RW</button>
+   <!-- RW hidden until the Kinyarwanda texts are reviewed (owner decision 2026-10-21); translations kept below. -->
    <button type="button" data-lang="fr" aria-pressed="false">FR</button>
   </div>
  </div>
@@ -445,8 +445,11 @@ function setLang(l){
  });
  store('latc-lang',l);
 }
+/* Shown languages: en, fr. Kinyarwanda is hidden until reviewed - a saved 'rw' falls back to English. */
+var SHOWN=['en','fr'];
 var saved=store('latc-lang'),nav0=(navigator.language||'en').slice(0,2).toLowerCase();
-setLang(saved||(nav0==='rw'||nav0==='fr'?nav0:'en'));
+if(SHOWN.indexOf(saved)<0)saved=null;
+setLang(saved||(nav0==='fr'?'fr':'en'));
 [].forEach.call(document.querySelectorAll('.lang button'),function(b){b.addEventListener('click',function(){setLang(b.dataset.lang);track('language_'+b.dataset.lang)})});
 
 /* Theme toggle */
