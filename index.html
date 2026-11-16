@@ -91,6 +91,7 @@ h2{font-size:38px;letter-spacing:-.8px;line-height:1.15;margin-bottom:14px}
 .ticks li{padding-left:28px;position:relative}
 .ticks li:before{content:"";position:absolute;left:0;top:7px;width:16px;height:10px;border-left:3px solid var(--blue2);border-bottom:3px solid var(--blue2);transform:rotate(-45deg)}
 .grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+details.more summary{list-style:none;cursor:pointer}details.more summary::-webkit-details-marker{display:none}.morel{display:inline-block;margin-top:12px;color:var(--green);font-weight:700;font-size:14px}.morel::after{content:" ▾"}details.more[open] .morel::after{content:" ▴"}details.more ul{margin:12px 0 0;padding-left:18px;color:var(--muted);font-size:15px;line-height:1.55}details.more li{margin:4px 0}details.more:hover{border-color:var(--green)}details.more{align-self:start}
 .try{margin-top:28px}.steps{list-style:none;counter-reset:s;padding:0;margin:18px 0;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.steps li{counter-increment:s;background:var(--bg,transparent);border:1px solid var(--line);border-radius:16px;padding:18px 18px 18px 58px;position:relative;display:flex;flex-direction:column;gap:4px}.steps li::before{content:counter(s);position:absolute;left:16px;top:16px;width:28px;height:28px;border-radius:50%;background:rgba(34,220,110,.16);color:var(--green);font-weight:700;display:flex;align-items:center;justify-content:center}.steps span{color:var(--muted);font-size:15px}.try .note{color:var(--muted);font-size:14px}
 @media(max-width:820px){.steps{grid-template-columns:minmax(0,1fr)}}
 .feat{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:24px;box-shadow:var(--shadow)}
@@ -212,14 +213,14 @@ footer small a{color:var(--blue2)}
   <h2 data-i18n="feat.title">One system. Your whole business. Your whole market.</h2>
   <p class="sub" data-i18n="feat.sub">Sales, stock, credit, online orders and reports in one place, on your phone or computer, even when the internet is down.</p>
   <div class="grid4">
-   <div class="feat"><div class="ico" aria-hidden="true">⚡</div><h4 data-i18n="feat.f1">Sell fast, even offline</h4><p data-i18n="feat.f1t">Tap or scan with any phone camera. Every sale is saved instantly and synced when the connection returns.</p></div>
-   <div class="feat"><div class="ico b" aria-hidden="true">📦</div><h4 data-i18n="feat.f2">Stock you can trust</h4><p data-i18n="feat.f2t">Every movement recorded with who, when and why. Real buying costs and an alert when a supplier raises prices.</p></div>
-   <div class="feat"><div class="ico" aria-hidden="true">🤝</div><h4 data-i18n="feat.f3">Credit under control</h4><p data-i18n="feat.f3t">A limit for every customer, approval from your phone, part payments with receipts, and a clear view of who owes what.</p></div>
-   <div class="feat"><div class="ico b" aria-hidden="true">📈</div><h4 data-i18n="feat.f4">Price changes, made visible</h4><p data-i18n="feat.f4t">LFS remembers what goods cost on the day you sold them on credit and shows what price rises cost you since.</p></div>
-   <div class="feat"><div class="ico" aria-hidden="true">🛒</div><h4 data-i18n="feat.f5">Your shop online</h4><p data-i18n="feat.f5t">A shop page built from your products. Customers find shops near them and order for pickup or delivery.</p></div>
-   <div class="feat"><div class="ico b" aria-hidden="true">📲</div><h4 data-i18n="feat.f6">Order from the table</h4><p data-i18n="feat.f6t">Customers scan a QR code, order and follow every step live. Their receipt appears on their own phone.</p></div>
-   <div class="feat"><div class="ico" aria-hidden="true">🧾</div><h4 data-i18n="feat.f7">Receipts that can't be faked</h4><p data-i18n="feat.f7t">Every receipt carries a "Check this receipt" QR code that anyone can scan to confirm it is genuine.</p></div>
-   <div class="feat"><div class="ico b" aria-hidden="true">🔒</div><h4 data-i18n="feat.f8">Secure by design</h4><p data-i18n="feat.f8t">Encrypted connections, approved devices only, roles that hide costs from cashiers, and a record of every action.</p></div>
+   <details class="feat more"><summary><div class="ico" aria-hidden="true">⚡</div><h4 data-i18n="feat.f1">Sell fast, even offline</h4><p data-i18n="feat.f1t">Tap or scan with any phone camera. Every sale is saved instantly and synced when the connection returns.</p><span class="morel" data-i18n="feat.more">Learn more</span></summary><ul><li data-i18n="feat.f1d1">Works on any phone, tablet or computer, no special hardware.</li><li data-i18n="feat.f1d2">Scan barcodes with the phone camera or a USB scanner.</li><li data-i18n="feat.f1d3">Each sale shows one tick when saved on the device, two ticks when safe on the server.</li><li data-i18n="feat.f1d4">Cash, mobile money, card, credit and split payments.</li></ul></details>
+   <details class="feat more"><summary><div class="ico b" aria-hidden="true">📦</div><h4 data-i18n="feat.f2">Stock you can trust</h4><p data-i18n="feat.f2t">Every movement recorded with who, when and why. Real buying costs and an alert when a supplier raises prices.</p><span class="morel" data-i18n="feat.more">Learn more</span></summary><ul><li data-i18n="feat.f2d1">Deliveries record the supplier and the buying price.</li><li data-i18n="feat.f2d2">Average cost is calculated for you, so profit is real.</li><li data-i18n="feat.f2d3">A warning when your margin drops, and a red flag before selling at a loss.</li><li data-i18n="feat.f2d4">Transfers between branches, damages and corrections, each with a reason.</li></ul></details>
+   <details class="feat more"><summary><div class="ico" aria-hidden="true">🤝</div><h4 data-i18n="feat.f3">Credit under control</h4><p data-i18n="feat.f3t">A limit for every customer, approval from your phone, part payments with receipts, and a clear view of who owes what.</p><span class="morel" data-i18n="feat.more">Learn more</span></summary><ul><li data-i18n="feat.f3d1">A customer with no limit gets no credit, even offline.</li><li data-i18n="feat.f3d2">Cashiers ask, the owner approves from the phone, no password shared.</li><li data-i18n="feat.f3d3">Each customer: total owed, overdue amount and credit left.</li><li data-i18n="feat.f3d4">Part payments get their own numbered receipt; WhatsApp reminders in one tap.</li></ul></details>
+   <details class="feat more"><summary><div class="ico b" aria-hidden="true">📈</div><h4 data-i18n="feat.f4">Price changes, made visible</h4><p data-i18n="feat.f4t">LFS remembers what goods cost on the day you sold them on credit and shows what price rises cost you since.</p><span class="morel" data-i18n="feat.more">Learn more</span></summary><ul><li data-i18n="feat.f4d1">Example: sugar cost RWF 500 when sold on credit and RWF 800 today.</li><li data-i18n="feat.f4d2">LFS shows: "Restocking these items now costs RWF 3,000 more."</li><li data-i18n="feat.f4d3">Green when prices fell, orange when they rose.</li><li data-i18n="feat.f4d4">See the true cost of giving credit and set smarter terms.</li></ul></details>
+   <details class="feat more"><summary><div class="ico" aria-hidden="true">🛒</div><h4 data-i18n="feat.f5">Your shop online</h4><p data-i18n="feat.f5t">A shop page built from your products. Customers find shops near them and order for pickup or delivery.</p><span class="morel" data-i18n="feat.more">Learn more</span></summary><ul><li data-i18n="feat.f5d1">Your page fills itself from your products: no website to build.</li><li data-i18n="feat.f5d2">You choose which products and prices are public; quantities are never shown.</li><li data-i18n="feat.f5d3">Stock shows as a colour: green available, amber few left, red out.</li><li data-i18n="feat.f5d4">Share your page on WhatsApp, Facebook and Instagram in one tap.</li></ul></details>
+   <details class="feat more"><summary><div class="ico b" aria-hidden="true">📲</div><h4 data-i18n="feat.f6">Order from the table</h4><p data-i18n="feat.f6t">Customers scan a QR code, order and follow every step live. Their receipt appears on their own phone.</p><span class="morel" data-i18n="feat.more">Learn more</span></summary><ul><li data-i18n="feat.f6d1">Steps shown live: sent, received, preparing, ready, served, paid.</li><li data-i18n="feat.f6d2">Call the waiter or ask for the bill from the phone.</li><li data-i18n="feat.f6d3">Orders go to the right station: kitchen, bar or coffee.</li><li data-i18n="feat.f6d4">Staff get a sound alert for every new order and request.</li></ul></details>
+   <details class="feat more"><summary><div class="ico" aria-hidden="true">🧾</div><h4 data-i18n="feat.f7">Receipts that can't be faked</h4><p data-i18n="feat.f7t">Every receipt carries a "Check this receipt" QR code that anyone can scan to confirm it is genuine.</p><span class="morel" data-i18n="feat.more">Learn more</span></summary><ul><li data-i18n="feat.f7d1">Each receipt has its own number, in an unbroken sequence per business.</li><li data-i18n="feat.f7d2">Scanning the QR opens a page confirming the receipt, its number and its items.</li><li data-i18n="feat.f7d3">Cancelled receipts stay visible with who, when and why.</li><li data-i18n="feat.f7d4">Customers' phone numbers are masked on printed receipts.</li></ul></details>
+   <details class="feat more"><summary><div class="ico b" aria-hidden="true">🔒</div><h4 data-i18n="feat.f8">Secure by design</h4><p data-i18n="feat.f8t">Encrypted connections, approved devices only, roles that hide costs from cashiers, and a record of every action.</p><span class="morel" data-i18n="feat.more">Learn more</span></summary><ul><li data-i18n="feat.f8d1">All connections are encrypted (HTTPS).</li><li data-i18n="feat.f8d2">A new device must be approved by the owner before it can sell.</li><li data-i18n="feat.f8d3">Each role sees only what it needs; refunds, discounts and credit need approval.</li><li data-i18n="feat.f8d4">Every important action is recorded; data handled under Rwanda's data protection law.</li></ul></details>
   </div>
 
   <div class="card try" id="try">
@@ -407,6 +408,40 @@ rw:{
 'wa.contact':'Muraho LATC, '
 },
 fr:{
+"feat.f1d1":"Fonctionne sur tout téléphone, tablette ou ordinateur, sans matériel spécial.",
+"feat.f1d2":"Scannez les codes-barres avec la caméra ou un lecteur USB.",
+"feat.f1d3":"Chaque vente affiche une coche quand elle est enregistrée sur l'appareil, deux coches quand elle est sur le serveur.",
+"feat.f1d4":"Espèces, mobile money, carte, crédit et paiements fractionnés.",
+"feat.f2d1":"Les livraisons enregistrent le fournisseur et le prix d'achat.",
+"feat.f2d2":"Le coût moyen est calculé pour vous : le bénéfice est réel.",
+"feat.f2d3":"Une alerte quand votre marge baisse, et un signal rouge avant de vendre à perte.",
+"feat.f2d4":"Transferts entre succursales, casses et corrections, chacun avec un motif.",
+"feat.f3d1":"Un client sans limite n'obtient pas de crédit, même hors ligne.",
+"feat.f3d2":"Le caissier demande, le propriétaire approuve depuis son téléphone, sans partager de mot de passe.",
+"feat.f3d3":"Pour chaque client : total dû, montant en retard et crédit restant.",
+"feat.f3d4":"Chaque paiement partiel a son propre reçu numéroté ; rappels WhatsApp en un clic.",
+"feat.f4d1":"Exemple : le sucre coûtait 500 RWF lors de la vente à crédit et 800 RWF aujourd'hui.",
+"feat.f4d2":"LFS indique : « Réapprovisionner ces articles coûte maintenant 3 000 RWF de plus. »",
+"feat.f4d3":"Vert quand les prix ont baissé, orange quand ils ont augmenté.",
+"feat.f4d4":"Voyez le vrai coût du crédit et fixez de meilleures conditions.",
+"feat.f5d1":"Votre page se remplit avec vos produits : aucun site à créer.",
+"feat.f5d2":"Vous choisissez les produits et prix publics ; les quantités ne sont jamais affichées.",
+"feat.f5d3":"Le stock apparaît en couleur : vert disponible, ambre peu, rouge épuisé.",
+"feat.f5d4":"Partagez votre page sur WhatsApp, Facebook et Instagram en un clic.",
+"feat.f6d1":"Étapes en direct : envoyée, reçue, en préparation, prête, servie, payée.",
+"feat.f6d2":"Appelez le serveur ou demandez l'addition depuis le téléphone.",
+"feat.f6d3":"Les commandes vont au bon poste : cuisine, bar ou café.",
+"feat.f6d4":"Le personnel reçoit une alerte sonore à chaque nouvelle commande.",
+"feat.f7d1":"Chaque reçu a son propre numéro, dans une suite continue par entreprise.",
+"feat.f7d2":"Le QR ouvre une page qui confirme le reçu, son numéro et ses articles.",
+"feat.f7d3":"Les reçus annulés restent visibles avec qui, quand et pourquoi.",
+"feat.f7d4":"Les numéros de téléphone des clients sont masqués sur les reçus imprimés.",
+"feat.f8d1":"Toutes les connexions sont chiffrées (HTTPS).",
+"feat.f8d2":"Un nouvel appareil doit être approuvé par le propriétaire avant de vendre.",
+"feat.f8d3":"Chaque rôle voit seulement ce qu'il faut ; remboursements, remises et crédit exigent une approbation.",
+"feat.f8d4":"Chaque action importante est enregistrée ; données traitées selon la loi rwandaise.",
+"feat.more":"En savoir plus",
+
 "feat.eyebrow":"Au cœur de LATC Flow Suite",
 "feat.title":"Un seul système. Toute votre activité. Tout votre marché.",
 "feat.sub":"Ventes, stock, crédit, commandes en ligne et rapports au même endroit, sur téléphone ou ordinateur, même sans internet.",
