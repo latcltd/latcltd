@@ -91,6 +91,8 @@ h2{font-size:38px;letter-spacing:-.8px;line-height:1.15;margin-bottom:14px}
 .ticks li{padding-left:28px;position:relative}
 .ticks li:before{content:"";position:absolute;left:0;top:7px;width:16px;height:10px;border-left:3px solid var(--blue2);border-bottom:3px solid var(--blue2);transform:rotate(-45deg)}
 .grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.try{margin-top:28px}.steps{list-style:none;counter-reset:s;padding:0;margin:18px 0;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.steps li{counter-increment:s;background:var(--bg,transparent);border:1px solid var(--line);border-radius:16px;padding:18px 18px 18px 58px;position:relative;display:flex;flex-direction:column;gap:4px}.steps li::before{content:counter(s);position:absolute;left:16px;top:16px;width:28px;height:28px;border-radius:50%;background:rgba(34,220,110,.16);color:var(--green);font-weight:700;display:flex;align-items:center;justify-content:center}.steps span{color:var(--muted);font-size:15px}.try .note{color:var(--muted);font-size:14px}
+@media(max-width:820px){.steps{grid-template-columns:minmax(0,1fr)}}
 .feat{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:24px;box-shadow:var(--shadow)}
 a.feat{text-decoration:none;display:block}
 .ico{width:44px;height:44px;border-radius:12px;background:rgba(34,220,110,.14);display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:14px;font-weight:800;color:var(--blue2)}
@@ -187,7 +189,7 @@ footer small a{color:var(--blue2)}
     <h3>LATC Flow Suite</h3>
     <p data-i18n="lfs.text">The business system made in Rwanda for shops, pharmacies, restaurants, hotels and growing companies. Sell faster, stop losses and see your whole business clearly — online or offline, on any device.</p>
     <div class="soon"><b data-i18n="lfs.first">Be among the first</b><br><small data-i18n="lfs.firstSub">Early-access businesses hear first on launch day.</small></div>
-    <div class="cta"><a class="btn g js-wa" href="https://wa.me/250786187326" target="_blank" rel="noopener" data-track="early_access_card" data-i18n="cta.earlyWa">💬 Get early access on WhatsApp</a></div>
+    <div class="cta"><a class="btn g js-wa" href="https://wa.me/250786187326" target="_blank" rel="noopener" data-track="early_access_card" data-i18n="cta.earlyWa">💬 Get early access on WhatsApp</a><a class="btn b" href="#try" data-track="demo_from_card" data-i18n="cta.tryDemo">Try the live demo</a></div>
    </div>
    <div class="card blue">
     <span class="tag b" data-i18n="fleet.tag">Mobility</span>
@@ -199,6 +201,40 @@ footer small a{color:var(--blue2)}
      <li data-i18n="fleet.t3">Fleet monitoring for African operators</li>
     </ul>
     <a class="btn b" href="https://fleet.latcltd.rw" target="_blank" rel="noopener" data-track="visit_fleet" data-i18n="fleet.cta">Visit LATC Fleet →</a>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="lfs-features">
+ <div class="wrap">
+  <span class="eyebrow" data-i18n="feat.eyebrow">Inside LATC Flow Suite</span>
+  <h2 data-i18n="feat.title">One system. Your whole business. Your whole market.</h2>
+  <p class="sub" data-i18n="feat.sub">Sales, stock, credit, online orders and reports in one place, on your phone or computer, even when the internet is down.</p>
+  <div class="grid4">
+   <div class="feat"><div class="ico" aria-hidden="true">⚡</div><h4 data-i18n="feat.f1">Sell fast, even offline</h4><p data-i18n="feat.f1t">Tap or scan with any phone camera. Every sale is saved instantly and synced when the connection returns.</p></div>
+   <div class="feat"><div class="ico b" aria-hidden="true">📦</div><h4 data-i18n="feat.f2">Stock you can trust</h4><p data-i18n="feat.f2t">Every movement recorded with who, when and why. Real buying costs and an alert when a supplier raises prices.</p></div>
+   <div class="feat"><div class="ico" aria-hidden="true">🤝</div><h4 data-i18n="feat.f3">Credit under control</h4><p data-i18n="feat.f3t">A limit for every customer, approval from your phone, part payments with receipts, and a clear view of who owes what.</p></div>
+   <div class="feat"><div class="ico b" aria-hidden="true">📈</div><h4 data-i18n="feat.f4">Price changes, made visible</h4><p data-i18n="feat.f4t">LFS remembers what goods cost on the day you sold them on credit and shows what price rises cost you since.</p></div>
+   <div class="feat"><div class="ico" aria-hidden="true">🛒</div><h4 data-i18n="feat.f5">Your shop online</h4><p data-i18n="feat.f5t">A shop page built from your products. Customers find shops near them and order for pickup or delivery.</p></div>
+   <div class="feat"><div class="ico b" aria-hidden="true">📲</div><h4 data-i18n="feat.f6">Order from the table</h4><p data-i18n="feat.f6t">Customers scan a QR code, order and follow every step live. Their receipt appears on their own phone.</p></div>
+   <div class="feat"><div class="ico" aria-hidden="true">🧾</div><h4 data-i18n="feat.f7">Receipts that can't be faked</h4><p data-i18n="feat.f7t">Every receipt carries a "Check this receipt" QR code that anyone can scan to confirm it is genuine.</p></div>
+   <div class="feat"><div class="ico b" aria-hidden="true">🔒</div><h4 data-i18n="feat.f8">Secure by design</h4><p data-i18n="feat.f8t">Encrypted connections, approved devices only, roles that hide costs from cashiers, and a record of every action.</p></div>
+  </div>
+
+  <div class="card try" id="try">
+   <span class="tag" data-i18n="try.tag">Live demo</span>
+   <h3 data-i18n="try.title">See LFS in action. Try the live demo.</h3>
+   <p data-i18n="try.text">Explore ready-made sample businesses: a supermarket, a restaurant, a hotel and more. Sell, give credit, take an online order and watch it all appear on the owner's dashboard.</p>
+   <ol class="steps">
+    <li><b data-i18n="try.s1">Ask for an access code</b><span data-i18n="try.s1t">One tap on WhatsApp. We send you a personal code.</span></li>
+    <li><b data-i18n="try.s2">Open the demo</b><span data-i18n="try.s2t">Go to demo.latcflow.com and enter your code.</span></li>
+    <li><b data-i18n="try.s3">Pick a business and a role</b><span data-i18n="try.s3t">Owner, cashier or waiter. Use two devices to watch orders arrive live.</span></li>
+   </ol>
+   <p class="note" data-i18n="try.note">The demo uses sample data that resets every night. Please don't enter real customer information.</p>
+   <div class="cta">
+    <a class="btn g js-wa" data-wa="demo" href="https://wa.me/250786187326" target="_blank" rel="noopener" data-track="demo_code_whatsapp" data-i18n="try.ask">💬 Ask for a demo code on WhatsApp</a>
+    <a class="btn b" href="https://demo.latcflow.com" target="_blank" rel="noopener" data-track="demo_open" data-i18n="try.open">Open the demo →</a>
    </div>
   </div>
  </div>
@@ -371,6 +407,40 @@ rw:{
 'wa.contact':'Muraho LATC, '
 },
 fr:{
+"feat.eyebrow":"Au cœur de LATC Flow Suite",
+"feat.title":"Un seul système. Toute votre activité. Tout votre marché.",
+"feat.sub":"Ventes, stock, crédit, commandes en ligne et rapports au même endroit, sur téléphone ou ordinateur, même sans internet.",
+"feat.f1":"Vendez vite, même hors ligne",
+"feat.f1t":"Touchez ou scannez avec la caméra de n'importe quel téléphone. Chaque vente est enregistrée aussitôt et synchronisée au retour de la connexion.",
+"feat.f2":"Un stock fiable",
+"feat.f2t":"Chaque mouvement enregistré : qui, quand et pourquoi. Les vrais coûts d'achat et une alerte quand un fournisseur augmente ses prix.",
+"feat.f3":"Le crédit sous contrôle",
+"feat.f3t":"Une limite par client, l'approbation depuis votre téléphone, les paiements partiels avec reçus et une vue claire de qui doit quoi.",
+"feat.f4":"Les variations de prix, visibles",
+"feat.f4t":"LFS retient le coût des articles le jour de la vente à crédit et vous montre ce que les hausses de prix vous ont coûté depuis.",
+"feat.f5":"Votre boutique en ligne",
+"feat.f5t":"Une page boutique créée à partir de vos produits. Les clients trouvent les commerces proches et commandent à emporter ou en livraison.",
+"feat.f6":"Commande depuis la table",
+"feat.f6t":"Le client scanne un QR code, commande et suit chaque étape en direct. Son reçu apparaît sur son propre téléphone.",
+"feat.f7":"Des reçus infalsifiables",
+"feat.f7t":"Chaque reçu porte un QR code « Vérifier ce reçu » que chacun peut scanner pour confirmer qu'il est authentique.",
+"feat.f8":"Sécurisé dès la conception",
+"feat.f8t":"Connexions chiffrées, appareils approuvés uniquement, rôles qui cachent les coûts aux caissiers et trace de chaque action.",
+"try.tag":"Démo en direct",
+"try.title":"Voyez LFS en action. Essayez la démo en direct.",
+"try.text":"Explorez des entreprises d'exemple prêtes à l'emploi : un supermarché, un restaurant, un hôtel et plus. Vendez, accordez un crédit, prenez une commande en ligne et voyez tout apparaître sur le tableau de bord du propriétaire.",
+"try.s1":"Demandez un code d'accès",
+"try.s1t":"Un clic sur WhatsApp. Nous vous envoyons un code personnel.",
+"try.s2":"Ouvrez la démo",
+"try.s2t":"Allez sur demo.latcflow.com et saisissez votre code.",
+"try.s3":"Choisissez une entreprise et un rôle",
+"try.s3t":"Propriétaire, caissier ou serveur. Utilisez deux appareils pour voir les commandes arriver en direct.",
+"try.note":"La démo utilise des données d'exemple remises à zéro chaque nuit. Merci de ne pas saisir de vraies informations clients.",
+"try.ask":"💬 Demander un code de démo sur WhatsApp",
+"try.open":"Ouvrir la démo →",
+"cta.tryDemo":"Essayer la démo",
+"wa.demo":"Bonjour LATC, je souhaite un code d'accès pour essayer la démo de LATC Flow Suite.\nNom : \nEntreprise : ",
+
 'skip':'Aller au contenu','slogan':'Votre partenaire de confiance en affaires',
 'nav.products':'Produits','nav.lfs':'LATC Flow Suite','nav.engineering':'Ingénierie','nav.about':'À propos','nav.contact':'Contact',
 'cta.early':'Accès anticipé','cta.earlyLfs':'💬 Accès anticipé à LFS','cta.explore':'Découvrir LATC','cta.earlyWa':'💬 Accès anticipé sur WhatsApp',
@@ -422,7 +492,7 @@ fr:{
 'wa.early':'Bonjour LATC, je souhaite un accès anticipé à LATC Flow Suite.\nNom de l\'entreprise : \nType d\'activité : \nVille : ',
 'wa.contact':'Bonjour LATC, '
 }};
-var EN_WA={'wa.early':'Hello LATC, I would like early access to LATC Flow Suite.\nBusiness name: \nType of business: \nLocation: ','wa.contact':'Hello LATC, '};
+var EN_WA={'wa.demo':'Hello LATC, I would like an access code to try the LATC Flow Suite demo.\nName: \nBusiness: ','wa.early':'Hello LATC, I would like early access to LATC Flow Suite.\nBusiness name: \nType of business: \nLocation: ','wa.contact':'Hello LATC, '};
 
 function store(k,v){try{if(v===undefined)return localStorage.getItem(k);localStorage.setItem(k,v)}catch(e){return null}}
 var root=document.documentElement;
@@ -440,7 +510,7 @@ function setLang(l){
  root.lang=l==='rw'?'rw':l;
  [].forEach.call(document.querySelectorAll('.lang button'),function(b){b.setAttribute('aria-pressed',b.dataset.lang===l?'true':'false')});
  [].forEach.call(document.querySelectorAll('.js-wa'),function(a){
-  var key=a.dataset.wa==='contact'?'wa.contact':'wa.early',msg=(l==='en'?EN_WA:T[l])[key];
+  var key=a.dataset.wa==='contact'?'wa.contact':(a.dataset.wa==='demo'?'wa.demo':'wa.early'),msg=(l==='en'?EN_WA:T[l])[key];
   a.href='https://wa.me/'+WA_NUMBER+'?text='+encodeURIComponent(msg);
  });
  store('latc-lang',l);
