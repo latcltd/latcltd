@@ -5,9 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>LATC — Your trusted partner in business</title>
 <meta name="description" content="Luxury Africa Technology Center Ltd (LATC) is a Rwanda-based technology company building business software and automotive technology for real African conditions.">
+<meta name="theme-color" content="#050505">
 <link rel="canonical" href="https://latcltd.rw/">
-<meta name="theme-color" content="#050706" media="(prefers-color-scheme: dark)">
-<meta name="theme-color" content="#f7faf8" media="(prefers-color-scheme: light)">
 <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48.png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <meta property="og:type" content="website">
@@ -19,124 +18,259 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Organization","name":"Luxury Africa Technology Center Ltd","alternateName":"LATC","url":"https://latcltd.rw/","logo":"https://latcltd.rw/assets/icon-512.png","email":"info@latcltd.rw","telephone":"+250786187326","address":{"@type":"PostalAddress","addressLocality":"Kicukiro, Kigali","addressCountry":"RW"},"sameAs":["https://www.linkedin.com/company/latcltd/"]}
 </script>
-<script>
-/* Theme before first paint: saved choice, else the device setting. */
-(function(){var t=null;try{t=localStorage.getItem('latc-theme')}catch(e){}
-if(t!=='light'&&t!=='dark'){t=window.matchMedia&&matchMedia('(prefers-color-scheme: light)').matches?'light':'dark'}
-document.documentElement.setAttribute('data-theme',t)})();
-</script>
 <style>
-:root{--bg:#050706;--panel:#0d1210;--line:#1d2622;--text:#fff;--muted:#a9b3ae;--green:#22DC6E;--blue:#2563eb;--blue2:#4f8dff;--navbg:rgba(5,7,6,.92);--onGreen:#03140a;--shadow:none;
---heroBg:radial-gradient(700px 450px at 90% 10%,rgba(37,99,235,.22),transparent 60%),radial-gradient(700px 450px at 70% 60%,rgba(34,220,110,.14),transparent 60%);
---glow:radial-gradient(closest-side,rgba(34,220,110,.22),transparent 70%);--cardG:rgba(34,220,110,.10);--cardB:rgba(37,99,235,.14)}
-:root[data-theme="light"]{--bg:#f7faf8;--panel:#fff;--line:#dfe7e2;--text:#0b1410;--muted:#55635c;--green:#14a352;--blue:#2563eb;--blue2:#1d4ed8;--navbg:rgba(255,255,255,.94);--onGreen:#fff;--shadow:0 6px 24px rgba(10,30,20,.06);
---heroBg:radial-gradient(700px 450px at 90% 10%,rgba(37,99,235,.12),transparent 60%),radial-gradient(700px 450px at 70% 60%,rgba(20,163,82,.10),transparent 60%);
---glow:radial-gradient(closest-side,rgba(20,163,82,.14),transparent 70%);--cardG:rgba(20,163,82,.08);--cardB:rgba(37,99,235,.08)}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;scroll-padding-top:84px}
-body{background:var(--bg);color:var(--text);font-family:Inter,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
-a{color:inherit}
-:focus-visible{outline:3px solid var(--blue2);outline-offset:3px;border-radius:6px}
-.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
-.skip{position:absolute;left:-999px;top:8px;background:var(--green);color:var(--onGreen);padding:10px 14px;border-radius:8px;z-index:20}
-.skip:focus{left:12px}
-nav{position:sticky;top:0;z-index:10;background:var(--navbg);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid transparent;border-image:linear-gradient(90deg,var(--green),var(--blue)) 1}
-nav .wrap{display:flex;align-items:center;gap:22px;height:76px}
-.brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.5px;text-decoration:none}
-.brand img{width:48px;height:48px}
-.brand small{display:block;font-weight:500;color:var(--muted);font-size:11px;letter-spacing:1.5px;text-transform:uppercase}
-.links{display:flex;gap:24px;margin-left:auto;font-size:15px}
-.links a{color:var(--muted);text-decoration:none}.links a:hover{color:var(--text)}
-.iconbtn{width:44px;height:44px;flex:none;border:1px solid var(--line);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:19px;background:var(--panel);cursor:pointer;color:var(--text)}
-.menu{display:none}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:12px;font-weight:700;font-size:15px;text-decoration:none;white-space:nowrap;border:0;cursor:pointer;font-family:inherit;transition:transform .15s,filter .15s}
-.btn:hover{transform:translateY(-1px);filter:brightness(1.06)}
-.btn.g{background:var(--green);color:var(--onGreen)}.btn.b{background:var(--blue);color:#fff}.btn.o{border:1.5px solid var(--line);color:var(--text);background:transparent}
-.mobile{display:none;border-top:1px solid var(--line);padding:10px 24px 18px}
-.mobile a{display:block;padding:13px 0;text-decoration:none;border-bottom:1px solid var(--line);font-weight:600}
-.mobile .btn{margin-top:14px;width:100%;justify-content:center}
-nav.open .mobile{display:block}
-.hero{padding:84px 0 70px;background:var(--heroBg)}
-.hero .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:50px;align-items:center}
-.eyebrow{display:inline-block;color:var(--green);font-weight:700;font-size:13px;letter-spacing:2px;text-transform:uppercase;margin-bottom:18px}
-.eyebrow.b{color:var(--blue2)}
-h1{font-size:56px;line-height:1.06;letter-spacing:-1.5px;font-weight:800}
-h1 .g{color:var(--green)}h1 .b{color:var(--blue2)}
-.lead{color:var(--muted);font-size:19px;margin:22px 0 32px;max-width:540px}
-.cta{display:flex;gap:14px;flex-wrap:wrap}
-.trust{display:flex;gap:10px 22px;margin-top:34px;color:var(--muted);font-size:14px;flex-wrap:wrap}
-.trust b{color:var(--text)}
-.glow{display:flex;justify-content:center;align-items:center;min-height:380px;background:var(--glow)}
-.glow img{width:330px;max-width:80%;height:auto}.slogan-fig{text-align:center}.slogan-fig img{display:block;margin:0 auto}.slogan{margin-top:20px;font-weight:700;font-size:20px;letter-spacing:.3px;background:linear-gradient(90deg,var(--green),var(--blue2));-webkit-background-clip:text;background-clip:text;color:transparent}.slogan-foot{color:var(--text)}
-section{padding:80px 0;border-top:1px solid var(--line)}
-h2{font-size:38px;letter-spacing:-.8px;line-height:1.15;margin-bottom:14px}
-.sub{color:var(--muted);font-size:17px;max-width:640px;margin-bottom:40px}
-.products{display:grid;grid-template-columns:1.25fr 1fr;gap:22px}
-.card{background:var(--panel);border:1px solid var(--line);border-radius:22px;padding:34px;box-shadow:var(--shadow)}
-.card.main{border-color:rgba(34,220,110,.45);background:linear-gradient(160deg,var(--cardG),var(--panel) 50%)}
-.card.blue{border-color:rgba(79,141,255,.45);background:linear-gradient(160deg,var(--cardB),var(--panel) 50%)}
-.tag{display:inline-block;font-size:12px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase;padding:6px 11px;border-radius:999px;background:rgba(34,220,110,.14);color:var(--green);margin-bottom:16px}
-.tag.b{background:rgba(37,99,235,.18);color:var(--blue2)}
-.card h3{font-size:28px;margin-bottom:8px}
-.card p{color:var(--muted);margin-bottom:22px}
-.soon{border:1px dashed rgba(34,220,110,.5);border-radius:14px;padding:16px 18px;margin-bottom:24px}
-.soon small{color:var(--muted)}
-.ticks{list-style:none;display:grid;gap:10px;margin-bottom:28px}
-.ticks li{padding-left:28px;position:relative}
-.ticks li:before{content:"";position:absolute;left:0;top:7px;width:16px;height:10px;border-left:3px solid var(--blue2);border-bottom:3px solid var(--blue2);transform:rotate(-45deg)}
-.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-details.more summary{list-style:none;cursor:pointer}details.more summary::-webkit-details-marker{display:none}.morel{display:inline-block;margin-top:12px;color:var(--green);font-weight:700;font-size:14px}.morel::after{content:" ▾"}details.more[open] .morel::after{content:" ▴"}details.more ul{margin:12px 0 0;padding-left:18px;color:var(--muted);font-size:15px;line-height:1.55}details.more li{margin:4px 0}details.more:hover{border-color:var(--green)}details.more{align-self:start}
-.try{margin-top:28px}.steps{list-style:none;counter-reset:s;padding:0;margin:18px 0;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.steps li{counter-increment:s;background:var(--bg,transparent);border:1px solid var(--line);border-radius:16px;padding:18px 18px 18px 58px;position:relative;display:flex;flex-direction:column;gap:4px}.steps li::before{content:counter(s);position:absolute;left:16px;top:16px;width:28px;height:28px;border-radius:50%;background:rgba(34,220,110,.16);color:var(--green);font-weight:700;display:flex;align-items:center;justify-content:center}.steps span{color:var(--muted);font-size:15px}.steps a{color:inherit;text-decoration:none;display:flex;flex-direction:column;gap:4px}.steps a b::after{content:" →";color:var(--green)}.steps li:hover{border-color:var(--green)}.try .note{color:var(--muted);font-size:14px}
-@media(max-width:820px){.steps{grid-template-columns:minmax(0,1fr)}}
-.feat{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:24px;box-shadow:var(--shadow)}
-a.feat{text-decoration:none;display:block}
-.ico{width:44px;height:44px;border-radius:12px;background:rgba(34,220,110,.14);display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:14px;font-weight:800;color:var(--blue2)}
-.ico.b{background:rgba(37,99,235,.2)}
-.feat h4{font-size:17px;margin-bottom:6px}.feat p{color:var(--muted);font-size:14.5px;overflow-wrap:anywhere}
-.about{display:grid;grid-template-columns:1.2fr 1fr;gap:40px}
-.facts{display:grid;gap:14px}
-.fact{border-left:3px solid;border-image:linear-gradient(var(--green),var(--blue)) 1;padding:6px 0 6px 16px}
-.fact small{color:var(--muted);display:block;font-size:13px}
-.fact a{color:var(--blue2);text-decoration:none}
-.contact{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.band-wrap{border-top:0;padding-top:0}
-.band{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;padding:40px;border-radius:24px;border:1px solid var(--line);background:linear-gradient(120deg,var(--cardG),var(--cardB));box-shadow:var(--shadow)}
-.band h2{margin-bottom:6px}.band p{color:var(--muted);font-size:17px}
-footer{border-top:1px solid var(--line);padding:30px 0 40px;color:var(--muted);font-size:14px}
-footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
-footer small a{color:var(--blue2)}
-.lang{display:flex;gap:8px}
-.lang button{padding:6px 11px;border:1px solid var(--line);border-radius:8px;background:transparent;color:var(--muted);cursor:pointer;font:inherit;font-weight:600}
-.lang button[aria-pressed="true"]{border-color:var(--green);color:var(--text)}
-.consent{position:fixed;left:16px;right:16px;bottom:16px;z-index:30;max-width:560px;margin:0 auto;background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:16px 18px;box-shadow:0 12px 40px rgba(0,0,0,.35);display:none;gap:14px;align-items:center;flex-wrap:wrap;font-size:14px;color:var(--muted)}
-.consent.show{display:flex}.consent p{flex:1 1 260px}.consent a{color:var(--blue2)}
-.consent .btn{padding:10px 16px;font-size:14px}.consent #consentYes{padding:12px 30px;font-size:15px}
-@media(max-width:900px){
- .links,nav .wrap>.btn{display:none}.menu{display:flex}
- #themeBtn{margin-left:auto}
- .hero{padding:44px 0 50px}.hero .wrap,.products,.about{grid-template-columns:minmax(0,1fr)}
- .glow{min-height:240px}.glow img{width:200px}.slogan{font-size:17px}
- h1{font-size:38px;letter-spacing:-.8px}.lead{font-size:17px}
- .grid4{grid-template-columns:1fr 1fr}.contact{grid-template-columns:1fr}
- section{padding:56px 0}h2{font-size:29px}.card{padding:24px}
- .brand img{width:44px;height:44px}
+/* Layout: full-width black bands, one 1440px column, huge uppercase type, LATC green as the only accent.
+   Deliberately one dark look; no web fonts, so it loads fast on any network. */
+:root{
+ --bg:#050505;--panel:#0B0B0B;--line:#1C1C1C;--line2:#2E2E2E;
+ --fg:#F5F5F5;--muted:#B4B4B4;--dim:#8A8A8A;--green:#3DD68C;--ink:#050505;--paper:#F5F5F5;
+ --sans:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+ --mono:ui-monospace,Menlo,Consolas,monospace;
+ color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 var(--sans);overflow-x:hidden;-webkit-text-size-adjust:100%}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--bg)}
+img{max-width:100%;display:block}
+a{color:var(--fg);text-decoration:none}
+a:hover{color:var(--green)}
+:focus-visible{outline:2px solid var(--green);outline-offset:3px}
+.skip{position:absolute;left:-9999px}.skip:focus{left:16px;top:16px;z-index:50;background:var(--green);color:var(--ink);padding:10px 14px}
+.wrap{max-width:1440px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+
+/* type */
+.eyebrow{margin:0 0 18px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.16em;color:var(--green)}
+.eyebrow.line{display:flex;align-items:center;gap:12px}.eyebrow.line:before{content:"";width:32px;height:1px;background:var(--green);flex:none}
+.eyebrow.mute{color:var(--dim)}.eyebrow.ink{color:var(--ink)}
+.h1,.h2,.h3,.rowtitle,.devh,.cbig,.giant,.marquee{font-weight:800;text-transform:uppercase;letter-spacing:-.02em;text-wrap:balance}
+.h1{margin:0;font-size:clamp(40px,6.6vw,112px);line-height:.94}
+.h2{margin:0;font-size:clamp(32px,5vw,80px);line-height:.95;max-width:1100px}
+.h3{margin:0;font-size:clamp(26px,3vw,44px);line-height:1}
+.lead{margin:22px 0 0;max-width:640px;font-size:17px;color:var(--muted)}
+.lead.big{font-size:18px;max-width:600px}
+.small{font-size:14px}
+.mute{color:var(--muted);margin:4px 0 0}
+.g{color:var(--green)}
+.o,.h1 .b{color:transparent;-webkit-text-stroke:1.5px var(--fg)}
+.num{font-size:13px;font-weight:700;letter-spacing:.14em;color:var(--green);flex:none}
+
+/* buttons */
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:0 24px;font:800 12px/1 var(--sans);text-transform:uppercase;letter-spacing:.14em;border:1px solid transparent;cursor:pointer}
+.btn.g{background:var(--green);color:var(--ink)}.btn.g:hover{background:var(--fg);color:var(--ink)}
+.btn.o{border-color:var(--line2);color:var(--fg);background:transparent}.btn.o:hover{border-color:var(--green)}
+.btn.k{background:var(--ink);color:var(--paper)}.btn.k:hover{color:var(--green)}
+.btn.ok{border:2px solid var(--ink);color:var(--ink)}.btn.ok:hover{background:var(--ink);color:var(--paper)}
+
+/* nav */
+#nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+.navrow{display:flex;align-items:center;gap:16px 32px;padding-block:12px}
+.brand{display:flex;align-items:center;gap:10px}.brand img{width:40px;height:40px}
+.brand span{display:flex;flex-direction:column;line-height:1.1}.brand b{font-size:18px;letter-spacing:.26em}
+.brand small{font-size:10px;color:var(--dim);letter-spacing:.03em}
+.links{display:flex;flex-wrap:wrap;gap:8px 28px;flex:1;justify-content:center;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.14em}
+.links a{color:#C8C8C8;padding:12px 0}.links a:hover{color:var(--green)}
+.navcta{margin-left:auto;min-height:44px}
+.menu{display:none;width:44px;height:44px;background:transparent;border:1px solid var(--line2);color:var(--fg);font-size:20px;cursor:pointer}
+.mobile{display:none}
+#nav.open .mobile{display:flex;flex-direction:column;gap:4px;padding:8px max(20px,env(safe-area-inset-right,0px)) 20px max(20px,env(safe-area-inset-left,0px));border-top:1px solid var(--line)}
+.mobile a{padding:14px 0;font-weight:700;text-transform:uppercase;letter-spacing:.12em;font-size:14px;border-bottom:1px solid var(--line)}
+.mobile .btn{margin-top:12px;justify-content:center;border:0}
+
+/* hero */
+.hero{border-bottom:1px solid var(--line)}
+.herorow{display:flex;flex-wrap:wrap;align-items:center;gap:56px 48px;padding-block:72px 80px}
+.herotext{flex:1 1 600px;min-width:0}
+.trust{list-style:none;margin:32px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:10px 28px;font-size:14px;color:var(--dim)}
+.trust b{color:var(--fg)}
+.orbitwrap{flex:1 1 340px;min-width:0;margin:0;display:flex;flex-direction:column;align-items:center;gap:24px}
+.orbit{position:relative;width:100%;max-width:500px;aspect-ratio:1}
+.ring{position:absolute;border-radius:50%}
+.r0{inset:0;border:1px dashed #222}.r1{inset:12%;border:1px solid #222}.r2{inset:27%;border:1px solid #262626}
+.core{position:absolute;inset:34%;border-radius:50%;background:#000;display:flex;align-items:center;justify-content:center}
+.core img{width:100%;height:100%}
+.node{position:absolute;width:118px;margin-left:-59px;margin-top:-15px;text-align:center;padding:6px 0;background:#0E0E0E;border:1px solid var(--line2);font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.14em}
+.n1{top:0;left:50%}.n2{top:50%;left:100%}.n3{top:100%;left:50%}.n4{top:50%;left:0}
+.node.hot{border-color:var(--green);color:var(--green)}
+.slogan{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.16em;color:#C8C8C8;text-align:center}
+
+/* marquee */
+.marqwrap{overflow:hidden;border-bottom:1px solid var(--line);padding-block:22px}
+.marquee{display:flex;width:max-content;font-size:clamp(36px,5.6vw,84px);line-height:1;animation:marquee 40s linear infinite}
+.marquee>span{display:flex;gap:40px;padding-right:40px;white-space:nowrap}
+.star{color:var(--green)}
+
+/* sections */
+.sec{border-bottom:1px solid var(--line)}
+.sec>.wrap{padding-block:110px}
+.sec.tight>.wrap{padding-block:88px}
+.split{display:flex;flex-wrap:wrap;gap:56px;align-items:center}
+.splittext{flex:1 1 460px;min-width:0}
+
+/* products */
+.prods{margin-top:52px;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
+.prod{padding:36px 28px;border:1px solid var(--line2);display:flex;flex-direction:column;gap:18px;min-width:0}
+.prod.main{border-color:var(--green)}
+.prod p{margin:0;font-size:17px;color:#D4D4D4}
+.prod .cta{margin-top:auto;padding-top:8px}
+.tag{align-self:flex-start;padding:5px 12px;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.14em;border:1px solid var(--line2);color:#D4D4D4}
+.tag.g{background:var(--green);border-color:var(--green);color:var(--ink)}
+.note{padding:18px 20px;background:#0E0E0E;border:1px solid var(--line)}
+.note b{display:block}.note small{font-size:14px;color:var(--muted)}
+.ticks{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:10px;color:#D4D4D4}
+.ticks li{position:relative;padding-left:22px}
+.ticks li:before{content:"";position:absolute;left:0;top:.75em;width:10px;height:2px;background:var(--green)}
+
+/* one sale, every screen */
+.flow{display:flex;align-items:center;margin-top:48px}
+.dev{flex:1 1 0;min-width:0;padding:24px;border:1px solid var(--line2);background:var(--panel)}
+.dev.hot{border-color:var(--green)}
+.dev .eyebrow{margin:0;font-size:11px}
+.devh{margin:12px 0 0;font-size:24px}
+.link{flex:0 1 120px;min-width:60px;position:relative;height:2px;background:#1F1F1F}
+.travel{position:absolute;top:-5px;left:0;width:12px;height:12px;border-radius:50%;background:var(--green);animation:travel 2.6s cubic-bezier(.6,0,.4,1) infinite}
+
+/* feature rows */
+.rows{margin-top:40px}
+.row{border-top:1px solid var(--line)}
+.row summary{display:flex;align-items:center;gap:16px 40px;padding:26px 0;cursor:pointer;list-style:none}
+.row summary .num{width:48px}
+.rowtext{flex:1;min-width:0}
+.rowtitle{display:block;font-size:clamp(24px,3.4vw,50px);line-height:1}
+.rowsub{display:block;margin-top:8px;color:var(--muted);max-width:760px}
+.plus{flex:none;width:48px;height:48px;border:1px solid var(--line2);border-radius:50%;display:inline-flex;align-items:center;justify-content:center;color:var(--green);font-size:22px;transition:transform .3s}
+details[open] .plus{transform:rotate(45deg)}
+.rowmore{margin:0 0 32px 88px;max-width:760px}
+summary::-webkit-details-marker{display:none}
+summary{list-style:none}
+
+/* order steps + receipt */
+.steps6{list-style:none;margin:32px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:10px}
+.step{padding:12px 16px;border:1px solid var(--line2);font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:var(--dim);animation:step 10s infinite}
+.printer{flex:1 1 300px;max-width:380px;min-width:0;margin:0 auto}
+.slot{height:14px;background:#1A1A1A;border:1px solid var(--line2)}
+.receipt{margin:0 12px;padding:24px 20px;background:var(--paper);color:#111;font:13px/1.6 var(--mono);animation:print 10s ease-out infinite}
+.rshop{margin:0;text-align:center;font-weight:800;font-size:15px;text-transform:uppercase}
+.rhead{margin:2px 0 14px;text-align:center;font-size:12px;color:#555}
+.rline{display:flex;justify-content:space-between;gap:12px;padding:6px 0;border-bottom:1px dashed #BBB}
+.rtotal{display:flex;justify-content:space-between;margin-top:12px;font-weight:800;font-size:15px;text-transform:uppercase}
+.rqr{display:flex;align-items:center;gap:12px;margin-top:16px;font-size:11px}
+.qr{width:52px;height:52px;flex:none;background:
+ linear-gradient(#111 0 0) 0 0/16px 16px no-repeat,linear-gradient(#111 0 0) 36px 0/16px 16px no-repeat,linear-gradient(#111 0 0) 0 36px/16px 16px no-repeat,
+ linear-gradient(#111 0 0) 22px 22px/8px 8px no-repeat,linear-gradient(#111 0 0) 40px 40px/8px 8px no-repeat,linear-gradient(#111 0 0) 22px 4px/6px 10px no-repeat}
+.rfoot{margin:10px 0 0;text-align:center;font-size:10px;color:#555}
+
+/* conveyor */
+.belt{margin-top:44px;display:flex;flex-wrap:wrap;align-items:center;gap:12px}
+.chip{padding:14px 18px;border:1px solid var(--line2);font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.14em}
+.chip.g{background:var(--green);border-color:var(--green);color:var(--ink)}
+.track{flex:1 1 220px;position:relative;height:40px;border-top:1px solid #262626;border-bottom:1px solid #262626}
+.box{position:absolute;top:50%;width:20px;height:20px;margin-top:-10px;border:2px solid var(--green);animation:conv 6s linear infinite}
+
+/* demo */
+.sec.green{background:var(--green);color:var(--ink);border-bottom:0}
+.sec.green .h1{font-size:clamp(44px,7.4vw,124px)}
+.ink{color:var(--ink)}
+.savetext{margin:24px 0 0;max-width:980px;font-size:clamp(20px,2.4vw,34px);line-height:1.25;font-weight:700}
+.trygrid{margin-top:64px;align-items:flex-start}
+.sec.green p{color:var(--ink)}
+.sec.green .small{color:#0F3D26}
+.trysteps{flex:1 1 400px;min-width:0;list-style:none;margin:0;padding:0}
+.trysteps li{border-top:1px solid rgba(5,5,5,.25)}
+.trysteps a{display:flex;align-items:center;gap:18px;padding:18px 0;color:var(--ink)}
+.trysteps a:hover{color:var(--ink);opacity:.75}
+.trysteps .num{color:var(--ink);font-size:20px;min-width:36px}
+.trysteps b{display:block;font-size:18px}
+.trysteps a>span:nth-child(2){flex:1;min-width:0}
+.trysteps svg{flex:none}
+
+/* card groups */
+.cells{margin-top:48px;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.cell{background:var(--bg);padding:30px 24px;min-width:0}
+.cell summary{cursor:pointer}
+.cell h3{margin:14px 0 0;font-size:22px;line-height:1.1;font-weight:800;text-transform:uppercase;letter-spacing:-.01em}
+.cell p{margin:12px 0 0;color:var(--muted);font-size:15px}
+.morel{display:inline-flex;align-items:center;gap:10px;min-height:44px;margin-top:6px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.14em;color:var(--green)}
+.morel .plus{width:28px;height:28px;font-size:16px}
+.cell .ticks{margin-top:6px;font-size:15px}
+.contact .cell{display:flex;flex-direction:column;gap:8px;padding:32px 24px}
+.contact .eyebrow{margin:0}
+.cbig{font-size:22px;text-transform:none;letter-spacing:0;overflow-wrap:anywhere}
+
+/* about */
+.facts{flex:1 1 380px;min-width:0;margin:0}
+.facts div{padding:18px 0;border-top:1px solid var(--line)}
+.facts dt{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.14em;color:var(--dim)}
+.facts dd{margin:6px 0 0;font-size:17px}
+
+/* band + footer */
+.band{background:var(--panel)}
+.bandrow{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:32px}
+.bandrow>div:first-child{flex:1 1 560px;min-width:0}
+.bandrow .cta{margin-top:0}
+.footrow{display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;padding-block:56px 24px}
+.foottext{flex:1 1 520px;min-width:0;font-size:14px;color:#A3A3A3}
+.foottext p{margin:6px 0 0}.foottext a{text-decoration:underline}
+.footslogan{color:var(--fg);font-weight:700}
+.lang{display:flex;gap:8px;align-items:flex-start}
+.lang button{min-width:52px;min-height:44px;background:transparent;color:var(--fg);border:1px solid var(--line2);font:800 13px var(--sans);cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--green);border-color:var(--green);color:var(--ink)}
+.giant{overflow:hidden;border-top:1px solid var(--line);text-align:center;font-size:clamp(88px,26vw,400px);line-height:.85;padding-top:20px;color:transparent;-webkit-text-stroke:1px #333;white-space:nowrap}
+
+/* consent bar */
+.consent{position:fixed;left:0;right:0;bottom:0;z-index:40;display:none;flex-wrap:wrap;align-items:center;gap:12px;padding:16px max(20px,env(safe-area-inset-right,0px)) calc(16px + env(safe-area-inset-bottom,0px)) max(20px,env(safe-area-inset-left,0px));background:#111;border-top:1px solid var(--line2)}
+.consent.show{display:flex}
+.consent p{margin:0;flex:1 1 300px;font-size:14px;color:var(--muted)}
+.consent a{text-decoration:underline}
+.consent .btn{min-height:44px}
+
+/* motion */
+@keyframes spin{to{transform:rotate(360deg)}}
+.spin{animation:spin 48s linear infinite}.spin-rev{animation:spin 48s linear infinite reverse}.spin-slow{animation:spin 120s linear infinite reverse}
+.pulse{animation:pulse 3s ease-in-out infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(61,214,140,.4)}50%{box-shadow:0 0 0 16px rgba(61,214,140,0)}}
+@keyframes marquee{to{transform:translateX(-50%)}}
+@keyframes travel{0%{left:0;opacity:0}10%,90%{opacity:1}100%{left:calc(100% - 12px);opacity:0}}
+@keyframes travelv{0%{top:0;opacity:0}10%,90%{opacity:1}100%{top:calc(100% - 12px);opacity:0}}
+.blink{animation:blink 2.6s ease-in-out infinite}
+@keyframes blink{0%,60%{color:var(--fg)}75%,100%{color:var(--green)}}
+.d2{animation-delay:1.3s}
+@keyframes print{0%{clip-path:inset(0 0 100% 0)}35%,92%{clip-path:inset(0 0 0 0)}100%{clip-path:inset(0 0 0 0);opacity:0}}
+@keyframes step{0%{border-color:var(--line2);color:var(--dim);background:transparent}8%,92%{border-color:var(--green);color:var(--ink);background:var(--green)}100%{border-color:var(--line2);color:var(--dim);background:transparent}}
+.step.d2{animation-delay:.8s}.step.d3{animation-delay:1.6s}.step.d4{animation-delay:2.4s}.step.d5{animation-delay:3.2s}.step.d6{animation-delay:4s}
+@keyframes conv{0%{left:0;opacity:0}8%,92%{opacity:1}100%{left:calc(100% - 20px);opacity:0}}
+.box.d2{animation-delay:1.5s}.box.d3{animation-delay:3s}.box.d4{animation-delay:4.5s}
+
+/* phone */
+@media (max-width:860px){
+ .links,.navcta{display:none}
+ .menu{display:inline-flex;align-items:center;justify-content:center;margin-left:auto}
+ .brand small{display:none}
 }
-@media(max-width:420px){.grid4{grid-template-columns:minmax(0,1fr)}.btn{white-space:normal;text-align:center}.brand small{font-size:10px;letter-spacing:1px}.cta .btn{width:100%;justify-content:center}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+@media (max-width:760px){
+ .flow{flex-direction:column;align-items:stretch}
+ .link{flex:none;width:2px;min-width:0;height:48px;margin-left:28px}
+ .travel{left:-5px;animation-name:travelv}
+ .row summary .num{display:none}
+ .rowmore{margin-left:0}
+ .sec>.wrap{padding-block:80px}
+ .sec.tight>.wrap{padding-block:64px}
+}
+@media (prefers-reduced-motion:reduce){
+ *,*:before,*:after{animation:none!important;transition:none!important}
+ html{scroll-behavior:auto}
+}
+
 </style>
 </head>
 <body>
 <a class="skip" href="#main" data-i18n="skip">Skip to content</a>
-
 <nav id="nav" aria-label="Main">
- <div class="wrap">
-  <a class="brand" href="#top"><img src="assets/logo-circle-96.png" alt="LATC logo" width="48" height="48"><div>LATC<small>Luxury Africa Technology Center</small></div></a>
+ <div class="wrap navrow">
+  <a class="brand" href="#top"><img src="assets/logo-circle-96.png" alt="LATC logo" width="40" height="40"><span><b>LATC</b><small>Luxury Africa Technology Center</small></span></a>
   <div class="links">
    <a href="#products" data-i18n="nav.products">Products</a>
    <a href="#lfs" data-i18n="nav.lfs">LATC Flow Suite</a>
@@ -144,9 +278,8 @@ footer small a{color:var(--blue2)}
    <a href="#about" data-i18n="nav.about">About</a>
    <a href="#contact" data-i18n="nav.contact">Contact</a>
   </div>
-  <button class="iconbtn" id="themeBtn" type="button" aria-label="Switch light / dark theme">🌙</button>
-  <a class="btn g js-wa" href="https://wa.me/250786187326" target="_blank" rel="noopener" data-track="early_access_nav" data-i18n="cta.early">Get started</a>
-  <button class="iconbtn menu" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">☰</button>
+  <a class="btn g js-wa navcta" href="https://wa.me/250786187326" target="_blank" rel="noopener" data-track="early_access_nav" data-i18n="cta.early">Get started</a>
+  <button class="menu" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">☰</button>
  </div>
  <div class="mobile" id="mobileMenu">
   <a href="#products" data-i18n="nav.products">Products</a>
@@ -160,182 +293,313 @@ footer small a{color:var(--blue2)}
 
 <main id="main">
 <header class="hero" id="top">
- <div class="wrap">
-  <div>
-   <span class="eyebrow" data-i18n="hero.eyebrow">Made in Rwanda · Built for Africa</span>
-   <h1 data-i18n-html="hero.title">African-built technology for <span class="g">business</span> and <span class="b">mobility</span>.</h1>
-   <p class="lead" data-i18n="hero.lead">Technology that keeps working when the internet doesn't, speaks your language, and gives you clear control of every sale, every item and every decision — designed in Rwanda for the way Africa really does business.</p>
+ <div class="wrap herorow">
+  <div class="herotext">
+   <p class="eyebrow line" data-i18n="hero.eyebrow">Made in Rwanda · Built for Africa</p>
+   <h1 class="h1" data-i18n-html="hero.title">African-built technology for <span class="g">business</span> and <span class="b">mobility</span>.</h1>
+   <p class="lead big" data-i18n="hero.lead">Technology that keeps working when the internet doesn't, speaks your language, and gives you clear control of every sale, every item and every decision — designed in Rwanda for the way Africa really does business.</p>
    <div class="cta">
-    <a class="btn g js-wa" href="https://wa.me/250786187326" target="_blank" rel="noopener" data-track="early_access_hero" data-i18n="cta.earlyLfs">💬 Get started with LFS</a>
-    <a class="btn b" href="#products" data-track="explore_latc" data-i18n="cta.explore">Explore LATC</a>
+    <a class="btn g js-wa" href="https://wa.me/250786187326" target="_blank" rel="noopener" data-track="early_access_hero"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.8A8 8 0 1 1 21 12z"/></svg><span data-i18n="cta.earlyLfs">Get started with LFS</span></a>
+    <a class="btn o" href="#products" data-track="explore_latc" data-i18n="cta.explore">Explore LATC</a>
    </div>
-   <div class="trust">
-    <span data-i18n-html="trust.rdb"><b>RDB</b> registered company</span>
-    <span data-i18n-html="trust.city"><b>Kigali</b>, Rwanda</span>
-    <span data-i18n-html="trust.focus"><b>Software</b> · <b>Mobility</b> · <b>R&amp;D</b></span>
-   </div>
+   <ul class="trust">
+    <li data-i18n-html="trust.rdb"><b>RDB</b> registered company</li>
+    <li data-i18n-html="trust.city"><b>Kigali</b>, Rwanda</li>
+    <li data-i18n-html="trust.focus"><b>Software</b> · <b>Mobility</b> · <b>R&amp;D</b></li>
+   </ul>
   </div>
-  <div class="glow"><figure class="slogan-fig"><img src="assets/logo-circle.png" alt="LATC — Luxury Africa Technology Center" width="330" height="330"><figcaption class="slogan" data-i18n="slogan">Your trusted partner in business</figcaption></figure></div>
+  <figure class="orbitwrap">
+   <div class="orbit" aria-hidden="true">
+    <div class="ring r0 spin-slow"></div>
+    <div class="ring r1 spin">
+     <span class="node n1 spin-rev" data-i18n="o.sale">Sale</span>
+     <span class="node n2 spin-rev" data-i18n="m.stock">Stock</span>
+     <span class="node n3 spin-rev" data-i18n="m.credit">Credit</span>
+     <span class="node n4 spin-rev hot" data-i18n="o.order">Online order</span>
+    </div>
+    <div class="ring r2"></div>
+    <div class="core pulse"><img src="assets/logo-circle-96.png" alt="" width="96" height="96"></div>
+   </div>
+   <figcaption class="slogan" data-i18n="slogan">Your trusted partner in business</figcaption>
+  </figure>
  </div>
 </header>
 
-<section id="products">
+<div class="marqwrap" aria-hidden="true"><div class="marquee"><span><span data-i18n="m.sell">Sell</span><span class="star" aria-hidden="true">+</span><span class="o" data-i18n="m.stock">Stock</span><span class="star" aria-hidden="true">+</span><span data-i18n="m.credit">Credit</span><span class="star" aria-hidden="true">+</span><span class="o" data-i18n="m.market">Online market</span><span class="star" aria-hidden="true">+</span><span data-i18n="m.reports">Reports</span><span class="star" aria-hidden="true">+</span><span class="o" data-i18n="m.offline">Works offline</span><span class="star" aria-hidden="true">+</span></span><span><span data-i18n="m.sell">Sell</span><span class="star" aria-hidden="true">+</span><span class="o" data-i18n="m.stock">Stock</span><span class="star" aria-hidden="true">+</span><span data-i18n="m.credit">Credit</span><span class="star" aria-hidden="true">+</span><span class="o" data-i18n="m.market">Online market</span><span class="star" aria-hidden="true">+</span><span data-i18n="m.reports">Reports</span><span class="star" aria-hidden="true">+</span><span class="o" data-i18n="m.offline">Works offline</span><span class="star" aria-hidden="true">+</span></span></div></div>
+
+<section id="products" class="sec">
  <div class="wrap">
-  <span class="eyebrow" data-i18n="products.eyebrow">Our products</span>
-  <h2 data-i18n="products.title">Two product lines. One engineering team.</h2>
-  <p class="sub" data-i18n="products.sub">Practical technology designed in Rwanda — from the shop counter to the road.</p>
-  <div class="products">
-   <div class="card main" id="lfs">
-    <span class="tag" data-i18n="lfs.tag">Ready to serve you</span>
-    <h3>LATC Flow Suite</h3>
+  <p class="eyebrow" data-i18n="products.eyebrow">Our products</p>
+  <h2 class="h2" data-i18n="products.title">Two product lines. One engineering team.</h2>
+  <p class="lead" data-i18n="products.sub">Practical technology designed in Rwanda — from the shop counter to the road.</p>
+  <div class="prods">
+   <article class="prod main" id="lfs">
+    <span class="tag g" data-i18n="lfs.tag">Ready to serve you</span>
+    <h3 class="h3">LATC Flow Suite</h3>
     <p data-i18n="lfs.text">Smart inventory management and a trusted online market in one system, made in Rwanda. Every item tracked from supplier to customer, every online shop verified, every sale backed by a genuine receipt — online or offline, on any device.</p>
-    <div class="soon"><b data-i18n="lfs.first">Start with LFS today</b><br><small data-i18n="lfs.firstSub">We set up your business, train your team and stay by your side.</small></div>
-    <div class="cta"><a class="btn g js-wa" href="https://wa.me/250786187326" target="_blank" rel="noopener" data-track="early_access_card" data-i18n="cta.earlyWa">💬 Talk to us on WhatsApp</a><a class="btn b" href="#try" data-track="demo_from_card" data-i18n="cta.tryDemo">Try the live demo</a></div>
-   </div>
-   <div class="card blue">
-    <span class="tag b" data-i18n="fleet.tag">Mobility</span>
-    <h3 data-i18n="fleet.title">Fleet &amp; Telematics</h3>
+    <div class="note"><b data-i18n="lfs.first">Start with LFS today</b><small data-i18n="lfs.firstSub">We set up your business, train your team and stay by your side.</small></div>
+    <div class="cta">
+     <a class="btn g js-wa" href="https://wa.me/250786187326" target="_blank" rel="noopener" data-track="early_access_card"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.8A8 8 0 1 1 21 12z"/></svg><span data-i18n="cta.earlyWa">Talk to us on WhatsApp</span></a>
+     <a class="btn o" href="#try" data-track="demo_from_card" data-i18n="cta.tryDemo">Try the live demo</a>
+    </div>
+   </article>
+   <article class="prod">
+    <span class="tag" data-i18n="fleet.tag">Mobility</span>
+    <h3 class="h3" data-i18n="fleet.title">Fleet &amp; Telematics</h3>
     <p data-i18n="fleet.text">Connected-vehicle technology for safer roads and smarter fleets, built on our automotive research.</p>
-    <ul class="ticks">
-     <li data-i18n="fleet.t1">OBD-II and CAN bus vehicle data</li>
-     <li data-i18n="fleet.t2">Vehicle diagnostics and road-safety insight</li>
-     <li data-i18n="fleet.t3">Fleet monitoring for African operators</li>
-    </ul>
-    <a class="btn b" href="https://fleet.latcltd.rw" target="_blank" rel="noopener" data-track="visit_fleet" data-i18n="fleet.cta">Visit LATC Fleet →</a>
-   </div>
+    <ul class="ticks"><li data-i18n="fleet.t1">OBD-II and CAN bus vehicle data</li><li data-i18n="fleet.t2">Vehicle diagnostics and road-safety insight</li><li data-i18n="fleet.t3">Fleet monitoring for African operators</li></ul>
+    <div class="cta"><a class="btn o" href="https://fleet.latcltd.rw" target="_blank" rel="noopener" data-track="visit_fleet" data-i18n="fleet.cta">Visit LATC Fleet →</a></div>
+   </article>
   </div>
  </div>
 </section>
 
-<section id="lfs-features">
+<section class="sec tight" aria-labelledby="a1h">
  <div class="wrap">
-  <span class="eyebrow" data-i18n="feat.eyebrow">Inside LATC Flow Suite</span>
-  <h2 data-i18n="feat.title">Inventory you can trust. A market people trust.</h2>
-  <p class="sub" data-i18n="feat.sub">Track every item from delivery to sale, and sell to customers nearby through verified shop pages, with sales, credit and reports in one place, even when the internet is down.</p>
-  <div class="grid4">
-   <details class="feat more"><summary><div class="ico" aria-hidden="true">⚡</div><h4 data-i18n="feat.f1">Sell fast, even offline</h4><p data-i18n="feat.f1t">Tap or scan with any phone camera. Every sale is saved instantly and synced when the connection returns.</p><span class="morel" data-i18n="feat.more">Learn more</span></summary><ul><li data-i18n="feat.f1d1">Works on any phone, tablet or computer, no special hardware.</li><li data-i18n="feat.f1d2">Scan barcodes with the phone camera or a USB scanner.</li><li data-i18n="feat.f1d3">Each sale shows one tick when saved on the device, two ticks when safe on the server.</li><li data-i18n="feat.f1d4">Cash, mobile money, card, credit and split payments.</li></ul></details>
-   <details class="feat more"><summary><div class="ico b" aria-hidden="true">📦</div><h4 data-i18n="feat.f2">Stock you can trust</h4><p data-i18n="feat.f2t">Every movement recorded with who, when and why. Real buying costs and an alert when a supplier raises prices.</p><span class="morel" data-i18n="feat.more">Learn more</span></summary><ul><li data-i18n="feat.f2d1">Deliveries record the supplier and the buying price.</li><li data-i18n="feat.f2d2">Average cost is calculated for you, so profit is real.</li><li data-i18n="feat.f2d3">A warning when your margin drops, and a red flag before selling at a loss.</li><li data-i18n="feat.f2d4">Transfers between branches, damages and corrections, each with a reason.</li></ul></details>
-   <details class="feat more"><summary><div class="ico" aria-hidden="true">🤝</div><h4 data-i18n="feat.f3">Credit under control</h4><p data-i18n="feat.f3t">A limit for every customer, approval from your phone, part payments with receipts, and a clear view of who owes what.</p><span class="morel" data-i18n="feat.more">Learn more</span></summary><ul><li data-i18n="feat.f3d1">A customer with no limit gets no credit, even offline.</li><li data-i18n="feat.f3d2">Cashiers ask, the owner approves from the phone, no password shared.</li><li data-i18n="feat.f3d3">Each customer: total owed, overdue amount and credit left.</li><li data-i18n="feat.f3d4">Part payments get their own numbered receipt; WhatsApp reminders in one tap.</li></ul></details>
-   <details class="feat more"><summary><div class="ico b" aria-hidden="true">📈</div><h4 data-i18n="feat.f4">Price changes, made visible</h4><p data-i18n="feat.f4t">LFS remembers what goods cost on the day you sold them on credit and shows what price rises cost you since.</p><span class="morel" data-i18n="feat.more">Learn more</span></summary><ul><li data-i18n="feat.f4d1">Example: sugar cost RWF 500 when sold on credit and RWF 800 today.</li><li data-i18n="feat.f4d2">LFS shows: "Restocking these items now costs RWF 3,000 more."</li><li data-i18n="feat.f4d3">Green when prices fell, orange when they rose.</li><li data-i18n="feat.f4d4">See the true cost of giving credit and set smarter terms.</li></ul></details>
-   <details class="feat more"><summary><div class="ico" aria-hidden="true">🛒</div><h4 data-i18n="feat.f5">A trusted online market</h4><p data-i18n="feat.f5t">Verified shops, real prices and live stock colours. Customers find shops and products near them and order for pickup or delivery.</p><span class="morel" data-i18n="feat.more">Learn more</span></summary><ul><li data-i18n="feat.f5d1">Every shop selling online is verified once with its registration documents.</li><li data-i18n="feat.f5d0">Your page fills itself from your products: no website to build.</li><li data-i18n="feat.f5d2">You choose which products and prices are public; quantities are never shown.</li><li data-i18n="feat.f5d3">Stock shows as a colour: green available, amber few left, red out.</li><li data-i18n="feat.f5d4">Share your page on WhatsApp, Facebook and Instagram in one tap.</li></ul></details>
-   <details class="feat more"><summary><div class="ico b" aria-hidden="true">📲</div><h4 data-i18n="feat.f6">Order from the table</h4><p data-i18n="feat.f6t">Customers scan a QR code, order and follow every step live. Their receipt appears on their own phone.</p><span class="morel" data-i18n="feat.more">Learn more</span></summary><ul><li data-i18n="feat.f6d1">Steps shown live: sent, received, preparing, ready, served, paid.</li><li data-i18n="feat.f6d2">Call the waiter or ask for the bill from the phone.</li><li data-i18n="feat.f6d3">Orders go to the right station: kitchen, bar or coffee.</li><li data-i18n="feat.f6d4">Staff get a sound alert for every new order and request.</li></ul></details>
-   <details class="feat more"><summary><div class="ico" aria-hidden="true">🧾</div><h4 data-i18n="feat.f7">Receipts that can't be faked</h4><p data-i18n="feat.f7t">Every receipt carries a "Check this receipt" QR code that anyone can scan to confirm it is genuine.</p><span class="morel" data-i18n="feat.more">Learn more</span></summary><ul><li data-i18n="feat.f7d1">Each receipt has its own number, in an unbroken sequence per business.</li><li data-i18n="feat.f7d2">Scanning the QR opens a page confirming the receipt, its number and its items.</li><li data-i18n="feat.f7d3">Cancelled receipts stay visible with who, when and why.</li><li data-i18n="feat.f7d4">Customers' phone numbers are masked on printed receipts.</li></ul></details>
-   <details class="feat more"><summary><div class="ico b" aria-hidden="true">🔒</div><h4 data-i18n="feat.f8">Secure by design</h4><p data-i18n="feat.f8t">Encrypted connections, approved devices only, roles that hide costs from cashiers, and a record of every action.</p><span class="morel" data-i18n="feat.more">Learn more</span></summary><ul><li data-i18n="feat.f8d1">All connections are encrypted (HTTPS).</li><li data-i18n="feat.f8d2">A new device must be approved by the owner before it can sell.</li><li data-i18n="feat.f8d3">Each role sees only what it needs; refunds, discounts and credit need approval.</li><li data-i18n="feat.f8d4">Every important action is recorded; data handled under Rwanda's data protection law.</li></ul></details>
+  <h2 class="h2" id="a1h"><span data-i18n="a1.t1">One sale.</span><br><span class="g" data-i18n="a1.t2">Every screen.</span></h2>
+  <div class="flow">
+   <div class="dev"><p class="eyebrow mute" data-i18n="a1.k1">Counter</p><p class="devh" data-i18n="a1.h1">Sale complete</p><p class="mute" data-i18n="a1.p1">One tick: saved on the device</p></div>
+   <div class="link" aria-hidden="true"><span class="travel"></span></div>
+   <div class="dev"><p class="eyebrow mute" data-i18n="a1.k2">Server</p><p class="devh blink" data-i18n="a1.h2">Two ticks</p><p class="mute" data-i18n="a1.p2">Safe on the server</p></div>
+   <div class="link" aria-hidden="true"><span class="travel d2"></span></div>
+   <div class="dev hot"><p class="eyebrow" data-i18n="a1.k3">Owner's phone</p><p class="devh blink d2" data-i18n="a1.h3">Live sales</p><p class="mute" data-i18n="a1.p3">Profit and debts, wherever you are</p></div>
   </div>
+ </div>
+</section>
 
-  <div class="card try" id="try">
-   <span class="tag" data-i18n="try.tag">Live demo</span>
-   <h3 data-i18n="try.title">See LFS in action. Try the live demo.</h3>
-   <p data-i18n="try.text">Explore ready-made sample businesses: a supermarket, a restaurant, a hotel and more. Sell, give credit, take an online order and watch it all appear on the owner's dashboard.</p>
-   <ol class="steps">
-    <li><a class="js-wa" data-wa="demo" href="https://wa.me/250786187326" target="_blank" rel="noopener" data-track="demo_step1_whatsapp"><b data-i18n="try.s1">Ask for an access code</b><span data-i18n="try.s1t">One tap on WhatsApp. We send you a personal code.</span></a></li>
-    <li><a href="https://demo.latcflow.com" target="_blank" rel="noopener" data-track="demo_step2_open"><b data-i18n="try.s2">Open the demo</b><span data-i18n="try.s2t">Go to demo.latcflow.com and enter your code.</span></a></li>
-    <li><a href="https://demo.latcflow.com" target="_blank" rel="noopener" data-track="demo_step3_open"><b data-i18n="try.s3">Pick a business and a role</b><span data-i18n="try.s3t">Owner, cashier or waiter. Use two devices to watch orders arrive live.</span></a></li>
+<section id="lfs-features" class="sec">
+ <div class="wrap">
+  <p class="eyebrow" data-i18n="feat.eyebrow">Inside LATC Flow Suite</p>
+  <h2 class="h2" data-i18n="feat.title">Inventory you can trust. A market people trust.</h2>
+  <p class="lead" data-i18n="feat.sub">Track every item from delivery to sale, and sell to customers nearby through verified shop pages, with sales, credit and reports in one place, even when the internet is down.</p>
+  <div class="rows">
+<details class="row">
+ <summary><span class="num">01</span><span class="rowtext"><span class="rowtitle" data-i18n="feat.f1">Sell fast, even offline</span><span class="rowsub" data-i18n="feat.f1t">Tap or scan with any phone camera. Every sale is saved instantly and synced when the connection returns.</span></span><span class="plus" aria-hidden="true">+</span></summary>
+ <ul class="ticks rowmore"><li data-i18n="feat.f1d1">Works on any phone, tablet or computer, no special hardware.</li><li data-i18n="feat.f1d2">Scan barcodes with the phone camera or a USB scanner.</li><li data-i18n="feat.f1d3">Each sale shows one tick when saved on the device, two ticks when safe on the server.</li><li data-i18n="feat.f1d4">Cash, mobile money, card, credit and split payments.</li></ul>
+</details>
+<details class="row">
+ <summary><span class="num">02</span><span class="rowtext"><span class="rowtitle" data-i18n="feat.f2">Stock you can trust</span><span class="rowsub" data-i18n="feat.f2t">Every movement recorded with who, when and why. Real buying costs and an alert when a supplier raises prices.</span></span><span class="plus" aria-hidden="true">+</span></summary>
+ <ul class="ticks rowmore"><li data-i18n="feat.f2d1">Deliveries record the supplier and the buying price.</li><li data-i18n="feat.f2d2">Average cost is calculated for you, so profit is real.</li><li data-i18n="feat.f2d3">A warning when your margin drops, and a red flag before selling at a loss.</li><li data-i18n="feat.f2d4">Transfers between branches, damages and corrections, each with a reason.</li></ul>
+</details>
+<details class="row">
+ <summary><span class="num">03</span><span class="rowtext"><span class="rowtitle" data-i18n="feat.f3">Credit under control</span><span class="rowsub" data-i18n="feat.f3t">A limit for every customer, approval from your phone, part payments with receipts, and a clear view of who owes what.</span></span><span class="plus" aria-hidden="true">+</span></summary>
+ <ul class="ticks rowmore"><li data-i18n="feat.f3d1">A customer with no limit gets no credit, even offline.</li><li data-i18n="feat.f3d2">Cashiers ask, the owner approves from the phone, no password shared.</li><li data-i18n="feat.f3d3">Each customer: total owed, overdue amount and credit left.</li><li data-i18n="feat.f3d4">Part payments get their own numbered receipt; WhatsApp reminders in one tap.</li></ul>
+</details>
+<details class="row">
+ <summary><span class="num">04</span><span class="rowtext"><span class="rowtitle" data-i18n="feat.f4">Price changes, made visible</span><span class="rowsub" data-i18n="feat.f4t">LFS remembers what goods cost on the day you sold them on credit and shows what price rises cost you since.</span></span><span class="plus" aria-hidden="true">+</span></summary>
+ <ul class="ticks rowmore"><li data-i18n="feat.f4d1">Example: sugar cost RWF 500 when sold on credit and RWF 800 today.</li><li data-i18n="feat.f4d2">LFS shows: "Restocking these items now costs RWF 3,000 more."</li><li data-i18n="feat.f4d3">Green when prices fell, orange when they rose.</li><li data-i18n="feat.f4d4">See the true cost of giving credit and set smarter terms.</li></ul>
+</details>
+<details class="row">
+ <summary><span class="num">05</span><span class="rowtext"><span class="rowtitle" data-i18n="feat.f5">A trusted online market</span><span class="rowsub" data-i18n="feat.f5t">Verified shops, real prices and live stock colours. Customers find shops and products near them and order for pickup or delivery.</span></span><span class="plus" aria-hidden="true">+</span></summary>
+ <ul class="ticks rowmore"><li data-i18n="feat.f5d0">Your page fills itself from your products: no website to build.</li><li data-i18n="feat.f5d1">Every shop selling online is verified once with its registration documents.</li><li data-i18n="feat.f5d2">You choose which products and prices are public; quantities are never shown.</li><li data-i18n="feat.f5d3">Stock shows as a colour: green available, amber few left, red out.</li><li data-i18n="feat.f5d4">Share your page on WhatsApp, Facebook and Instagram in one tap.</li></ul>
+</details>
+<details class="row">
+ <summary><span class="num">06</span><span class="rowtext"><span class="rowtitle" data-i18n="feat.f6">Order from the table</span><span class="rowsub" data-i18n="feat.f6t">Customers scan a QR code, order and follow every step live. Their receipt appears on their own phone.</span></span><span class="plus" aria-hidden="true">+</span></summary>
+ <ul class="ticks rowmore"><li data-i18n="feat.f6d1">Steps shown live: sent, received, preparing, ready, served, paid.</li><li data-i18n="feat.f6d2">Call the waiter or ask for the bill from the phone.</li><li data-i18n="feat.f6d3">Orders go to the right station: kitchen, bar or coffee.</li><li data-i18n="feat.f6d4">Staff get a sound alert for every new order and request.</li></ul>
+</details>
+<details class="row">
+ <summary><span class="num">07</span><span class="rowtext"><span class="rowtitle" data-i18n="feat.f7">Receipts that can't be faked</span><span class="rowsub" data-i18n="feat.f7t">Every receipt carries a "Check this receipt" QR code that anyone can scan to confirm it is genuine.</span></span><span class="plus" aria-hidden="true">+</span></summary>
+ <ul class="ticks rowmore"><li data-i18n="feat.f7d1">Each receipt has its own number, in an unbroken sequence per business.</li><li data-i18n="feat.f7d2">Scanning the QR opens a page confirming the receipt, its number and its items.</li><li data-i18n="feat.f7d3">Cancelled receipts stay visible with who, when and why.</li><li data-i18n="feat.f7d4">Customers' phone numbers are masked on printed receipts.</li></ul>
+</details>
+<details class="row">
+ <summary><span class="num">08</span><span class="rowtext"><span class="rowtitle" data-i18n="feat.f8">Secure by design</span><span class="rowsub" data-i18n="feat.f8t">Encrypted connections, approved devices only, roles that hide costs from cashiers, and a record of every action.</span></span><span class="plus" aria-hidden="true">+</span></summary>
+ <ul class="ticks rowmore"><li data-i18n="feat.f8d1">All connections are encrypted (HTTPS).</li><li data-i18n="feat.f8d2">A new device must be approved by the owner before it can sell.</li><li data-i18n="feat.f8d3">Each role sees only what it needs; refunds, discounts and credit need approval.</li><li data-i18n="feat.f8d4">Every important action is recorded; data handled under Rwanda's data protection law.</li></ul>
+</details>
+  </div>
+ </div>
+</section>
+
+<section class="sec tight" aria-labelledby="a2h">
+ <div class="wrap split">
+  <div class="splittext">
+   <h2 class="h2" id="a2h"><span data-i18n="feat.f6">Order from the table</span>.<br><span class="o" data-i18n="a2.t2">Follow every step live.</span></h2>
+   <ol class="steps6">
+    <li class="step d1" data-i18n="a2.s1">Sent</li><li class="step d2" data-i18n="a2.s2">Received</li><li class="step d3" data-i18n="a2.s3">Preparing</li><li class="step d4" data-i18n="a2.s4">Ready</li><li class="step d5" data-i18n="a2.s5">Served</li><li class="step d6" data-i18n="a2.s6">Paid</li>
    </ol>
-   <p class="note" data-i18n="try.note">The demo uses sample data that resets every night. Please don't enter real customer information.</p>
-   <div class="cta">
-    <a class="btn g js-wa" data-wa="demo" href="https://wa.me/250786187326" target="_blank" rel="noopener" data-track="demo_code_whatsapp" data-i18n="try.ask">💬 Ask for a demo code on WhatsApp</a>
-    <a class="btn b" href="https://demo.latcflow.com" target="_blank" rel="noopener" data-track="demo_open" data-i18n="try.open">Open the demo →</a>
+   <p class="lead" data-i18n="a2.text">Then the receipt appears on the customer's own phone, with a “Check this receipt” QR code that proves it is genuine.</p>
+  </div>
+  <div class="printer">
+   <div class="slot" aria-hidden="true"></div>
+   <figure class="receipt print">
+    <p class="rshop" data-i18n="r.shop">Sample shop</p>
+    <p class="rhead" data-i18n="r.head">Kigali · Receipt</p>
+    <div class="rline"><span data-i18n="r.i1">Rice 5 kg × 2</span><span>13,000</span></div>
+    <div class="rline"><span data-i18n="r.i2">Sugar 1 kg × 3</span><span>4,500</span></div>
+    <div class="rline"><span data-i18n="r.i3">Cooking oil 1 L</span><span>4,000</span></div>
+    <div class="rtotal"><span data-i18n="r.total">Total</span><span>RWF 21,500</span></div>
+    <div class="rqr"><span class="qr" aria-hidden="true"></span><span data-i18n="r.check">Check this receipt</span></div>
+    <p class="rfoot" data-i18n="r.powered">Powered by LATC Flow Suite</p>
+    <figcaption class="rfoot" data-i18n="r.ill">Illustration with sample items</figcaption>
+   </figure>
+  </div>
+ </div>
+</section>
+
+<section class="sec tight" aria-labelledby="a3h">
+ <div class="wrap">
+  <h2 class="h2" id="a3h"><span data-i18n="a3.t1">Buy it.</span><br><span class="o" data-i18n="a3.t2">Sell it. At once.</span></h2>
+  <div class="belt">
+   <span class="chip" data-i18n="a3.sup">Supplier</span>
+   <div class="track" aria-hidden="true"><span class="box"></span><span class="box d2"></span><span class="box d3"></span><span class="box d4"></span></div>
+   <span class="chip g" data-i18n="a3.shelf">Your shelf · ready to sell</span>
+  </div>
+ </div>
+</section>
+
+<section id="try" class="sec green">
+ <div class="wrap">
+  <p class="eyebrow ink" data-i18n="try.tag">Live demo</p>
+  <h2 class="h1 ink" data-i18n="save.title">Save your time.</h2>
+  <p class="savetext" data-i18n="save.text">Search nearby products, shops and accommodation, see what's inside supermarkets, compare prices and serve yourself in just one click.</p>
+  <div class="split trygrid">
+   <div class="splittext">
+    <h3 class="h3" data-i18n="try.title">See LFS in action. Try the live demo.</h3>
+    <p data-i18n="try.text">Explore ready-made sample businesses: a supermarket, a restaurant, a hotel and more. Sell, give credit, take an online order and watch it all appear on the owner's dashboard.</p>
+    <p class="small" data-i18n="try.note">The demo uses sample data that resets every night. Please don't enter real customer information.</p>
+    <div class="cta">
+     <a class="btn k js-wa" data-wa="demo" href="https://wa.me/250786187326" target="_blank" rel="noopener" data-track="demo_code_whatsapp"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.8A8 8 0 1 1 21 12z"/></svg><span data-i18n="try.ask">Ask for a demo code on WhatsApp</span></a>
+     <a class="btn ok" href="https://demo.latcflow.com" target="_blank" rel="noopener" data-track="demo_open" data-i18n="try.open">Open the demo →</a>
+    </div>
    </div>
+   <ol class="trysteps">
+    <li><a class="js-wa" data-wa="demo" href="https://wa.me/250786187326" target="_blank" rel="noopener" data-track="demo_step1_whatsapp"><span class="num">01</span><span><b data-i18n="try.s1">Ask for an access code</b><span data-i18n="try.s1t">One tap on WhatsApp. We send you a personal code.</span></span><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
+    <li><a href="https://demo.latcflow.com" target="_blank" rel="noopener" data-track="demo_step2_open"><span class="num">02</span><span><b data-i18n="try.s2">Open the demo</b><span data-i18n="try.s2t">Go to demo.latcflow.com and enter your code.</span></span><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
+    <li><a href="https://demo.latcflow.com" target="_blank" rel="noopener" data-track="demo_step3_open"><span class="num">03</span><span><b data-i18n="try.s3">Pick a business and a role</b><span data-i18n="try.s3t">Owner, cashier or waiter. Use two devices to watch orders arrive live.</span></span><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li>
+   </ol>
   </div>
  </div>
 </section>
 
-<section id="why">
+<section id="why" class="sec">
  <div class="wrap">
-  <span class="eyebrow" data-i18n="why.eyebrow">Why LATC</span>
-  <h2 data-i18n="why.title">We solve the problems others ignore.</h2>
-  <p class="sub" data-i18n="why.sub">Most software is built for perfect internet, perfect power and one language. Africa deserves better — so we engineered for reality.</p>
-  <div class="grid4">
-   <details class="feat more"><summary><div class="ico" aria-hidden="true">📶</div><h4 data-i18n="why.p1">Internet drops. Your business doesn't.</h4><p data-i18n="why.p1t">Keep serving customers through network cuts — everything catches up on its own when you're back online.</p><span class="morel" data-i18n="feat.more">Learn more</span></summary><ul><li data-i18n="why.p1d1">Every sale is saved on the device instantly, with or without internet.</li><li data-i18n="why.p1d2">When the connection returns, everything syncs by itself — nothing is lost or typed twice.</li><li data-i18n="why.p1d3">One tick: saved on the device. Two ticks: safe on the server.</li></ul></details>
-   <details class="feat more"><summary><div class="ico b" aria-hidden="true">🧾</div><h4 data-i18n="why.p2">Every franc accounted for.</h4><p data-i18n="why.p2t">Clear records of every sale, payment and item, so losses, mistakes and guesswork have nowhere to hide.</p><span class="morel" data-i18n="feat.more">Learn more</span></summary><ul><li data-i18n="why.p2d1">Every stock movement records who, when and why.</li><li data-i18n="why.p2d2">Cancelled sales stay visible with a reason; nothing silently disappears.</li><li data-i18n="why.p2d3">Gap-free receipt numbers, each with a QR code to prove it is genuine.</li></ul></details>
-   <details class="feat more"><summary><div class="ico" aria-hidden="true">📱</div><h4 data-i18n="why.p3">Your business in your pocket.</h4><p data-i18n="why.p3t">See what's happening in every shop or branch from your phone, wherever you are.</p><span class="morel" data-i18n="feat.more">Learn more</span></summary><ul><li data-i18n="why.p3d1">Live sales, profit and debts on the owner's phone.</li><li data-i18n="why.p3d2">Approve credit, discounts and refunds remotely in one tap.</li><li data-i18n="why.p3d3">All branches in one view, with alerts when something needs you.</li></ul></details>
-   <details class="feat more"><summary><div class="ico b" aria-hidden="true">🇷🇼</div><h4 data-i18n="why.p4">Built here. Supported here.</h4><p data-i18n="why.p4t">Designed in Kigali, in your language, by a team that answers when you call.</p><span class="morel" data-i18n="feat.more">Learn more</span></summary><ul><li data-i18n="why.p4d1">LFS speaks your language: Kinyarwanda, English, French and Swahili.</li><li data-i18n="why.p4d2">Mobile money, credit and the way Rwandan businesses really work, built in.</li><li data-i18n="why.p4d3">A local team for setup, training and support on WhatsApp.</li></ul></details>
+  <p class="eyebrow" data-i18n="why.eyebrow">Why LATC</p>
+  <h2 class="h2" data-i18n="why.title">We solve the problems others ignore.</h2>
+  <p class="lead" data-i18n="why.sub">Most software is built for perfect internet, perfect power and one language. Africa deserves better — so we engineered for reality.</p>
+  <div class="cells">
+<details class="cell">
+ <summary><span class="num">01</span><h3 data-i18n="why.p1">Internet drops. Your business doesn't.</h3><p data-i18n="why.p1t">Keep serving customers through network cuts — everything catches up on its own when you're back online.</p><span class="morel"><span data-i18n="feat.more">Learn more</span> <span class="plus" aria-hidden="true">+</span></span></summary>
+ <ul class="ticks"><li data-i18n="why.p1d1">Every sale is saved on the device instantly, with or without internet.</li><li data-i18n="why.p1d2">When the connection returns, everything syncs by itself — nothing is lost or typed twice.</li><li data-i18n="why.p1d3">One tick: saved on the device. Two ticks: safe on the server.</li></ul>
+</details>
+<details class="cell">
+ <summary><span class="num">02</span><h3 data-i18n="why.p2">Every franc accounted for.</h3><p data-i18n="why.p2t">Clear records of every sale, payment and item, so losses, mistakes and guesswork have nowhere to hide.</p><span class="morel"><span data-i18n="feat.more">Learn more</span> <span class="plus" aria-hidden="true">+</span></span></summary>
+ <ul class="ticks"><li data-i18n="why.p2d1">Every stock movement records who, when and why.</li><li data-i18n="why.p2d2">Cancelled sales stay visible with a reason; nothing silently disappears.</li><li data-i18n="why.p2d3">Gap-free receipt numbers, each with a QR code to prove it is genuine.</li></ul>
+</details>
+<details class="cell">
+ <summary><span class="num">03</span><h3 data-i18n="why.p3">Your business in your pocket.</h3><p data-i18n="why.p3t">See what's happening in every shop or branch from your phone, wherever you are.</p><span class="morel"><span data-i18n="feat.more">Learn more</span> <span class="plus" aria-hidden="true">+</span></span></summary>
+ <ul class="ticks"><li data-i18n="why.p3d1">Live sales, profit and debts on the owner's phone.</li><li data-i18n="why.p3d2">Approve credit, discounts and refunds remotely in one tap.</li><li data-i18n="why.p3d3">All branches in one view, with alerts when something needs you.</li></ul>
+</details>
+<details class="cell">
+ <summary><span class="num">04</span><h3 data-i18n="why.p4">Built here. Supported here.</h3><p data-i18n="why.p4t">Designed in Kigali, in your language, by a team that answers when you call.</p><span class="morel"><span data-i18n="feat.more">Learn more</span> <span class="plus" aria-hidden="true">+</span></span></summary>
+ <ul class="ticks"><li data-i18n="why.p4d1">LFS speaks your language: Kinyarwanda, English, French and Swahili.</li><li data-i18n="why.p4d2">Mobile money, credit and the way Rwandan businesses really work, built in.</li><li data-i18n="why.p4d3">A local team for setup, training and support on WhatsApp.</li></ul>
+</details>
   </div>
  </div>
 </section>
-
-<section id="engineering">
+<section id="engineering" class="sec">
  <div class="wrap">
-  <span class="eyebrow b" data-i18n="eng.eyebrow">What we do</span>
-  <h2 data-i18n="eng.title">Engineering for real African conditions.</h2>
-  <p class="sub" data-i18n="eng.sub">From embedded electronics to business software, we build technology that lasts.</p>
-  <div class="grid4">
-   <details class="feat more"><summary><div class="ico" aria-hidden="true">💻</div><h4 data-i18n="eng.f1">Business software</h4><p data-i18n="eng.f1t">Practical tools for shops, restaurants, hotels and growing companies.</p><span class="morel" data-i18n="feat.more">Learn more</span></summary><ul><li data-i18n="eng.f1d1">LATC Flow Suite: sales, stock, credit, online shop and reports in one system.</li><li data-i18n="eng.f1d2">Made for supermarkets, pharmacies, restaurants, hotels, boutiques and wholesalers.</li><li data-i18n="eng.f1d3">Works on the phones, tablets and computers you already own.</li></ul></details>
-   <details class="feat more"><summary><div class="ico b" aria-hidden="true">🚗</div><h4 data-i18n="eng.f2">Automotive technology</h4><p data-i18n="eng.f2t">OBD-II, CAN bus and vehicle diagnostics research.</p><span class="morel" data-i18n="feat.more">Learn more</span></summary><ul><li data-i18n="eng.f2d1">We read vehicle data through the standard OBD-II port and CAN bus.</li><li data-i18n="eng.f2d2">Diagnostics help find faults early and reduce breakdowns.</li><li data-i18n="eng.f2d3">Research aimed at safer roads and lower running costs.</li></ul></details>
-   <details class="feat more"><summary><div class="ico" aria-hidden="true">📡</div><h4 data-i18n="eng.f3">IoT &amp; telematics</h4><p data-i18n="eng.f3t">Connected devices and fleet intelligence.</p><span class="morel" data-i18n="feat.more">Learn more</span></summary><ul><li data-i18n="eng.f3d1">LATC Fleet shows where your vehicles are, live, on a map.</li><li data-i18n="eng.f3d2">Trip history, alerts and reports for fleet owners.</li><li data-i18n="eng.f3d3">Visit fleet.latcltd.rw to see it in action.</li></ul></details>
-   <details class="feat more"><summary><div class="ico b" aria-hidden="true">🧠</div><h4 data-i18n="eng.f4">Data &amp; AI</h4><p data-i18n="eng.f4t">Turning data into decisions for African businesses.</p><span class="morel" data-i18n="feat.more">Learn more</span></summary><ul><li data-i18n="eng.f4d1">Clear dashboards that turn daily numbers into decisions.</li><li data-i18n="eng.f4d2">Alerts on falling margins, late payers and products running out.</li><li data-i18n="eng.f4d3">Your data stays yours: used only to serve your business.</li></ul></details>
+  <p class="eyebrow" data-i18n="eng.eyebrow">What we do</p>
+  <h2 class="h2" data-i18n="eng.title">Engineering for real African conditions.</h2>
+  <p class="lead" data-i18n="eng.sub">From embedded electronics to business software, we build technology that lasts.</p>
+  <div class="cells">
+<details class="cell">
+ <summary><span class="num">01</span><h3 data-i18n="eng.f1">Business software</h3><p data-i18n="eng.f1t">Practical tools for shops, restaurants, hotels and growing companies.</p><span class="morel"><span data-i18n="feat.more">Learn more</span> <span class="plus" aria-hidden="true">+</span></span></summary>
+ <ul class="ticks"><li data-i18n="eng.f1d1">LATC Flow Suite: sales, stock, credit, online shop and reports in one system.</li><li data-i18n="eng.f1d2">Made for supermarkets, pharmacies, restaurants, hotels, boutiques and wholesalers.</li><li data-i18n="eng.f1d3">Works on the phones, tablets and computers you already own.</li></ul>
+</details>
+<details class="cell">
+ <summary><span class="num">02</span><h3 data-i18n="eng.f2">Automotive technology</h3><p data-i18n="eng.f2t">OBD-II, CAN bus and vehicle diagnostics research.</p><span class="morel"><span data-i18n="feat.more">Learn more</span> <span class="plus" aria-hidden="true">+</span></span></summary>
+ <ul class="ticks"><li data-i18n="eng.f2d1">We read vehicle data through the standard OBD-II port and CAN bus.</li><li data-i18n="eng.f2d2">Diagnostics help find faults early and reduce breakdowns.</li><li data-i18n="eng.f2d3">Research aimed at safer roads and lower running costs.</li></ul>
+</details>
+<details class="cell">
+ <summary><span class="num">03</span><h3 data-i18n="eng.f3">IoT &amp; telematics</h3><p data-i18n="eng.f3t">Connected devices and fleet intelligence.</p><span class="morel"><span data-i18n="feat.more">Learn more</span> <span class="plus" aria-hidden="true">+</span></span></summary>
+ <ul class="ticks"><li data-i18n="eng.f3d1">LATC Fleet shows where your vehicles are, live, on a map.</li><li data-i18n="eng.f3d2">Trip history, alerts and reports for fleet owners.</li><li data-i18n="eng.f3d3">Visit fleet.latcltd.rw to see it in action.</li></ul>
+</details>
+<details class="cell">
+ <summary><span class="num">04</span><h3 data-i18n="eng.f4">Data &amp; AI</h3><p data-i18n="eng.f4t">Turning data into decisions for African businesses.</p><span class="morel"><span data-i18n="feat.more">Learn more</span> <span class="plus" aria-hidden="true">+</span></span></summary>
+ <ul class="ticks"><li data-i18n="eng.f4d1">Clear dashboards that turn daily numbers into decisions.</li><li data-i18n="eng.f4d2">Alerts on falling margins, late payers and products running out.</li><li data-i18n="eng.f4d3">Your data stays yours: used only to serve your business.</li></ul>
+</details>
   </div>
  </div>
 </section>
-
-<section id="promise">
+<section id="promise" class="sec">
  <div class="wrap">
-  <span class="eyebrow b" data-i18n="promise.eyebrow">Our promise</span>
-  <h2 data-i18n="promise.title">Technology you can trust with your business.</h2>
-  <p class="sub" data-i18n="promise.sub">Your business runs on it every day, so we hold ourselves to four commitments.</p>
-  <div class="grid4">
-   <details class="feat more"><summary><div class="ico b" aria-hidden="true">⚡</div><h4 data-i18n="promise.q1">Offline-first engineering</h4><p data-i18n="promise.q1t">Built to work without internet from day one — not added as an afterthought.</p><span class="morel" data-i18n="feat.more">Learn more</span></summary><ul><li data-i18n="promise.q1d1">The counter keeps selling during network cuts.</li><li data-i18n="promise.q1d2">Receipts print and stock updates even offline.</li><li data-i18n="promise.q1d3">Everything catches up automatically when the connection returns.</li></ul></details>
-   <details class="feat more"><summary><div class="ico" aria-hidden="true">🗄️</div><h4 data-i18n="promise.q2">Your data stays yours</h4><p data-i18n="promise.q2t">Each business's information is kept separate, protected and safely stored.</p><span class="morel" data-i18n="feat.more">Learn more</span></summary><ul><li data-i18n="promise.q2d1">Each business's data is kept separate from every other business.</li><li data-i18n="promise.q2d2">Customer details are masked on printed receipts.</li><li data-i18n="promise.q2d3">Handled under Rwanda's Data Protection and Privacy Law.</li></ul></details>
-   <details class="feat more"><summary><div class="ico b" aria-hidden="true">🔒</div><h4 data-i18n="promise.q3">Security built in</h4><p data-i18n="promise.q3t">Protected sign-in, staff roles and a record of every important action.</p><span class="morel" data-i18n="feat.more">Learn more</span></summary><ul><li data-i18n="promise.q3d1">Encrypted connections and protected sign-in.</li><li data-i18n="promise.q3d2">Only devices approved by the owner can sell.</li><li data-i18n="promise.q3d3">Each role sees only what it needs; cashiers never see costs or profit.</li></ul></details>
-   <details class="feat more"><summary><div class="ico" aria-hidden="true">🤝</div><h4 data-i18n="promise.q4">Fair and transparent</h4><p data-i18n="promise.q4t">Clear monthly pricing, no hidden fees, cancel anytime.</p><span class="morel" data-i18n="feat.more">Learn more</span></summary><ul><li data-i18n="promise.q4d1">A simple monthly plan that matches your type of business.</li><li data-i18n="promise.q4d2">No setup traps and no hidden charges.</li><li data-i18n="promise.q4d3">Any price change is announced 30 days in advance.</li></ul></details>
+  <p class="eyebrow" data-i18n="promise.eyebrow">Our promise</p>
+  <h2 class="h2" data-i18n="promise.title">Technology you can trust with your business.</h2>
+  <p class="lead" data-i18n="promise.sub">Your business runs on it every day, so we hold ourselves to four commitments.</p>
+  <div class="cells">
+<details class="cell">
+ <summary><span class="num">01</span><h3 data-i18n="promise.q1">Offline-first engineering</h3><p data-i18n="promise.q1t">Built to work without internet from day one — not added as an afterthought.</p><span class="morel"><span data-i18n="feat.more">Learn more</span> <span class="plus" aria-hidden="true">+</span></span></summary>
+ <ul class="ticks"><li data-i18n="promise.q1d1">The counter keeps selling during network cuts.</li><li data-i18n="promise.q1d2">Receipts print and stock updates even offline.</li><li data-i18n="promise.q1d3">Everything catches up automatically when the connection returns.</li></ul>
+</details>
+<details class="cell">
+ <summary><span class="num">02</span><h3 data-i18n="promise.q2">Your data stays yours</h3><p data-i18n="promise.q2t">Each business's information is kept separate, protected and safely stored.</p><span class="morel"><span data-i18n="feat.more">Learn more</span> <span class="plus" aria-hidden="true">+</span></span></summary>
+ <ul class="ticks"><li data-i18n="promise.q2d1">Each business's data is kept separate from every other business.</li><li data-i18n="promise.q2d2">Customer details are masked on printed receipts.</li><li data-i18n="promise.q2d3">Handled under Rwanda's Data Protection and Privacy Law.</li></ul>
+</details>
+<details class="cell">
+ <summary><span class="num">03</span><h3 data-i18n="promise.q3">Security built in</h3><p data-i18n="promise.q3t">Protected sign-in, staff roles and a record of every important action.</p><span class="morel"><span data-i18n="feat.more">Learn more</span> <span class="plus" aria-hidden="true">+</span></span></summary>
+ <ul class="ticks"><li data-i18n="promise.q3d1">Encrypted connections and protected sign-in.</li><li data-i18n="promise.q3d2">Only devices approved by the owner can sell.</li><li data-i18n="promise.q3d3">Each role sees only what it needs; cashiers never see costs or profit.</li></ul>
+</details>
+<details class="cell">
+ <summary><span class="num">04</span><h3 data-i18n="promise.q4">Fair and transparent</h3><p data-i18n="promise.q4t">Clear monthly pricing, no hidden fees, cancel anytime.</p><span class="morel"><span data-i18n="feat.more">Learn more</span> <span class="plus" aria-hidden="true">+</span></span></summary>
+ <ul class="ticks"><li data-i18n="promise.q4d1">A simple monthly plan that matches your type of business.</li><li data-i18n="promise.q4d2">No setup traps and no hidden charges.</li><li data-i18n="promise.q4d3">Any price change is announced 30 days in advance.</li></ul>
+</details>
   </div>
  </div>
 </section>
 
-<section id="about">
- <div class="wrap about">
-  <div>
-   <span class="eyebrow" data-i18n="about.eyebrow">About LATC</span>
-   <h2 data-i18n="about.title">Engineering excellence with an African vision.</h2>
-   <p class="sub" style="margin-bottom:0" data-i18n="about.text">Luxury Africa Technology Center Ltd is a Rwanda-based technology company. We design business software and automotive electronics — embedded systems, telematics and data intelligence — built for long-term value across Africa.</p>
+<section id="about" class="sec">
+ <div class="wrap split">
+  <div class="splittext">
+   <p class="eyebrow" data-i18n="about.eyebrow">About LATC</p>
+   <h2 class="h2" data-i18n="about.title">Engineering excellence with an African vision.</h2>
+   <p class="lead" data-i18n="about.text">Luxury Africa Technology Center Ltd is a Rwanda-based technology company. We design business software and automotive electronics — embedded systems, telematics and data intelligence — built for long-term value across Africa.</p>
   </div>
-  <div class="facts">
-   <div class="fact"><small data-i18n="about.k1">Company</small><span data-i18n="about.v1">Registered with the Rwanda Development Board, 2026</span></div>
-   <div class="fact"><small data-i18n="about.k2">Focus</small><span data-i18n="about.v2">Business software · Embedded systems · Telematics · R&amp;D</span></div>
-   <div class="fact"><small data-i18n="about.k3">Location</small><span data-i18n="about.v3">Kicukiro District, Kigali, Rwanda</span></div>
-   <div class="fact"><small data-i18n="about.k4">Founder &amp; CEO</small><a href="https://www.linkedin.com/in/jean-bosco-ombeni-mukunzi-2002a3160" target="_blank" rel="noopener" data-track="linkedin_founder">Jean Bosco Ombeni Mukunzi</a></div>
-   <div class="fact"><small data-i18n="about.k5">Partnerships</small><span data-i18n="about.v5">Open to manufacturers, distributors, investors and institutions</span></div>
-  </div>
+  <dl class="facts">
+   <div><dt data-i18n="about.k1">Company</dt><dd data-i18n="about.v1">Registered with the Rwanda Development Board, 2026</dd></div>
+   <div><dt data-i18n="about.k2">Focus</dt><dd data-i18n="about.v2">Business software · Embedded systems · Telematics · R&amp;D</dd></div>
+   <div><dt data-i18n="about.k3">Location</dt><dd data-i18n="about.v3">Kicukiro District, Kigali, Rwanda</dd></div>
+   <div><dt data-i18n="about.k5">Partnerships</dt><dd data-i18n="about.v5">Open to manufacturers, distributors, investors and institutions</dd></div>
+  </dl>
  </div>
 </section>
 
-<section id="contact">
+<section id="contact" class="sec">
  <div class="wrap">
-  <span class="eyebrow b" data-i18n="contact.eyebrow">Contact</span>
-  <h2 data-i18n="contact.title">Let's build together.</h2>
-  <p class="sub" data-i18n="contact.sub">Questions, demos or partnerships — we reply fast.</p>
-  <div class="contact">
-   <a class="feat" href="mailto:info@latcltd.rw" data-track="contact_email"><div class="ico b" aria-hidden="true">✉️</div><h4 data-i18n="contact.email">Email</h4><p>info@latcltd.rw</p></a>
-   <a class="feat js-wa" href="https://wa.me/250786187326" target="_blank" rel="noopener" data-track="contact_whatsapp" data-wa="contact"><div class="ico" aria-hidden="true">💬</div><h4>WhatsApp</h4><p>+250 786 187 326</p></a>
-   <a class="feat" href="https://www.linkedin.com/company/latcltd/" target="_blank" rel="noopener" data-track="contact_linkedin"><div class="ico b" aria-hidden="true">in</div><h4>LinkedIn</h4><p data-i18n="contact.li">LATC official page</p></a>
+  <p class="eyebrow" data-i18n="contact.eyebrow">Contact</p>
+  <h2 class="h2" data-i18n="contact.title">Let's build together.</h2>
+  <p class="lead" data-i18n="contact.sub">Questions, demos or partnerships — we reply fast.</p>
+  <div class="cells contact">
+   <a class="cell" href="mailto:info@latcltd.rw" data-track="contact_email"><span class="eyebrow" data-i18n="contact.email">Email</span><span class="cbig">info@latcltd.rw</span></a>
+   <a class="cell js-wa" href="https://wa.me/250786187326" target="_blank" rel="noopener" data-track="contact_whatsapp" data-wa="contact"><span class="eyebrow">WhatsApp</span><span class="cbig">+250 786 187 326</span></a>
+   <a class="cell" href="https://www.linkedin.com/company/latcltd/" target="_blank" rel="noopener" data-track="contact_linkedin"><span class="eyebrow">LinkedIn</span><span class="cbig" data-i18n="contact.li">LATC official page</span></a>
   </div>
  </div>
 </section>
 
-<section class="band-wrap">
- <div class="wrap">
-  <div class="band">
-   <div><h2 data-i18n="band.title">Be part of what Africa builds next.</h2><p data-i18n="band.text">Start with LATC Flow Suite today, or talk to us about partnership.</p></div>
-   <div class="cta">
-    <a class="btn g js-wa" href="https://wa.me/250786187326" target="_blank" rel="noopener" data-track="early_access_band" data-i18n="cta.early">Get started</a>
-    <a class="btn b" href="mailto:info@latcltd.rw?subject=Partnership%20with%20LATC" data-track="partner_email" data-i18n="band.partner">Partner with us</a>
-   </div>
+<section class="sec band">
+ <div class="wrap bandrow">
+  <div><h2 class="h2" data-i18n="band.title">Be part of what Africa builds next.</h2><p class="lead" data-i18n="band.text">Start with LATC Flow Suite today, or talk to us about partnership.</p></div>
+  <div class="cta">
+   <a class="btn g js-wa" href="https://wa.me/250786187326" target="_blank" rel="noopener" data-track="early_access_band" data-i18n="cta.early">Get started</a>
+   <a class="btn o" href="mailto:info@latcltd.rw?subject=Partnership%20with%20LATC" data-track="partner_email" data-i18n="band.partner">Partner with us</a>
   </div>
  </div>
 </section>
 </main>
 
 <footer>
- <div class="wrap">
-  <span><b class="slogan-foot">LATC — <span data-i18n="slogan">Your trusted partner in business</span></b><br>© <span id="year">2026</span> Luxury Africa Technology Center Ltd · Kigali, Rwanda · <span data-i18n="footer.rights">All rights reserved.</span><br>
-   <small><span data-i18n="footer.trademark">LATC, LATC Flow Suite and the LATC logo are names and marks of Luxury Africa Technology Center Ltd.</span><br><span data-i18n="footer.count">We count visits anonymously to improve our service.</span> <a href="privacy.html" data-i18n="footer.privacy">Privacy</a></small></span>
+ <div class="wrap footrow">
+  <div class="foottext">
+   <p class="footslogan">LATC — <span data-i18n="slogan">Your trusted partner in business</span></p>
+   <p>© <span id="year">2026</span> Luxury Africa Technology Center Ltd · Kigali, Rwanda · <span data-i18n="footer.rights">All rights reserved.</span></p>
+   <p class="small"><span data-i18n="footer.trademark">LATC, LATC Flow Suite and the LATC logo are names and marks of Luxury Africa Technology Center Ltd.</span><br><span data-i18n="footer.count">We count visits anonymously to improve our service.</span> <a href="privacy.html" data-i18n="footer.privacy">Privacy</a></p>
+  </div>
   <div class="lang" role="group" aria-label="Language">
    <button type="button" data-lang="en" aria-pressed="true">EN</button>
    <!-- RW hidden until the Kinyarwanda texts are reviewed (owner decision 2026-10-21); translations kept below. -->
    <button type="button" data-lang="fr" aria-pressed="false">FR</button>
   </div>
  </div>
+ <div class="giant" aria-hidden="true">LATC</div>
 </footer>
 
 <div class="consent" id="consent" role="dialog" aria-live="polite" aria-label="Visit counting">
@@ -358,7 +622,7 @@ en:{},
 rw:{
 'skip':'Jya ku bikubiyemo','slogan':'Umufatanyabikorwa wizewe mu bucuruzi bwawe',
 'nav.products':'Ibyo dukora','nav.lfs':'LATC Flow Suite','nav.engineering':'Ubuhanga','nav.about':'Abo turi bo','nav.contact':'Twandikire',
-'cta.early':'Iyandikishe mbere','cta.earlyLfs':'💬 Iyandikishe mbere kuri LFS','cta.explore':'Menya LATC','cta.earlyWa':'💬 Iyandikishe kuri WhatsApp',
+'cta.early':'Iyandikishe mbere','cta.earlyLfs':'Iyandikishe mbere kuri LFS','cta.explore':'Menya LATC','cta.earlyWa':'Iyandikishe kuri WhatsApp',
 'hero.eyebrow':'Byakorewe mu Rwanda · Bigenewe Afurika',
 'hero.title':'Ikoranabuhanga ryakorewe muri Afurika mu <span class="g">bucuruzi</span> no mu <span class="b">gutwara abantu n\'ibintu</span>.',
 'hero.lead':"Ikoranabuhanga rikomeza gukora n'iyo interineti yabuze, rivuga ururimi rwawe, kandi rigufasha kugenzura neza ibyagurishijwe byose, ububiko n'ibyemezo byose — ryakorewe mu Rwanda rijyanye n'uko ubucuruzi bukorwa muri Afurika.",
@@ -408,6 +672,49 @@ rw:{
 'wa.contact':'Muraho LATC, '
 },
 fr:{
+"save.title":"Gagnez du temps.",
+"save.text":"Trouvez les produits, boutiques et hébergements proches, voyez ce qu'il y a dans les supermarchés, comparez les prix et servez-vous en un seul clic.",
+"m.sell":"Vendre",
+"m.stock":"Stock",
+"m.credit":"Crédit",
+"m.market":"Marché en ligne",
+"m.reports":"Rapports",
+"m.offline":"Hors ligne",
+"o.sale":"Vente",
+"o.order":"Commande en ligne",
+"a1.t1":"Une vente.",
+"a1.t2":"Tous les écrans.",
+"a1.k1":"Caisse",
+"a1.h1":"Vente terminée",
+"a1.p1":"Une coche : enregistrée sur l'appareil",
+"a1.k2":"Serveur",
+"a1.h2":"Deux coches",
+"a1.p2":"En sécurité sur le serveur",
+"a1.k3":"Téléphone du propriétaire",
+"a1.h3":"Ventes en direct",
+"a1.p3":"Bénéfice et dettes, où que vous soyez",
+"a2.t2":"Suivez chaque étape en direct.",
+"a2.s1":"Envoyée",
+"a2.s2":"Reçue",
+"a2.s3":"En préparation",
+"a2.s4":"Prête",
+"a2.s5":"Servie",
+"a2.s6":"Payée",
+"a2.text":"Puis le reçu apparaît sur le téléphone du client, avec un QR code « Vérifier ce reçu » qui prouve son authenticité.",
+"r.shop":"Boutique d'exemple",
+"r.head":"Kigali · Reçu",
+"r.i1":"Riz 5 kg × 2",
+"r.i2":"Sucre 1 kg × 3",
+"r.i3":"Huile 1 L",
+"r.total":"Total",
+"r.check":"Vérifier ce reçu",
+"r.powered":"Propulsé par LATC Flow Suite",
+"r.ill":"Illustration avec des articles d'exemple",
+"a3.t1":"Achetez.",
+"a3.t2":"Vendez. Aussitôt.",
+"a3.sup":"Fournisseur",
+"a3.shelf":"Votre rayon · prêt à vendre",
+"nav.menu":"Menu",
 "why.p1d1":"Chaque vente est enregistrée instantanément sur l'appareil, avec ou sans internet.",
 "why.p1d2":"Au retour de la connexion, tout se synchronise seul — rien n'est perdu ni saisi deux fois.",
 "why.p1d3":"Une coche : enregistrée sur l'appareil. Deux coches : en sécurité sur le serveur.",
@@ -508,14 +815,14 @@ fr:{
 "try.s3":"Choisissez une entreprise et un rôle",
 "try.s3t":"Propriétaire, caissier ou serveur. Utilisez deux appareils pour voir les commandes arriver en direct.",
 "try.note":"La démo utilise des données d'exemple remises à zéro chaque nuit. Merci de ne pas saisir de vraies informations clients.",
-"try.ask":"💬 Demander un code de démo sur WhatsApp",
+"try.ask":"Demander un code de démo sur WhatsApp",
 "try.open":"Ouvrir la démo →",
 "cta.tryDemo":"Essayer la démo",
 "wa.demo":"Bonjour LATC, je souhaite un code d'accès pour essayer la démo de LATC Flow Suite.\nNom : \nEntreprise : ",
 
 'skip':'Aller au contenu','slogan':'Votre partenaire de confiance en affaires',
 'nav.products':'Produits','nav.lfs':'LATC Flow Suite','nav.engineering':'Ingénierie','nav.about':'À propos','nav.contact':'Contact',
-'cta.early':'Commencer','cta.earlyLfs':'💬 Commencer avec LFS','cta.explore':'Découvrir LATC','cta.earlyWa':'💬 Parlons sur WhatsApp',
+'cta.early':'Commencer','cta.earlyLfs':'Commencer avec LFS','cta.explore':'Découvrir LATC','cta.earlyWa':'Parlons sur WhatsApp',
 'hero.eyebrow':'Fabriqué au Rwanda · Conçu pour l\'Afrique',
 'hero.title':'Une technologie africaine pour le <span class="g">commerce</span> et la <span class="b">mobilité</span>.',
 'hero.lead':"Une technologie qui continue de fonctionner quand Internet s'arrête, qui parle votre langue et qui vous donne le contrôle de chaque vente, de chaque article et de chaque décision — conçue au Rwanda pour la façon dont l'Afrique fait vraiment des affaires.",
@@ -594,13 +901,6 @@ if(SHOWN.indexOf(saved)<0)saved=null;
 setLang(saved||(nav0==='fr'?'fr':'en'));
 [].forEach.call(document.querySelectorAll('.lang button'),function(b){b.addEventListener('click',function(){setLang(b.dataset.lang);track('language_'+b.dataset.lang)})});
 
-/* Theme toggle */
-var tb=document.getElementById('themeBtn');
-function paintTheme(){var d=root.getAttribute('data-theme')==='dark';tb.textContent=d?'☀️':'🌙'}
-tb.addEventListener('click',function(){var t=root.getAttribute('data-theme')==='dark'?'light':'dark';root.setAttribute('data-theme',t);store('latc-theme',t);paintTheme();track('theme_'+t)});
-if(window.matchMedia){var mq=matchMedia('(prefers-color-scheme: light)');var onSys=function(e){if(!store('latc-theme')){root.setAttribute('data-theme',e.matches?'light':'dark');paintTheme()}};
- if(mq.addEventListener)mq.addEventListener('change',onSys);else if(mq.addListener)mq.addListener(onSys)}
-paintTheme();
 
 /* Mobile menu */
 var nav=document.getElementById('nav'),mb=document.getElementById('menuBtn');
